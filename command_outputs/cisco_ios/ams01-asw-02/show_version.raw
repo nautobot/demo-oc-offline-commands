@@ -1,5 +1,5 @@
 Cisco IOS XE Software, Version 16.09.08
-Cisco IOS Software [Fuji], Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M), Version 16.09.08, RELEASE SOFTWARE (fc2)
+Cisco IOS Software [Fuji], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.09.08, RELEASE SOFTWARE (fc2)
 Technical Support: http://www.cisco.com/techsupport
 Copyright (c) 1986-2022 by Cisco Systems, Inc.
 Compiled Thu 18-Aug-22 08:50 by mcpre
@@ -17,12 +17,12 @@ software.
 
 
 ROM: IOS-XE ROMMON
-BOOTLDR: CAT3K_CAA Boot Loader (CAT3K_CAA-HBOOT-M) Version 6.06, RELEASE SOFTWARE (P)
+BOOTLDR: System Bootstrap, Version 16.9.1r [FC1], RELEASE SOFTWARE (P)
 
 ams01-asw-02 uptime is 1 day, 2 hours, 4 minutes
 Uptime for this control processor is 1 day, 2 hours, 7 minutes
 System returned to ROM by Power-on
-System image file is "flash:cat3k_caa-universalk9.16.09.08.SPA.bin"
+System image file is "flash:cat9k_iosxe.16.09.08.SPA.bin"
 Last reload reason: Power-on
 
 
@@ -55,7 +55,7 @@ None                    Subscription Smart License       None
 
 Smart Licensing Status: UNREGISTERED/EVAL EXPIRED
 
-cisco WS-C3750X-48T-S (MIPS) processor (revision A0) with 794814K/6147K bytes of memory.
+cisco C9300-48T (X86) processor (revision A0) with 1338934K/6147K bytes of memory.
 Processor board ID FDO2445A022
 1 Virtual Ethernet interface
 48 Gigabit Ethernet interfaces
@@ -71,13 +71,13 @@ Motherboard Assembly Number        : 73-15776-03
 Motherboard Serial Number          : FDO2445024L
 Model Revision Number              : A0
 Motherboard Revision Number        : A0
-Model Number                       : WS-C3750X-48T-S
+Model Number                       : C9300-48T
 System Serial Number               : FDO2445A022
 
 
 Switch Ports Model              SW Version        SW Image              Mode
 ------ ----- -----              ----------        ----------            ----
-*    1 52    WS-C3750X-48T-S      16.09.08          CAT3K_CAA-UNIVERSALK9 BUNDLE
+*    1 52    C9300-48T            16.09.08          CAT9K_IOSXE           INSTALL
 
 
 Configuration register is 0x102

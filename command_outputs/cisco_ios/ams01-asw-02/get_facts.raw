@@ -2,7 +2,7 @@
   "hostname": "ams01-asw-02",
   "fqdn": "ams01-asw-02.ams01.example.com",
   "vendor": "Cisco",
-  "model": "WS-C3750X-48T-S",
+  "model": "C9300-48T",
   "serial_number": "FDO2445A022",
   "os_version": "16.09.08",
   "uptime": 93840,
