@@ -1,0 +1,10 @@
+Value SYNC_STATUS (synchronized|unsynchronized)
+Value STRATUM (\d+)
+Value REFERENCE (\S+)
+
+Start
+  ^Clock is ${SYNC_STATUS}, stratum ${STRATUM}, reference is ${REFERENCE}\s*$$ -> Record End
+  ^Clock is ${SYNC_STATUS}, stratum ${STRATUM}, no reference.*$$ -> Record End
+  ^.*$$
+
+End
