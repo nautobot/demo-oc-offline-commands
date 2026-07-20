@@ -1,0 +1,283 @@
+ 11:11:29 up 6 days,  4:07,  1 user,  load average: 0.23, 0.24, 0.18
+  PID %CPU %MEM TT       STAT  STARTED     TIME CMD
+29372 50.3  4.5 ?        Ssl  11:11:26 00:00:01 Cli [interac    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+29364 16.6  0.2 pts/3    Ssl+ 11:11:26 00:00:00 FastCli                                                           
+ 3015  4.9  5.6 ?        Sl     Jul 14 07:20:50 Strata          -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+29349  3.2  0.3 ?        Ss   11:11:25 00:00:00 sshd: ntc [priv] 
+17969  1.6  2.6 ?        S      Jul 14 02:23:27 StrataCounte    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1810  0.7  0.0 ?        S      Jul 14 01:06:52 /usr/bin/SlabMonitor
+29361  0.6  0.1 ?        S    11:11:26 00:00:00 sshd: ntc@pts/3  
+ 1808  0.6  1.9 ?        S      Jul 14 00:57:41 ProcMgr-work    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2487  0.5  2.6 ?        S      Jul 14 00:49:26 Smbus           -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+17928  0.5  2.2 ?        S      Jul 14 00:44:31 AgentMonitor    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1809  0.4  7.3 ?        S      Jul 14 00:39:05 Sysdb           -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1981  0.2  2.9 ?        S      Jul 14 00:23:05 SuperServer     -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2549  0.1  2.2 ?        S      Jul 14 00:14:00 PhyEthtool      -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3011  0.1  2.4 ?        S      Jul 14 00:13:32 Pmbus           -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3007  0.1  3.4 ?        S      Jul 14 00:09:33 /usr/sbin/ribd -N
+18324  0.1  4.1 ?        S      Jul 14 00:09:19 Snmp            -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18611  0.1  2.3 ?        S      Jul 14 00:09:18 StandbyCpld     -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1983  0.0  2.5 ?        Sl     Jul 14 00:08:43 Aaa             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3832  0.0  2.9 ?        S      Jul 14 00:08:02 /usr/sbin/ribd -z "client name GREEN ns-name ns-GREEN vrfname GREEN servername vre_server rd 1:5" -N
+28141  0.0  4.6 pts/4    Ssl+ 01:21:47 00:00:31 Cli [interac    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3824  0.0  2.9 ?        S      Jul 14 00:07:55 /usr/sbin/ribd -z "client name ORANGE ns-name ns-ORANGE vrfname ORANGE servername vre_server rd 2:7" -N
+ 1899  0.0  5.3 ?        Ssl    Jul 14 00:07:18 FastCapi        -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1614  0.0  0.0 ?        S      Jul 14 00:06:59 /usr/bin/EosOomAdjust
+ 2557  0.0  2.4 ?        S      Jul 14 00:04:41 PowerSupplyD    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2897  0.0  2.6 ?        S      Jul 14 00:04:29 Fhrp            -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2787  0.0  3.7 ?        S      Jul 14 00:04:11 StrataL2        -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3591  0.0  0.0 ?        S      Jul 14 00:04:04 /usr/sbin/snmpd -LS0-6d -Lf /var/log/snmpd -p /var/run/snmpd.pid
+ 2954  0.0  2.6 ?        S      Jul 14 00:03:39 Acl             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1812  0.0  4.1 ?        S      Jul 14 00:03:32 Fru             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1982  0.0  4.7 ?        S      Jul 14 00:03:30 CliSessionMg    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2788  0.0  2.9 ?        S      Jul 14 00:02:26 StrataVlanTo    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2883  0.0  3.8 ?        S      Jul 14 00:02:25 Lag+LacpAgen    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2610  0.0  2.5 ?        S      Jul 14 00:02:23 Ucd9012         -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2046  0.0  2.4 ?        S      Jul 14 00:02:17 Thermostat      -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1813  0.0  3.0 ?        S      Jul 14 00:02:13 Launcher        -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18565  0.0  2.3 ?        S      Jul 14 00:02:10 Kabini          -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2553  0.0  2.3 ?        S      Jul 14 00:02:10 Max6658         -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2440  0.0  2.4 ?        S      Jul 14 00:01:59 ScdAgent        -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2783  0.0  3.5 ?        S      Jul 14 00:01:58 StrataL3        -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3003  0.0  2.8 ?        S      Jul 14 00:01:40 XcvrAgent       -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18628  0.0  2.5 ?        S      Jul 14 00:01:34 Lldp            -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2895  0.0  3.3 ?        Sl     Jul 14 00:01:34 Arp             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2069  0.0  2.7 ?        S      Jul 14 00:01:33 StrataCentra    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2616  0.0  2.2 ?        S      Jul 14 00:01:14 CpuComplex      -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1397  0.0  0.0 ?        S<     Jul 14 00:00:59 /usr/bin/TimeAgent -c /etc/TimeAgent.conf -p /var/run/TimeAgent.pid
+18168  0.0  2.5 ?        S      Jul 14 00:00:58 Bfd             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1373  0.0  0.3 ?        S<     Jul 14 00:00:53 wdog-cld
+18275  0.0  2.5 ?        S      Jul 14 00:00:41 LedPolicy       -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+17967  0.0  2.7 ?        S      Jul 14 00:00:41 IgmpSnooping    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18273  0.0  2.5 ?        S      Jul 14 00:00:38 PortSec         -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2945  0.0  3.0 ?        S      Jul 14 00:00:37 Ebra            -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3018  0.0  2.8 ?        S      Jul 14 00:00:35 KernelFib       -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18165  0.0  2.4 ?        S      Jul 14 00:00:35 Qos             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2949  0.0  2.4 ?        S      Jul 14 00:00:34 Stp             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2605  0.0  2.4 ?        S      Jul 14 00:00:34 GpioLedAgent    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2893  0.0  2.0 ?        S      Jul 14 00:00:33 StpTopology     -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18109  0.0  2.0 ?        S      Jul 14 00:00:33 Dot1x           -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2437  0.0  2.3 ?        S      Jul 14 00:00:33 PciBus          -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2944  0.0  2.8 ?        S      Jul 14 00:00:33 Ira             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2613  0.0  2.3 ?        S      Jul 14 00:00:31 FanDetector     -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2890  0.0  2.6 ?        S      Jul 14 00:00:30 LacpTxAgent     -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 7005  0.0  0.0 ?        Sl     Jul 17 00:00:11 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5
+ 2024  0.0  2.2 ?        S      Jul 14 00:00:28 PowerManager    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2070  0.0  2.6 ?        S      Jul 14 00:00:26 MaintenanceM    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18486  0.0  2.7 ?        S      Jul 14 00:00:25 StrataMirror    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2491  0.0  2.4 ?        S      Jul 14 00:00:25 Ds125Br         -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18386  0.0  2.5 ?        S      Jul 14 00:00:25 MplsUtilLsp     -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2784  0.0  2.7 ?        S      Jul 14 00:00:25 StrataLag       -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18645  0.0  2.4 ?        S      Jul 14 00:00:25 Sol             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18103  0.0  2.5 ?        S      Jul 14 00:00:25 StrataLanz      -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18215  0.0  2.6 ?        Sl     Jul 14 00:00:23 uwsgi           -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18019  0.0  2.5 ?        S      Jul 14 00:00:23 EventMgr        -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18609  0.0  2.0 ?        S      Jul 14 00:00:23 EventMon        -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+17922  0.0  2.4 ?        S      Jul 14 00:00:23 Ipv6RouterAd    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+17930  0.0  2.4 ?        S      Jul 14 00:00:23 Mirroring       -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18108  0.0  2.4 ?        S      Jul 14 00:00:22 PtpTimeSync     -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18392  0.0  2.4 ?        S      Jul 14 00:00:22 Macsec          -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2247  0.0  0.0 ?        Ss     Jul 14 00:00:21 /usr/sbin/sshd
+ 2956  0.0  2.4 ?        S      Jul 14 00:00:21 TopoAgent       -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18484  0.0  2.2 ?        S      Jul 14 00:00:20 Mpls            -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18563  0.0  2.3 ?        S      Jul 14 00:00:20 Picasso         -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+  412  0.0  0.0 ?        S      Jul 14 00:00:20 [khungtaskd2]
+18390  0.0  2.2 ?        S      Jul 14 00:00:20 Asu             -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+  630  0.0  0.0 ?        S      Jul 14 00:00:17 [kworker/3:1]
+  525  0.0  0.0 ?        S      Jul 14 00:00:13 [kworker/2:1]
+ 1811  0.0  4.8 ?        S      Jul 14 00:00:13 FastClid-ser    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+  399  0.0  0.0 ?        S      Jul 14 00:00:13 [kworker/1:1]
+   11  0.0  0.0 ?        S      Jul 14 00:00:13 [kworker/0:1]
+ 2145  0.0  0.3 ?        S      Jul 14 00:00:08 nginx: worker process                                              
+ 2534  0.0  0.0 ?        S      Jul 14 00:00:06 /usr/bin/tail -n 0 --retry --follow=name --pid=2530 /var/log/eos-console
+ 1461  0.0  0.0 ?        S      Jul 14 00:00:06 [watchdog/0]
+ 1464  0.0  0.0 ?        S      Jul 14 00:00:06 [watchdog/3]
+ 1463  0.0  0.0 ?        S      Jul 14 00:00:06 [watchdog/2]
+ 1462  0.0  0.0 ?        S      Jul 14 00:00:06 [watchdog/1]
+  305  0.0  0.0 ?        S      Jul 14 00:00:05 [dst_gc_task]
+ 3651  0.0  0.0 ?        S      Jul 14 00:00:05 /usr/sbin/dnsmasq
+    1  0.0  0.3 ?        Ss     Jul 14 00:00:04 /sbin/init
+    5  0.0  0.0 ?        S      Jul 14 00:00:04 [kworker/u:0]
+ 1687  0.0  0.0 ?        Ss     Jul 14 00:00:01 crond
+   13  0.0  0.0 ?        S      Jul 14 00:00:01 [migration/2]
+    6  0.0  0.0 ?        S      Jul 14 00:00:01 [migration/0]
+   17  0.0  0.0 ?        S      Jul 14 00:00:01 [migration/3]
+    8  0.0  0.0 ?        S      Jul 14 00:00:01 [migration/1]
+  766  0.0  0.0 ?        S<     Jul 14 00:00:00 [loop0]
+  184  0.0  0.0 ?        S      Jul 14 00:00:00 [sync_supers]
+28137  0.0  3.9 ?        S    01:21:47 00:00:00 FastClid-ses    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1896  0.0  3.9 ?        S      Jul 14 00:00:00 FastClid-ses    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+  634  0.0  0.0 ?        S      Jul 14 00:00:00 [usb-storage]
+ 1796  0.0  1.8 ?        S      Jul 14 00:00:00 netnsd-server   -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+    3  0.0  0.0 ?        S      Jul 14 00:00:00 [ksoftirqd/0]
+   19  0.0  0.0 ?        S      Jul 14 00:00:00 [ksoftirqd/3]
+   10  0.0  0.0 ?        S      Jul 14 00:00:00 [ksoftirqd/1]
+   15  0.0  0.0 ?        S      Jul 14 00:00:00 [ksoftirqd/2]
+ 1049  0.0  0.0 ?        S<s    Jul 14 00:00:00 /sbin/udevd -d
+  411  0.0  0.0 ?        S      Jul 14 00:00:00 [khungtaskd]
+ 2663  0.0  0.0 ?        S<     Jul 14 00:00:00 /sbin/udevd -d
+    2  0.0  0.0 ?        S      Jul 14 00:00:00 [kthreadd]
+    4  0.0  0.0 ?        S      Jul 14 00:00:00 [kworker/0:0]
+   18  0.0  0.0 ?        S      Jul 14 00:00:00 [kworker/3:0]
+   21  0.0  0.0 ?        S<     Jul 14 00:00:00 [khelper]
+   22  0.0  0.0 ?        S<     Jul 14 00:00:00 [netns]
+   23  0.0  0.0 ?        S      Jul 14 00:00:00 [kworker/u:1]
+  186  0.0  0.0 ?        S      Jul 14 00:00:00 [bdi-default]
+  188  0.0  0.0 ?        S<     Jul 14 00:00:00 [kblockd]
+  281  0.0  0.0 ?        S<     Jul 14 00:00:00 [ata_sff]
+  291  0.0  0.0 ?        S      Jul 14 00:00:00 [khubd]
+  396  0.0  0.0 ?        S      Jul 14 00:00:00 [arp_cache-prd]
+  397  0.0  0.0 ?        S      Jul 14 00:00:00 [icmp_unreachabl]
+  398  0.0  0.0 ?        S<     Jul 14 00:00:00 [rpciod]
+  400  0.0  0.0 ?        S<     Jul 14 00:00:00 [ecc_log_wq]
+  418  0.0  0.0 ?        S      Jul 14 00:00:00 [kswapd0]
+  419  0.0  0.0 ?        S      Jul 14 00:00:00 [fsnotify_mark]
+  420  0.0  0.0 ?        S<     Jul 14 00:00:00 [nfsiod]
+  421  0.0  0.0 ?        S<     Jul 14 00:00:00 [crypto]
+  437  0.0  0.0 ?        S<     Jul 14 00:00:00 [pcielwd]
+  473  0.0  0.0 ?        S      Jul 14 00:00:00 [scsi_eh_0]
+  476  0.0  0.0 ?        S      Jul 14 00:00:00 [scsi_eh_1]
+  541  0.0  0.0 ?        S<     Jul 14 00:00:00 [edac-poller]
+  574  0.0  0.0 ?        S      Jul 14 00:00:00 [ndisc_cache-prd]
+  578  0.0  0.0 ?        S<     Jul 14 00:00:00 [deferwq]
+  633  0.0  0.0 ?        S      Jul 14 00:00:00 [scsi_eh_2]
+  811  0.0  0.0 ?        S<     Jul 14 00:00:00 [kvm-irqfd-clean]
+ 1183  0.0  0.0 ?        S      Jul 14 00:00:00 [kworker/1:2]
+ 1186  0.0  0.0 ?        S      Jul 14 00:00:00 [kworker/2:2]
+ 1372  0.0  0.3 ?        S      Jul 14 00:00:00 watchdog
+ 1395  0.0  0.0 ?        S      Jul 14 00:00:00 python /usr/bin/immortalize --daemonize --log=/var/log/agents/TimeAgent --logpidsuffix --maxcredits=5 --cost=1 --immortalizepidfile=/var/run/ImmortalizeTimeAgent.pid /usr/bin/TimeAgent -c /etc/TimeAgent.conf -p /var/run/TimeAgent.pid
+ 1429  0.0  0.0 ?        S      Jul 14 00:00:00 python /usr/bin/inotifyrun -c pax -x sv4cpio -O -w -f /mnt/flash/persist/local.new . && mv /mnt/flash/persist/local.new /mnt/flash/persist/local || logger -t EosInit Failed to update /mnt/flash/persist/local --daemon --logfile=/var/log/inotifyrun-local.log --pidfile=/var/run/inotifyrun-local.pid /persist/local
+ 1430  0.0  0.0 pts/0    Ss+    Jul 14 00:00:00 inotifywait -m -r -e modify -e create -e delete -e attrib -e move .
+ 1437  0.0  0.0 ?        S      Jul 14 00:00:00 python /usr/bin/inotifyrun -c pax -x sv4cpio -O -w -f /mnt/flash/persist/sys.new . && mv /mnt/flash/persist/sys.new /mnt/flash/persist/sys || logger -t EosInit Failed to update /mnt/flash/persist/sys --daemon --logfile=/var/log/inotifyrun-sys.log --pidfile=/var/run/inotifyrun-sys.pid /persist/sys
+ 1438  0.0  0.0 pts/1    Ss+    Jul 14 00:00:00 inotifywait -m -r -e modify -e create -e delete -e attrib -e move .
+ 1450  0.0  0.0 ?        S      Jul 14 00:00:00 python /usr/bin/inotifyrun -c shred --exact --iterations=1 /mnt/flash/persist/secure; pax -x sv4cpio -O -w -f /mnt/flash/persist/secure.new . && mv /mnt/flash/persist/secure.new /mnt/flash/persist/secure || logger -t EosInit Failed to update /mnt/flash/persist/secure --daemon --logfile=/var/log/inotifyrun-secure.log --pidfile=/var/run/inotifyrun-secure.pid /persist/secure
+ 1451  0.0  0.0 pts/2    Ss+    Jul 14 00:00:00 inotifywait -m -r -e modify -e create -e delete -e attrib -e move .
+ 1620  0.0  0.0 ?        Ss     Jul 14 00:00:00 /usr/sbin/mcelog --daemon --no-syslog --logfile /var/log/mcelog
+ 1632  0.0  0.0 ?        S      Jul 14 00:00:00 [kbfd_v4v6_rx]
+ 1633  0.0  0.0 ?        S      Jul 14 00:00:00 [kbfd_v4v6_echo]
+ 1634  0.0  0.0 ?        S<     Jul 14 00:00:00 [kbfd_tx]
+ 1635  0.0  0.0 ?        S<     Jul 14 00:00:00 [kbfd_rx_expire]
+ 1636  0.0  0.0 ?        S<     Jul 14 00:00:00 [kbfd_tx_reset]
+ 1637  0.0  0.0 ?        S<     Jul 14 00:00:00 [kbfd_echo_tx]
+ 1638  0.0  0.0 ?        S<     Jul 14 00:00:00 [kbfd_echo_rx_ex]
+ 1639  0.0  0.0 ?        S<     Jul 14 00:00:00 [kbfd_echo_tx_re]
+ 1640  0.0  0.0 ?        S<     Jul 14 00:00:00 [kbfd_echo_exp_r]
+ 1794  0.0  1.8 ?        S      Jul 14 00:00:00 netnsd-watcher  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 1807  0.0  1.9 ?        S      Jul 14 00:00:00 ProcMgr-mast    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2020  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/PowerManager
+ 2022  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2044  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Thermostat
+ 2045  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2065  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StrataCentral
+ 2066  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/MaintenanceMode
+ 2067  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2068  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2144  0.0  0.0 ?        Ss     Jul 14 00:00:00 nginx: master process /usr/sbin/nginx -c /etc/nginx/nginx.conf -g pid /var/run/nginx.pid;
+ 2429  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/ScdAgent
+ 2430  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/PciBus
+ 2434  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2438  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2483  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Ds125Br --sliceId=FixedSystem
+ 2489  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2530  0.0  0.0 ?        S      Jul 14 00:00:00 /usr/bin/conlogd
+ 2531  0.0  0.0 ?        S      Jul 14 00:00:00 sh -c /usr/bin/tail -n 0 --retry --follow=name --pid=2530 /var/log/eos-console | sed 's/\(.*\)/\1\r/'
+ 2535  0.0  0.0 ?        S      Jul 14 00:00:00 sed s/\(.*\)/\1\r/
+ 2540  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Max6658
+ 2544  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/PowerSupplyDetector
+ 2550  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2554  0.0  0.0 ttyS0    Ss+    Jul 14 00:00:00 /sbin/mingetty --noclear /dev/ttyS0
+ 2555  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2565  0.0  0.0 tty1     Ss+    Jul 14 00:00:00 /sbin/mingetty /dev/tty1
+ 2572  0.0  0.0 tty2     Ss+    Jul 14 00:00:00 /sbin/mingetty /dev/tty2
+ 2575  0.0  0.0 tty3     Ss+    Jul 14 00:00:00 /sbin/mingetty /dev/tty3
+ 2578  0.0  0.0 tty4     Ss+    Jul 14 00:00:00 /sbin/mingetty /dev/tty4
+ 2583  0.0  0.0 tty5     Ss+    Jul 14 00:00:00 /sbin/mingetty /dev/tty5
+ 2587  0.0  0.0 tty6     Ss+    Jul 14 00:00:00 /sbin/mingetty /dev/tty6
+ 2602  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Ucd9012
+ 2603  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/FanDetector
+ 2606  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/CpuComplex
+ 2609  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2611  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2615  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2772  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StrataVlanTopo
+ 2773  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StrataL3
+ 2775  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StrataL2
+ 2777  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StrataLag
+ 2779  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2780  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2782  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2785  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2882  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/LacpTxAgent
+ 2885  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Arp
+ 2887  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StpTopology
+ 2888  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2889  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Fhrp
+ 2891  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2892  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2894  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2932  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Ira
+ 2935  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Ebra
+ 2938  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Acl
+ 2939  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Stp
+ 2941  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2942  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/TopoAgent
+ 2943  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2947  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2950  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 2951  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3002  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/PmbusPowerSupply
+ 3005  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Strata --sliceId=FixedSystem
+ 3008  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/KernelFib
+ 3009  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3013  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3014  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+ 3308  0.0  0.0 ?        S<     Jul 14 00:00:00 /sbin/udevd -d
+ 3519  0.0  0.0 ?        Ss     Jul 14 00:00:00 /usr/sbin/sshd-ORANGE -f /etc/ssh/sshd_config-ORANGE
+ 3619  0.0  0.0 ?        Ss     Jul 14 00:00:00 /usr/sbin/sshd-GREEN -f /etc/ssh/sshd_config-GREEN
+17917  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Ipv6RouterAdvt
+17918  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/AgentMonitor
+17919  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Mirroring
+17920  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+17923  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+17927  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+17966  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StrataCounters
+17968  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18011  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/EventMgr
+18016  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18096  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StrataLanz
+18098  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/PtpTimeSync
+18099  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Dot1x
+18101  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18104  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18106  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18158  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Bfd
+18160  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Qos
+18163  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18166  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18213  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/uwsgi --ini /etc/uwsgi/CapiApp.ini
+18214  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18269  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/PortSec
+18270  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/LedPolicy
+18271  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18272  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18383  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Asu
+18384  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Macsec
+18389  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18391  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18476  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StrataMirror
+18477  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Mpls
+18479  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18482  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18546  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Kabini
+18547  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Picasso --fixed
+18554  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18561  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18608  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/StandbyCpld
+18610  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18626  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Lldp
+18627  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+18643  0.0  0.0 ?        S      Jul 14 00:00:00 netns --dlopen procmgr /usr/bin/Sol
+18644  0.0  1.8 ?        Ss     Jul 14 00:00:00 netnsd-session  -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+29010  0.0  0.0 ?        S    11:09:07 00:00:00 [flush-8:0]
+29368  0.0  3.9 ?        S    11:11:26 00:00:00 FastClid-ses    -d -i --dlopen -p -f  -l libLoadDynamicLibs.so procmgr libProcMgrSetup.so --daemonize
+29388  0.0  0.0 pts/4    R+   11:11:29 00:00:00 ps -e -o pid,pcpu,pmem,tt,stat,start,time,cmd --sort=-pcpu
