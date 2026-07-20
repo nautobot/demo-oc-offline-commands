@@ -699,18 +699,18 @@ FastEthernet0/24 is up, line protocol is up (connected)
   ARP type: ARPA, ARP Timeout 04:00:00
   Last input 00:00:00, output 00:00:00, output hang never
   Last clearing of "show interface" counters never
-  Input queue: 0/75/35/0 (size/max/drops/flushes); Total output drops: 0
+  Input queue: 0/75/96/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 1000 bits/sec, 2 packets/sec
-  5 minute output rate 0 bits/sec, 0 packets/sec
-     704535 packets input, 62415651 bytes, 0 no buffer
-     Received 548418 broadcasts (0 IP multicasts)
+  5 minute input rate 3000 bits/sec, 4 packets/sec
+  5 minute output rate 2000 bits/sec, 2 packets/sec
+     1761109 packets input, 155155588 bytes, 0 no buffer
+     Received 1095738 broadcasts (0 IP multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 191793 multicast, 0 pause input
+     0 watchdog, 376792 multicast, 0 pause input
      0 input packets with dribble condition detected
-     129516 packets output, 17723695 bytes, 0 underruns
+     633025 packets output, 143504009 bytes, 0 underruns
      0 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
      0 babbles, 0 late collision, 0 deferred
