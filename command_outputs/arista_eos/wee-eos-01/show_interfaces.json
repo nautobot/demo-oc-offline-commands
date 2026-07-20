@@ -1,7 +1,7 @@
 {
     "interfaces": {
         "Ethernet8": {
-            "lastStatusChangeTimestamp": 1784012844.7584176, 
+            "lastStatusChangeTimestamp": 1784012844.758418, 
             "name": "Ethernet8", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -25,7 +25,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545887.980043, 
+                "counterRefreshTime": 1784546583.838955, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -55,7 +55,7 @@
             "description": ""
         }, 
         "Ethernet9": {
-            "lastStatusChangeTimestamp": 1784012844.7587435, 
+            "lastStatusChangeTimestamp": 1784012844.7587442, 
             "name": "Ethernet9", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -79,7 +79,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.152482, 
+                "counterRefreshTime": 1784546584.011028, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -132,7 +132,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545887.923938, 
+                "counterRefreshTime": 1784546583.783375, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -162,7 +162,7 @@
             "description": ""
         }, 
         "Ethernet2": {
-            "lastStatusChangeTimestamp": 1784012844.7566605, 
+            "lastStatusChangeTimestamp": 1784012844.7566755, 
             "name": "Ethernet2", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -186,7 +186,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.083524, 
+                "counterRefreshTime": 1784546583.942086, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -216,7 +216,7 @@
             "description": ""
         }, 
         "Ethernet3": {
-            "lastStatusChangeTimestamp": 1784012844.7569656, 
+            "lastStatusChangeTimestamp": 1784012844.7569654, 
             "name": "Ethernet3", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -240,7 +240,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.370078, 
+                "counterRefreshTime": 1784546584.226281, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -270,7 +270,7 @@
             "description": ""
         }, 
         "Ethernet1": {
-            "lastStatusChangeTimestamp": 1784012844.756375, 
+            "lastStatusChangeTimestamp": 1784012844.7563775, 
             "name": "Ethernet1", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -294,7 +294,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.312434, 
+                "counterRefreshTime": 1784546584.168247, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -324,7 +324,7 @@
             "description": "PUBLIX TEST"
         }, 
         "Ethernet6": {
-            "lastStatusChangeTimestamp": 1784012844.7578306, 
+            "lastStatusChangeTimestamp": 1784012844.7577283, 
             "name": "Ethernet6", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -348,7 +348,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.49615, 
+                "counterRefreshTime": 1784546584.353891, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -378,7 +378,7 @@
             "description": ""
         }, 
         "Ethernet7": {
-            "lastStatusChangeTimestamp": 1784012844.758125, 
+            "lastStatusChangeTimestamp": 1784012844.7581253, 
             "name": "Ethernet7", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -402,7 +402,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545887.957402, 
+                "counterRefreshTime": 1784546583.816703, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -432,7 +432,7 @@
             "description": ""
         }, 
         "Ethernet4": {
-            "lastStatusChangeTimestamp": 1784012844.757254, 
+            "lastStatusChangeTimestamp": 1784012844.7572525, 
             "name": "Ethernet4", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -456,7 +456,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.277689, 
+                "counterRefreshTime": 1784546584.134856, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -486,7 +486,7 @@
             "description": ""
         }, 
         "Ethernet5": {
-            "lastStatusChangeTimestamp": 1784012844.757539, 
+            "lastStatusChangeTimestamp": 1784012844.757538, 
             "name": "Ethernet5", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -510,7 +510,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.381623, 
+                "counterRefreshTime": 1784546584.237848, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -563,7 +563,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545887.847445, 
+                "counterRefreshTime": 1784546583.704547, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -616,7 +616,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.266511, 
+                "counterRefreshTime": 1784546584.123414, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -669,7 +669,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.426999, 
+                "counterRefreshTime": 1784546584.283677, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -720,9 +720,9 @@
             "interfaceCounters": {
                 "outBroadcastPkts": 0, 
                 "linkStatusChanges": 0, 
-                "lastClear": 1784012629.0424435, 
+                "lastClear": 1784012629.0424404, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.473302, 
+                "counterRefreshTime": 1784546584.330583, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -753,7 +753,7 @@
             "description": ""
         }, 
         "Ethernet22": {
-            "lastStatusChangeTimestamp": 1784012844.7627137, 
+            "lastStatusChangeTimestamp": 1784012844.762714, 
             "name": "Ethernet22", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -777,7 +777,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.037348, 
+                "counterRefreshTime": 1784546583.895931, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -807,7 +807,7 @@
             "description": ""
         }, 
         "Ethernet13": {
-            "lastStatusChangeTimestamp": 1784012844.7599642, 
+            "lastStatusChangeTimestamp": 1784012844.7599623, 
             "name": "Ethernet13", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -831,7 +831,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.538848, 
+                "counterRefreshTime": 1784546584.397261, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -884,7 +884,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.289145, 
+                "counterRefreshTime": 1784546584.145891, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -937,7 +937,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.174997, 
+                "counterRefreshTime": 1784546584.03362, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -990,7 +990,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.014163, 
+                "counterRefreshTime": 1784546583.872876, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1043,7 +1043,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.358279, 
+                "counterRefreshTime": 1784546584.214732, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1073,7 +1073,7 @@
             "description": ""
         }, 
         "Ethernet36": {
-            "lastStatusChangeTimestamp": 1784012844.7669706, 
+            "lastStatusChangeTimestamp": 1784012844.7669683, 
             "name": "Ethernet36", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1097,7 +1097,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545887.991197, 
+                "counterRefreshTime": 1784546583.850104, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1150,7 +1150,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.243273, 
+                "counterRefreshTime": 1784546584.100882, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1203,7 +1203,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.40452, 
+                "counterRefreshTime": 1784546584.260681, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1256,7 +1256,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545887.946051, 
+                "counterRefreshTime": 1784546583.805485, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1309,7 +1309,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.060163, 
+                "counterRefreshTime": 1784546583.918926, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1339,7 +1339,7 @@
             "description": ""
         }, 
         "Ethernet38": {
-            "lastStatusChangeTimestamp": 1784012844.7675555, 
+            "lastStatusChangeTimestamp": 1784012844.767556, 
             "name": "Ethernet38", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1363,7 +1363,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.220415, 
+                "counterRefreshTime": 1784546584.078394, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1393,7 +1393,7 @@
             "description": ""
         }, 
         "Ethernet39": {
-            "lastStatusChangeTimestamp": 1784012844.7678514, 
+            "lastStatusChangeTimestamp": 1784012844.76785, 
             "name": "Ethernet39", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1417,7 +1417,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.484949, 
+                "counterRefreshTime": 1784546584.342304, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1447,7 +1447,7 @@
             "description": ""
         }, 
         "Ethernet18": {
-            "lastStatusChangeTimestamp": 1784012844.7614877, 
+            "lastStatusChangeTimestamp": 1784012844.7614896, 
             "name": "Ethernet18", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1471,7 +1471,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.117656, 
+                "counterRefreshTime": 1784546583.976268, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1501,7 +1501,7 @@
             "description": ""
         }, 
         "Ethernet19": {
-            "lastStatusChangeTimestamp": 1784012844.7617989, 
+            "lastStatusChangeTimestamp": 1784012844.7617986, 
             "name": "Ethernet19", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1525,7 +1525,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.449464, 
+                "counterRefreshTime": 1784546584.306187, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1555,7 +1555,7 @@
             "description": ""
         }, 
         "Ethernet14": {
-            "lastStatusChangeTimestamp": 1784012844.7602618, 
+            "lastStatusChangeTimestamp": 1784012844.7602599, 
             "name": "Ethernet14", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1579,7 +1579,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.41572, 
+                "counterRefreshTime": 1784546584.272472, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1609,7 +1609,7 @@
             "description": ""
         }, 
         "Ethernet33": {
-            "lastStatusChangeTimestamp": 1784012844.7660737, 
+            "lastStatusChangeTimestamp": 1784012844.7660758, 
             "name": "Ethernet33", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1633,7 +1633,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.613376, 
+                "counterRefreshTime": 1784546584.471969, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1663,7 +1663,7 @@
             "description": ""
         }, 
         "Ethernet30": {
-            "lastStatusChangeTimestamp": 1784012844.7651567, 
+            "lastStatusChangeTimestamp": 1784012844.7651544, 
             "name": "Ethernet30", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1687,7 +1687,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.186227, 
+                "counterRefreshTime": 1784546584.044854, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1717,7 +1717,7 @@
             "description": ""
         }, 
         "Ethernet17": {
-            "lastStatusChangeTimestamp": 1784012844.7611828, 
+            "lastStatusChangeTimestamp": 1784012844.7611833, 
             "name": "Ethernet17", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1741,7 +1741,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.140878, 
+                "counterRefreshTime": 1784546583.99939, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1771,7 +1771,7 @@
             "description": ""
         }, 
         "Ethernet10": {
-            "lastStatusChangeTimestamp": 1784012844.7590473, 
+            "lastStatusChangeTimestamp": 1784012844.7590458, 
             "name": "Ethernet10", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1795,7 +1795,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.559823, 
+                "counterRefreshTime": 1784546584.418422, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1825,7 +1825,7 @@
             "description": ""
         }, 
         "Ethernet37": {
-            "lastStatusChangeTimestamp": 1784012844.7672627, 
+            "lastStatusChangeTimestamp": 1784012844.7672608, 
             "name": "Ethernet37", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1849,7 +1849,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.254875, 
+                "counterRefreshTime": 1784546584.111975, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1879,7 +1879,7 @@
             "description": ""
         }, 
         "Ethernet34": {
-            "lastStatusChangeTimestamp": 1784012844.7663608, 
+            "lastStatusChangeTimestamp": 1784012844.7663624, 
             "name": "Ethernet34", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1903,7 +1903,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545887.968854, 
+                "counterRefreshTime": 1784546583.827852, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -1933,7 +1933,7 @@
             "description": ""
         }, 
         "Ethernet35": {
-            "lastStatusChangeTimestamp": 1784012844.7666748, 
+            "lastStatusChangeTimestamp": 1784012844.766675, 
             "name": "Ethernet35", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -1957,7 +1957,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.025707, 
+                "counterRefreshTime": 1784546583.884355, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2011,7 +2011,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.591484, 
+                "counterRefreshTime": 1784546584.45031, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2041,7 +2041,7 @@
             "description": ""
         }, 
         "Ethernet32": {
-            "lastStatusChangeTimestamp": 1784012844.765771, 
+            "lastStatusChangeTimestamp": 1784012844.76577, 
             "name": "Ethernet32", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2065,7 +2065,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.323751, 
+                "counterRefreshTime": 1784546584.179719, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2100,7 +2100,7 @@
             "mtu": 65535, 
             "name": "Loopback0", 
             "interfaceStatus": "connected", 
-            "lastStatusChangeTimestamp": 1784012771.7789843, 
+            "lastStatusChangeTimestamp": 1784012771.7789812, 
             "description": "", 
             "interfaceAddress": [
                 {
@@ -2144,7 +2144,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.460446, 
+                "counterRefreshTime": 1784546584.317361, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2174,7 +2174,7 @@
             "description": ""
         }, 
         "Ethernet16": {
-            "lastStatusChangeTimestamp": 1784012844.7608736, 
+            "lastStatusChangeTimestamp": 1784012844.7608733, 
             "name": "Ethernet16", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2198,7 +2198,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.231856, 
+                "counterRefreshTime": 1784546584.08981, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2228,18 +2228,18 @@
             "description": ""
         }, 
         "Management1": {
-            "lastStatusChangeTimestamp": 1784012765.9116807, 
+            "lastStatusChangeTimestamp": 1784012765.9116836, 
             "name": "Management1", 
             "interfaceStatus": "connected", 
             "autoNegotiate": "success", 
             "burnedInAddress": "00:1c:73:9e:5e:08", 
             "loopbackMode": "loopbackNone", 
             "interfaceStatistics": {
-                "inBitsRate": 4096.392103570334, 
-                "inPktsRate": 5.475637053179023, 
-                "outBitsRate": 3446.8385220612263, 
+                "inBitsRate": 4193.437619674941, 
+                "inPktsRate": 5.628174544004729, 
+                "outBitsRate": 4811.610724293168, 
                 "updateInterval": 300.0, 
-                "outPktsRate": 3.9945871496086776
+                "outPktsRate": 4.226705261634699
             }, 
             "mtu": 1500, 
             "hardware": "ethernet", 
@@ -2251,19 +2251,19 @@
                 "outBroadcastPkts": 7, 
                 "linkStatusChanges": 3, 
                 "totalOutErrors": 0, 
-                "inMulticastPkts": 18738, 
-                "counterRefreshTime": 1784545887.912998, 
-                "inBroadcastPkts": 704950, 
+                "inMulticastPkts": 18762, 
+                "counterRefreshTime": 1784546583.772422, 
+                "inBroadcastPkts": 705974, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
                     "txPause": 0, 
                     "collisions": 0, 
                     "lateCollisions": 0
                 }, 
-                "inOctets": 240939105, 
+                "inOctets": 241301073, 
                 "outDiscards": 0, 
-                "outOctets": 213683659, 
-                "inUcastPkts": 1504322, 
+                "outOctets": 214255056, 
+                "inUcastPkts": 1507256, 
                 "inputErrorsDetail": {
                     "runtFrames": 0, 
                     "rxPause": 0, 
@@ -2272,8 +2272,8 @@
                     "giantFrames": 0, 
                     "symbolErrors": 0
                 }, 
-                "outUcastPkts": 1477488, 
-                "outMulticastPkts": 17766, 
+                "outUcastPkts": 1480538, 
+                "outMulticastPkts": 17789, 
                 "totalInErrors": 0, 
                 "inDiscards": 0
             }, 
@@ -2296,7 +2296,7 @@
             "description": ""
         }, 
         "Ethernet31": {
-            "lastStatusChangeTimestamp": 1784012844.7654624, 
+            "lastStatusChangeTimestamp": 1784012844.7654593, 
             "name": "Ethernet31", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2320,7 +2320,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.517786, 
+                "counterRefreshTime": 1784546584.376077, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2374,7 +2374,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.507142, 
+                "counterRefreshTime": 1784546584.365108, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2404,7 +2404,7 @@
             "description": ""
         }, 
         "Ethernet47": {
-            "lastStatusChangeTimestamp": 1784012844.7745333, 
+            "lastStatusChangeTimestamp": 1784012844.7745328, 
             "name": "Ethernet47", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2428,7 +2428,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.528318, 
+                "counterRefreshTime": 1784546584.386718, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2481,7 +2481,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.208873, 
+                "counterRefreshTime": 1784546584.067151, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2511,7 +2511,7 @@
             "description": ""
         }, 
         "Ethernet45": {
-            "lastStatusChangeTimestamp": 1784012844.7739236, 
+            "lastStatusChangeTimestamp": 1784012844.7739224, 
             "name": "Ethernet45", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2535,7 +2535,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.048862, 
+                "counterRefreshTime": 1784546583.907502, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2565,7 +2565,7 @@
             "description": ""
         }, 
         "Ethernet44": {
-            "lastStatusChangeTimestamp": 1784012844.7693255, 
+            "lastStatusChangeTimestamp": 1784012844.7693205, 
             "name": "Ethernet44", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2589,7 +2589,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.570358, 
+                "counterRefreshTime": 1784546584.429122, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2619,7 +2619,7 @@
             "description": ""
         }, 
         "Ethernet43": {
-            "lastStatusChangeTimestamp": 1784012844.7690246, 
+            "lastStatusChangeTimestamp": 1784012844.769026, 
             "name": "Ethernet43", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2643,7 +2643,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.300654, 
+                "counterRefreshTime": 1784546584.156928, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2673,7 +2673,7 @@
             "description": ""
         }, 
         "Ethernet42": {
-            "lastStatusChangeTimestamp": 1784012844.7687292, 
+            "lastStatusChangeTimestamp": 1784012844.76873, 
             "name": "Ethernet42", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2697,7 +2697,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.094932, 
+                "counterRefreshTime": 1784546583.953552, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2727,7 +2727,7 @@
             "description": ""
         }, 
         "Ethernet41": {
-            "lastStatusChangeTimestamp": 1784012844.7684367, 
+            "lastStatusChangeTimestamp": 1784012844.768434, 
             "name": "Ethernet41", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2751,7 +2751,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.163702, 
+                "counterRefreshTime": 1784546584.022246, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2781,7 +2781,7 @@
             "description": ""
         }, 
         "Ethernet40": {
-            "lastStatusChangeTimestamp": 1784012844.7681456, 
+            "lastStatusChangeTimestamp": 1784012844.7681446, 
             "name": "Ethernet40", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2805,7 +2805,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.197548, 
+                "counterRefreshTime": 1784546584.056085, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2835,7 +2835,7 @@
             "description": ""
         }, 
         "Ethernet29": {
-            "lastStatusChangeTimestamp": 1784012844.7648559, 
+            "lastStatusChangeTimestamp": 1784012844.764856, 
             "name": "Ethernet29", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2859,7 +2859,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.129123, 
+                "counterRefreshTime": 1784546583.987744, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2889,7 +2889,7 @@
             "description": ""
         }, 
         "Ethernet15": {
-            "lastStatusChangeTimestamp": 1784012844.760563, 
+            "lastStatusChangeTimestamp": 1784012844.760562, 
             "name": "Ethernet15", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2913,7 +2913,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.346824, 
+                "counterRefreshTime": 1784546584.203113, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2943,7 +2943,7 @@
             "description": ""
         }, 
         "Ethernet11": {
-            "lastStatusChangeTimestamp": 1784012844.759352, 
+            "lastStatusChangeTimestamp": 1784012844.7593524, 
             "name": "Ethernet11", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -2967,7 +2967,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.438324, 
+                "counterRefreshTime": 1784546584.294908, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -2997,7 +2997,7 @@
             "description": ""
         }, 
         "Ethernet12": {
-            "lastStatusChangeTimestamp": 1784012844.7596571, 
+            "lastStatusChangeTimestamp": 1784012844.7596576, 
             "name": "Ethernet12", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -3021,7 +3021,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.071776, 
+                "counterRefreshTime": 1784546583.930556, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -3051,7 +3051,7 @@
             "description": ""
         }, 
         "Ethernet46": {
-            "lastStatusChangeTimestamp": 1784012844.7742207, 
+            "lastStatusChangeTimestamp": 1784012844.77422, 
             "name": "Ethernet46", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -3075,7 +3075,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.002609, 
+                "counterRefreshTime": 1784546583.861377, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -3105,7 +3105,7 @@
             "description": ""
         }, 
         "Ethernet21": {
-            "lastStatusChangeTimestamp": 1784012844.762405, 
+            "lastStatusChangeTimestamp": 1784012844.762404, 
             "name": "Ethernet21", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -3129,7 +3129,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.580896, 
+                "counterRefreshTime": 1784546584.439674, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -3159,7 +3159,7 @@
             "description": ""
         }, 
         "Ethernet20": {
-            "lastStatusChangeTimestamp": 1784012844.762098, 
+            "lastStatusChangeTimestamp": 1784012844.7621002, 
             "name": "Ethernet20", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -3183,7 +3183,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.106098, 
+                "counterRefreshTime": 1784546583.964782, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -3213,7 +3213,7 @@
             "description": ""
         }, 
         "Ethernet23": {
-            "lastStatusChangeTimestamp": 1784012844.76302, 
+            "lastStatusChangeTimestamp": 1784012844.7630188, 
             "name": "Ethernet23", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -3237,7 +3237,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.335212, 
+                "counterRefreshTime": 1784546584.191314, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -3290,7 +3290,7 @@
                 "linkStatusChanges": 0, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.549281, 
+                "counterRefreshTime": 1784546584.407749, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -3320,7 +3320,7 @@
             "description": ""
         }, 
         "Ethernet25": {
-            "lastStatusChangeTimestamp": 1784012844.7636344, 
+            "lastStatusChangeTimestamp": 1784012844.7636328, 
             "name": "Ethernet25", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -3344,7 +3344,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.602057, 
+                "counterRefreshTime": 1784546584.460862, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -3374,7 +3374,7 @@
             "description": ""
         }, 
         "Ethernet24": {
-            "lastStatusChangeTimestamp": 1784012844.7633226, 
+            "lastStatusChangeTimestamp": 1784012844.7633214, 
             "name": "Ethernet24", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -3398,7 +3398,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545888.393143, 
+                "counterRefreshTime": 1784546584.249316, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -3428,7 +3428,7 @@
             "description": ""
         }, 
         "Ethernet27": {
-            "lastStatusChangeTimestamp": 1784012844.7642498, 
+            "lastStatusChangeTimestamp": 1784012844.7642512, 
             "name": "Ethernet27", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -3452,7 +3452,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545887.935088, 
+                "counterRefreshTime": 1784546583.794491, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
@@ -3482,7 +3482,7 @@
             "description": ""
         }, 
         "Ethernet26": {
-            "lastStatusChangeTimestamp": 1784012844.7639403, 
+            "lastStatusChangeTimestamp": 1784012844.7639399, 
             "name": "Ethernet26", 
             "interfaceStatus": "notconnect", 
             "autoNegotiate": "negotiating", 
@@ -3506,7 +3506,7 @@
                 "linkStatusChanges": 2, 
                 "totalOutErrors": 0, 
                 "inMulticastPkts": 0, 
-                "counterRefreshTime": 1784545887.858567, 
+                "counterRefreshTime": 1784546583.715733, 
                 "inBroadcastPkts": 0, 
                 "outputErrorsDetail": {
                     "deferredTransmissions": 0, 
