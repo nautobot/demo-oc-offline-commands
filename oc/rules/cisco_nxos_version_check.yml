@@ -3,6 +3,10 @@ version_check:
   display_name: "Cisco NX-OS Version Check"
   rule_type: "parameter_match"
   description: "Verify the device is running the expected version of NX-OS"
+  evaluate_args:
+    params:
+      os_version: "7.0(3)I5(2)"
+    mode: "match"
   collectors:
     - name: "json"
       platform: "cisco_nxos"
