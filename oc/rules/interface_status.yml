@@ -17,4 +17,4 @@ cisco_ios_interface_status:
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show interfaces"
-      jmespath: "[].{name: INTERFACE, state: LINK_STATUS, admin: PROTOCOL_STATUS}"
+      jmespath: "[].{name: interface, state: link_status, admin: protocol_status}"
