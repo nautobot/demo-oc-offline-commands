@@ -21,4 +21,4 @@ cisco_ios_cpu_process_check:
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show processes cpu"
-      jmespath: "[0].{cpu_5s: cpu_5_sec, cpu_1m: cpu_1_min, cpu_5m: cpu_5_min, interrupt_5s: interrupts}"
+      jmespath: "[0].{cpu_5s: cpu_usage_5_sec, cpu_1m: cpu_usage_1_min, cpu_5m: cpu_usage_5_min, interrupt_5s: cpu_interruption_5_sec}"
