@@ -23,6 +23,6 @@ cisco_ios_version_check:
     mode: "match"
   collectors:
     - name: "textfsm"
-      platform: "cisco_xe"
+      platform: "cisco_ios"
       command: "show version"
       jmespath: "[0].{model: hardware[0], version: version}"
