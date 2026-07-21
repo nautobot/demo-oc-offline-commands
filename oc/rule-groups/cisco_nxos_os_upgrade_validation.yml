@@ -1,8 +1,0 @@
----
-os_upgrade_validation:
-  display_name: "Cisco NX-OS OS Upgrade Validation"
-  description: "Rules to run before and after the OS upgrade"
-  validation_rules:
-    - "Cisco NX-OS Interface Status Check"
-    - "Cisco NX-OS CPU Process Check"
-    - "Cisco NX-OS Version Check"
