@@ -1,0 +1,10 @@
+---
+cpu_process_check:
+  display_name: "Cisco NX-OS CPU Process Check"
+  rule_type: "tolerance"
+  description: "CPU utilization should not increase by more than 10%."
+  collectors:
+    - name: "json"
+      platform: "Cisco NX-OS"
+      command: "show process cpu | json"
+      jmespath: "{user: user_percent, kernel: kernel_percent, idle: idle_percent}"
