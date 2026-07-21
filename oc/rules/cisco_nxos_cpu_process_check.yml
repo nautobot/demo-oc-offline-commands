@@ -6,5 +6,5 @@ cpu_process_check:
   collectors:
     - name: "json"
       platform: "cisco_nxos"
-      command: "show process cpu | json"
+      command: "show processes cpu | json"
       jmespath: "{user: user_percent, kernel: kernel_percent, idle: idle_percent}"
