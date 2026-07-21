@@ -19,6 +19,6 @@ cisco_ios_cpu_process_check:
     tolerance: 5
   collectors:
     - name: "textfsm"
-      platform: "cisco_xe"
+      platform: "cisco_ios"
       command: "show processes cpu"
       jmespath: "[0].{cpu_5s: CPU_USAGE_5_SEC, cpu_1m: CPU_USAGE_1_MIN, cpu_5m: CPU_USAGE_5_MIN, interrupt_5s: CPU_INTERRUPTION_5_SEC}"
