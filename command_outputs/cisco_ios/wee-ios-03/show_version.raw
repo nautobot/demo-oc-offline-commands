@@ -6,11 +6,21 @@ Compiled Mon 18-Jul-16 02:05 by prod_rel_team
 ROM: Bootstrap program is C3560 boot loader
 BOOTLDR: C3560 Boot Loader (C3560-HBOOT-M) Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)
 
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:command_outputs/cisco_ios/wee-ios-03/show_version.raw
+wee-ios-03 uptime is 6 days, 7 hours, 7 minutes
+========
+>>>>>>> Change ios device name
 <<<<<<< HEAD:command_outputs/cisco_ios/wee-ios-03/show_version.raw
 wee-ios-03 uptime is 6 days, 7 hours, 7 minutes
 =======
 wee-ios-02 uptime is 6 days, 7 hours, 7 minutes
 >>>>>>> Change ios device name:command_outputs/cisco_ios/wee-ios-02/show_version.raw
+<<<<<<< HEAD
+=======
+>>>>>>>> Change ios device name:command_outputs/cisco_ios/wee-ios-02/show_version.raw
+>>>>>>> Change ios device name
 System returned to ROM by power-on
 System image file is "flash:/c3560-ipservicesk9-mz.150-2.SE10.bin"
 
