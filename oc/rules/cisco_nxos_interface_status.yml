@@ -5,6 +5,6 @@ interface_status:
   description: "Verify all interfaces remain in the same administrative and operational state"
   collectors:
     - name: "json"
-      platform: "Cisco NX-OS"
+      platform: "cisco_nxos"
       command: "show interface | json"
       jmespath: "TABLE_interface.ROW_interface[].{name: interface, state: state, admin: admin_state}"

@@ -5,6 +5,6 @@ version_check:
   description: "Verify the device is running the expected version of NX-OS"
   collectors:
     - name: "json"
-      platform: "Cisco NX-OS"
+      platform: "cisco_nxos"
       command: "show version | json"
       jmespath: "{model: chassis_id, version: kickstart_ver_str}"

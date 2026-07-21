@@ -5,6 +5,6 @@ cpu_process_check:
   description: "CPU utilization should not increase by more than 10%."
   collectors:
     - name: "json"
-      platform: "Cisco NX-OS"
+      platform: "cisco_nxos"
       command: "show process cpu | json"
       jmespath: "{user: user_percent, kernel: kernel_percent, idle: idle_percent}"
