@@ -1,4 +1,16 @@
 ---
+arista_eos_cpu_process_check:
+  display_name: "Arista EOS CPU Process Check"
+  rule_type: "tolerance"
+  description: "CPU utilization should not increase by more than 5%."
+  evaluate_args:
+    tolerance: 5
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show processes top once"
+      jmespath: "[0].{user: global_cpu_user_percent, kernel: global_cpu_percent_system, idle: global_cpu_percent_idle}"
+
 cisco_nxos_cpu_process_check:
   display_name: "Cisco NX-OS CPU Process Check"
   rule_type: "tolerance"

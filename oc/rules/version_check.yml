@@ -1,4 +1,18 @@
 ---
+arista_eos_version_check:
+  display_name: "Arista EOS Version Check"
+  rule_type: "parameter_match"
+  description: "Verify the device is running the expected version of EOS"
+  evaluate_args:
+    params:
+      version: "4.29.1F"
+    mode: "match"
+  collectors:
+    - name: "json"
+      platform: "arista_eos"
+      command: "show version | json"
+      jmespath: "{model: modelName, version: version}"
+
 cisco_nxos_version_check:
   display_name: "Cisco NX-OS Version Check"
   rule_type: "parameter_match"

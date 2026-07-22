@@ -1,4 +1,14 @@
 ---
+arista_eos_interface_status:
+  display_name: "Arista EOS Interface Status Check"
+  rule_type: "exact_match"
+  description: "Verify all interfaces remain in the same administrative and operational state"
+  collectors:
+    - name: "json"
+      platform: "arista_eos"
+      command: "show interfaces | json"
+      jmespath: "interfaces.*.{name: name, status: interfaceStatus, lineProtocol: lineProtocolStatus}"
+
 cisco_nxos_interface_status:
   display_name: "Cisco NX-OS Interface Status Check"
   rule_type: "exact_match"
