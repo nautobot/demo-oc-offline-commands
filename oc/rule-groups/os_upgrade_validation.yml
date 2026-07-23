@@ -1,5 +1,5 @@
 ---
-arista_eos_upgrade_validation:
+arista_eos_os_upgrade_validation:
   display_name: "Arista EOS OS Upgrade Validation"
   description: "Rules to run before and after the OS upgrade"
   validation_rules:
