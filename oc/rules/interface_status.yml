@@ -18,6 +18,10 @@ cisco_nxos_interface_status:
       platform: "cisco_nxos"
       command: "show interface | json"
       jmespath: "TABLE_interface.ROW_interface[].{name: interface, state: state, admin: admin_state}"
+    - name: "json"
+      platform: "Cisco NX-OS"
+      command: "show interface | json"
+      jmespath: "TABLE_interface.ROW_interface[].{name: interface, state: state, admin: admin_state}"
 
 cisco_ios_interface_status:
   display_name: "Cisco IOS Interface Status Check"
