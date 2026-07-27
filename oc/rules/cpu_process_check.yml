@@ -16,12 +16,13 @@ cisco_nxos_cpu_process_check:
   rule_type: "tolerance"
   description: "CPU utilization should not increase by more than 5%."
   evaluate_args:
-    tolerance: 5
+      mode: "is-ge"
+      operator_data: 90
   collectors:
     - name: "json"
       platform: "cisco_nxos"
       command: "show processes cpu | json"
-      jmespath: "{user: user_percent, kernel: kernel_percent, idle: idle_percent}"
+      jmespath: "{idle: idle_percent}"
 
 cisco_ios_cpu_process_check:
   display_name: "Cisco IOS CPU Process Check"
