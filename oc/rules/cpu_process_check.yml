@@ -14,7 +14,7 @@ arista_eos_cpu_process_check:
 cisco_nxos_cpu_process_check:
   display_name: "Cisco NX-OS CPU Process Check"
   rule_type: "operator"
-  description: "CPU utilization should not increase by more than 5%."
+  description: "CPU usage should be less than or equal to 10%."
   evaluate_args:
       mode: "is-ge"
       operator_data: 90
