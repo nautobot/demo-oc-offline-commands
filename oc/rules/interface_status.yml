@@ -26,7 +26,7 @@ cisco_ios_interface_status:
   collectors:
     - name: "textfsm"
       platform: "cisco_ios"
-      command: "show interfaces status"
+      command: "show interfaces"
       jmespath: "[].{name: interface, state: link_status, admin: protocol_status}"
 
 cisco_ios_xe_interface_status:
