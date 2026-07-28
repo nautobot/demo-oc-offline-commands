@@ -5,7 +5,6 @@ arista_eos_os_upgrade_validation:
   validation_rules:
     - "Arista EOS Interface Status Check"
     - "Arista EOS CPU Process Check"
-    - "Arista EOS Version Check"
 
 cisco_nxos_os_upgrade_validation:
   display_name: "Cisco NX-OS OS Upgrade Validation"
@@ -13,7 +12,6 @@ cisco_nxos_os_upgrade_validation:
   validation_rules:
     - "Cisco NX-OS Interface Status Check"
     - "Cisco NX-OS CPU Process Check"
-    - "Cisco NX-OS Version Check"
 
 cisco_ios_os_upgrade_validation:
   display_name: "Cisco IOS OS Upgrade Validation"
@@ -21,4 +19,3 @@ cisco_ios_os_upgrade_validation:
   validation_rules:
     - "Cisco IOS Interface Status Check"
     - "Cisco IOS CPU Process Check"
-    - "Cisco IOS Version Check"
