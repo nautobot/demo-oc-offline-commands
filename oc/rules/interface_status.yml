@@ -4,10 +4,10 @@ arista_eos_interface_status:
   rule_type: "exact_match"
   description: "Verify all interfaces remain in the same administrative and operational state"
   collectors:
-    - name: "json"
+    - name: "textfsm"
       platform: "arista_eos"
-      command: "show interfaces | json"
-      jmespath: "interfaces.*.{name: name, status: interfaceStatus, lineProtocol: lineProtocolStatus}"
+      command: "show interfaces status"
+      jmespath: "[].{name: interface, link: link_status, proto: protocol_status}"
 
 cisco_nxos_interface_status:
   display_name: "Cisco NX-OS Interface Status Check"
@@ -16,8 +16,8 @@ cisco_nxos_interface_status:
   collectors:
     - name: "json"
       platform: "cisco_nxos"
-      command: "show interface | json"
-      jmespath: "TABLE_interface.ROW_interface[].{name: interface, state: state, admin: admin_state}"
+      command: "show interface status | json"
+      jmespath: "TABLE_interface.ROW_interface[].{name: interface, state: state}"
 
 cisco_ios_interface_status:
   display_name: "Cisco IOS Interface Status Check"
@@ -26,5 +26,15 @@ cisco_ios_interface_status:
   collectors:
     - name: "textfsm"
       platform: "cisco_ios"
-      command: "show interfaces"
+      command: "show interfaces status"
+      jmespath: "[].{name: interface, state: link_status, admin: protocol_status}"
+
+cisco_ios_xe_interface_status:
+  display_name: "Cisco IOS-XE Interface Status Check"
+  rule_type: "exact_match"
+  description: "Verify all interfaces remain in the same administrative and operational state"
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios_xe"
+      command: "show interfaces status"
       jmespath: "[].{name: interface, state: link_status, admin: protocol_status}"
