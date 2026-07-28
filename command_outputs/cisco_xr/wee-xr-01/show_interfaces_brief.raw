@@ -1,0 +1,40 @@
+
+Tue Jul 28 18:41:35.353 UTC
+
+               Intf       Intf        LineP              Encap  MTU        BW
+               Name       State       State               Type (byte)    (Kbps)
+--------------------------------------------------------------------------------
+                Nu0          up          up               Null  1500          0
+     Mg0/RP0/CPU0/0          up          up               ARPA  1514    1000000
+          Hu0/0/0/0  admin-down  admin-down               ARPA  1514  100000000
+          Hu0/0/0/1  admin-down  admin-down               ARPA  1514  100000000
+          Hu0/0/0/2  admin-down  admin-down               ARPA  1514  100000000
+          Hu0/0/0/3  admin-down  admin-down               ARPA  1514  100000000
+          Hu0/0/0/4  admin-down  admin-down               ARPA  1514  100000000
+          Hu0/0/0/5  admin-down  admin-down               ARPA  1514  100000000
+          Hu0/0/0/6  admin-down  admin-down               ARPA  1514  100000000
+          Hu0/0/0/7  admin-down  admin-down               ARPA  1514  100000000
+          Hu0/0/0/8  admin-down  admin-down               ARPA  1514  100000000
+          Hu0/0/0/9  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/10  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/11  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/12  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/13  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/14  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/15  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/16  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/17  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/18  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/19  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/20  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/21  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/22  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/23  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/24  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/25  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/26  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/27  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/28  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/29  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/30  admin-down  admin-down               ARPA  1514  100000000
+         Hu0/0/0/31  admin-down  admin-down               ARPA  1514  100000000
