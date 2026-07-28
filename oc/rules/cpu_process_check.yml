@@ -50,3 +50,16 @@ cisco_ios_xe_cpu_process_check:
       platform: "cisco_xe"
       command: "show processes cpu"
       jmespath: "[0].{cpu_5m: cpu_usage_5_min}"
+
+cisco_ios_xr_cpu_process_check:
+  display_name: "Cisco IOS-XR CPU Process Check"
+  rule_type: "operator"
+  description: "CPU usage should be less than or equal to 10%."
+  evaluate_args:
+      mode: "is-le"
+      operator_data: 10
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_xr"
+      command: "show processes cpu"
+      jmespath: "[0].{cpu_5m: cpu_5_min}"

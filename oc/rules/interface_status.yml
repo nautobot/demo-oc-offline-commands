@@ -38,3 +38,13 @@ cisco_ios_xe_interface_status:
       platform: "cisco_xe"
       command: "show interfaces status"
       jmespath: "[].{name: port, state: status}"
+
+cisco_ios_xr_interface_status:
+  display_name: "Cisco IOS-XR Interface Status Check"
+  rule_type: "exact_match"
+  description: "Verify all interfaces remain in the same operational state"
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_xr"
+      command: "show interfaces brief"
+      jmespath: "[].{name: interface, state: linep_state, admin: intf_state}"
