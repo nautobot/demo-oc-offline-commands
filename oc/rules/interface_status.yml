@@ -37,4 +37,4 @@ cisco_ios_xe_interface_status:
     - name: "textfsm"
       platform: "cisco_xe"
       command: "show interfaces status"
-      jmespath: "[].{name: interface, state: link_status, admin: protocol_status}"
+      jmespath: "[].{name: port, state: status}"
