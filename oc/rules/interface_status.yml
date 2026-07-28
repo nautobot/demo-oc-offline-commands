@@ -2,7 +2,7 @@
 arista_eos_interface_status:
   display_name: "Arista EOS Interface Status Check"
   rule_type: "exact_match"
-  description: "Verify all interfaces remain in the same administrative and operational state"
+  description: "Verify all interfaces remain in the same operational state"
   collectors:
     - name: "textfsm"
       platform: "arista_eos"
@@ -32,7 +32,7 @@ cisco_ios_interface_status:
 cisco_ios_xe_interface_status:
   display_name: "Cisco IOS-XE Interface Status Check"
   rule_type: "exact_match"
-  description: "Verify all interfaces remain in the same administrative and operational state"
+  description: "Verify all interfaces remain in the same operational state"
   collectors:
     - name: "textfsm"
       platform: "cisco_xe"
