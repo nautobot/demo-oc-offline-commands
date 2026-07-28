@@ -35,6 +35,6 @@ cisco_ios_xe_interface_status:
   description: "Verify all interfaces remain in the same administrative and operational state"
   collectors:
     - name: "textfsm"
-      platform: "cisco_ios_xe"
+      platform: "cisco_xe"
       command: "show interfaces status"
       jmespath: "[].{name: interface, state: link_status, admin: protocol_status}"
