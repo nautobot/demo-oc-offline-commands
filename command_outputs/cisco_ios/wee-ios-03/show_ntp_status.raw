@@ -1,7 +1,1 @@
-Clock is unsynchronized, stratum 16, no reference clock
-nominal freq is 119.2092 Hz, actual freq is 119.2092 Hz, precision is 2**17
-reference time is 00000000.00000000 (00:00:00.000 UTC Mon Jan 1 1900)
-clock offset is 0.0000 msec, root delay is 0.00 msec
-root dispersion is 8159.74 msec, peer dispersion is 0.00 msec
-loopfilter state is 'FSET' (Drift set from file), drift is 0.000000000 s/s
-system poll interval is 64, never updated.
+%NTP is not enabled.
