@@ -1,7 +1,7 @@
 ---
 arista_eos_cpu_process_check:
   display_name: "Arista EOS CPU Process Check"
-  rule_type: "tolerance"
+  rule_type: "operator"
   description: "CPU usage should be less than or equal to 10%."
   evaluate_args:
       mode: "is-ge"
