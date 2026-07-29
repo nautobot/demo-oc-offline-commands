@@ -1,0 +1,66 @@
+Port       Name           Status       Vlan     Duplex Speed  Type         Flags
+Et1        PUBLIX TEST    notconnect   10       auto   auto   10GBASE-T         
+Et2                       notconnect   10       auto   auto   10GBASE-T         
+Et3                       notconnect   10       auto   auto   10GBASE-T         
+Et4                       notconnect   10       auto   auto   10GBASE-T         
+Et5                       notconnect   10       auto   auto   10GBASE-T         
+Et6                       notconnect   11       auto   auto   10GBASE-T         
+Et7                       notconnect   11       auto   auto   10GBASE-T         
+Et8                       notconnect   11       auto   auto   10GBASE-T         
+Et9                       notconnect   1        auto   auto   10GBASE-T         
+Et10                      notconnect   12       auto   auto   10GBASE-T         
+Et11                      notconnect   12       auto   auto   10GBASE-T         
+Et12                      notconnect   12       auto   auto   10GBASE-T         
+Et13                      notconnect   12       auto   auto   10GBASE-T         
+Et14                      notconnect   12       auto   auto   10GBASE-T         
+Et15                      notconnect   12       auto   auto   10GBASE-T         
+Et16                      notconnect   1        auto   auto   10GBASE-T         
+Et17                      notconnect   1        auto   auto   10GBASE-T         
+Et18                      notconnect   1        auto   auto   10GBASE-T         
+Et19                      notconnect   1        auto   auto   10GBASE-T         
+Et20                      notconnect   1        auto   auto   10GBASE-T         
+Et21                      notconnect   1        auto   auto   10GBASE-T         
+Et22                      notconnect   1        auto   auto   10GBASE-T         
+Et23                      notconnect   1        auto   auto   10GBASE-T         
+Et24                      notconnect   1        auto   auto   10GBASE-T         
+Et25                      notconnect   1        auto   auto   10GBASE-T         
+Et26                      notconnect   1        auto   auto   10GBASE-T         
+Et27                      notconnect   1        auto   auto   10GBASE-T         
+Et28                      notconnect   1        auto   auto   10GBASE-T         
+Et29                      notconnect   1        auto   auto   10GBASE-T         
+Et30                      notconnect   1        auto   auto   10GBASE-T         
+Et31                      notconnect   1        auto   auto   10GBASE-T         
+Et32                      notconnect   1        auto   auto   10GBASE-T         
+Et33                      notconnect   1        auto   auto   10GBASE-T         
+Et34                      notconnect   1        auto   auto   10GBASE-T         
+Et35                      notconnect   1        auto   auto   10GBASE-T         
+Et36                      notconnect   1        auto   auto   10GBASE-T         
+Et37                      notconnect   1        auto   auto   10GBASE-T         
+Et38                      notconnect   1        auto   auto   10GBASE-T         
+Et39                      notconnect   1        auto   auto   10GBASE-T         
+Et40                      notconnect   1        auto   auto   10GBASE-T         
+Et41                      notconnect   1        auto   auto   10GBASE-T         
+Et42                      notconnect   1        auto   auto   10GBASE-T         
+Et43                      notconnect   1        auto   auto   10GBASE-T         
+Et44                      notconnect   1        auto   auto   10GBASE-T         
+Et45                      notconnect   1        auto   auto   10GBASE-T         
+Et46                      notconnect   1        auto   auto   10GBASE-T         
+Et47                      notconnect   1        auto   auto   10GBASE-T         
+Et48                      notconnect   1        auto   auto   10GBASE-T         
+Et49/1                    notconnect   1        full   10G    Not Present       
+Et49/2                    notconnect   1        full   10G    Not Present       
+Et49/3                    notconnect   1        full   10G    Not Present       
+Et49/4                    notconnect   1        full   10G    Not Present       
+Et50/1                    notconnect   1        full   10G    Not Present       
+Et50/2                    notconnect   1        full   10G    Not Present       
+Et50/3                    notconnect   1        full   10G    Not Present       
+Et50/4                    notconnect   1        full   10G    Not Present       
+Et51/1                    notconnect   1        full   10G    Not Present       
+Et51/2                    notconnect   1        full   10G    Not Present       
+Et51/3                    notconnect   1        full   10G    Not Present       
+Et51/4                    notconnect   1        full   10G    Not Present       
+Et52/1                    notconnect   1        full   10G    Not Present       
+Et52/2                    notconnect   1        full   10G    Not Present       
+Et52/3                    notconnect   1        full   10G    Not Present       
+Et52/4                    notconnect   1        full   10G    Not Present       
+Ma1                       connected    routed   a-full a-100M 10/100/1000       

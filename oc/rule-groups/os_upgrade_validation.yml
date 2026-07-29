@@ -1,11 +1,17 @@
 ---
+arista_eos_os_upgrade_validation:
+  display_name: "Arista EOS OS Upgrade Validation"
+  description: "Rules to run before and after the OS upgrade"
+  validation_rules:
+    - "Arista EOS Interface Status Check"
+    - "Arista EOS CPU Process Check"
+
 cisco_nxos_os_upgrade_validation:
   display_name: "Cisco NX-OS OS Upgrade Validation"
   description: "Rules to run before and after the OS upgrade"
   validation_rules:
     - "Cisco NX-OS Interface Status Check"
     - "Cisco NX-OS CPU Process Check"
-    - "Cisco NX-OS Version Check"
 
 cisco_ios_os_upgrade_validation:
   display_name: "Cisco IOS OS Upgrade Validation"
@@ -13,4 +19,17 @@ cisco_ios_os_upgrade_validation:
   validation_rules:
     - "Cisco IOS Interface Status Check"
     - "Cisco IOS CPU Process Check"
-    - "Cisco IOS Version Check"
+
+cisco_ios_xe_os_upgrade_validation:
+  display_name: "Cisco IOS-XE OS Upgrade Validation"
+  description: "Rules to run before and after the OS upgrade"
+  validation_rules:
+    - "Cisco IOS-XE Interface Status Check"
+    - "Cisco IOS-XE CPU Process Check"
+
+cisco_ios_xr_os_upgrade_validation:
+  display_name: "Cisco IOS-XR OS Upgrade Validation"
+  description: "Rules to run before and after the OS upgrade"
+  validation_rules:
+    - "Cisco IOS-XR Interface Status Check"
+    - "Cisco IOS-XR CPU Process Check"
