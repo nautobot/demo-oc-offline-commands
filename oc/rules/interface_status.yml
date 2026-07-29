@@ -46,5 +46,5 @@ cisco_ios_xr_interface_status:
   collectors:
     - name: "textfsm"
       platform: "cisco_xr"
-      command: "show interfaces brief"
+      command: "show interface brief"
       jmespath: "[].{name: interface, state: linep_state, admin: intf_state}"
