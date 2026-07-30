@@ -11,7 +11,7 @@ arista_eos_cpu_process_check:
     - name: "textfsm"
       platform: "arista_eos"
       command: "show processes top once"
-      jmespath: "[0].{idle: global_cpu_percent_idle}"
+      jmespath: "[0:1].{cpu: {idle: to_number(global_cpu_percent_idle)}}"
 
 cisco_nxos_cpu_process_check:
   display_name: "Cisco NX-OS CPU Process Check"
@@ -25,7 +25,7 @@ cisco_nxos_cpu_process_check:
     - name: "json"
       platform: "cisco_nxos"
       command: "show processes cpu | json"
-      jmespath: "{idle: idle_percent}"
+      jmespath: "[@][*].{cpu: {idle: to_number(idle_percent)}}"
 
 cisco_ios_cpu_process_check:
   display_name: "Cisco IOS CPU Process Check"
@@ -39,7 +39,7 @@ cisco_ios_cpu_process_check:
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show processes cpu"
-      jmespath: "[0].{cpu_5m: cpu_usage_5_min}"
+      jmespath: "[0:1].{cpu: {cpu_5m: to_number(cpu_5_min)}}"
 
 cisco_ios_xe_cpu_process_check:
   display_name: "Cisco IOS-XE CPU Process Check"
@@ -53,7 +53,7 @@ cisco_ios_xe_cpu_process_check:
     - name: "textfsm"
       platform: "cisco_xe"
       command: "show processes cpu"
-      jmespath: "[0].{cpu_5m: cpu_usage_5_min}"
+      jmespath: "[0:1].{cpu: {cpu_5m: to_number(cpu_usage_5_min)}}"
 
 cisco_ios_xr_cpu_process_check:
   display_name: "Cisco IOS-XR CPU Process Check"
@@ -67,4 +67,4 @@ cisco_ios_xr_cpu_process_check:
     - name: "textfsm"
       platform: "cisco_xr"
       command: "show processes cpu"
-      jmespath: "[0].{cpu_5m: cpu_5_min}"
+      jmespath: "[0:1].{cpu: {cpu_5m: to_number(cpu_5_min)}}"
