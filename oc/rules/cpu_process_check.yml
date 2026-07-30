@@ -4,6 +4,7 @@ arista_eos_cpu_process_check:
   rule_type: "operator"
   description: "CPU usage should be less than or equal to 10%."
   evaluate_args:
+    params:
       mode: "is-ge"
       operator_data: 90
   collectors:
@@ -17,6 +18,7 @@ cisco_nxos_cpu_process_check:
   rule_type: "operator"
   description: "CPU usage should be less than or equal to 10%."
   evaluate_args:
+    params:
       mode: "is-ge"
       operator_data: 90
   collectors:
@@ -30,6 +32,7 @@ cisco_ios_cpu_process_check:
   rule_type: "operator"
   description: "CPU usage should be less than or equal to 10%."
   evaluate_args:
+    params:
       mode: "is-le"
       operator_data: 10
   collectors:
@@ -43,6 +46,7 @@ cisco_ios_xe_cpu_process_check:
   rule_type: "operator"
   description: "CPU usage should be less than or equal to 10%."
   evaluate_args:
+    params:
       mode: "is-le"
       operator_data: 10
   collectors:
@@ -56,6 +60,7 @@ cisco_ios_xr_cpu_process_check:
   rule_type: "operator"
   description: "CPU usage should be less than or equal to 10%."
   evaluate_args:
+    params:
       mode: "is-le"
       operator_data: 10
   collectors:
