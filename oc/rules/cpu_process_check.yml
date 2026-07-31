@@ -2,11 +2,11 @@
 arista_eos_cpu_process_check:
   display_name: "Arista EOS CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU usage should be less than or equal to 30%."
   evaluate_args:
     params:
       mode: "is-ge"
-      operator_data: 90
+      operator_data: 70
   collectors:
     - name: "textfsm"
       platform: "arista_eos"
@@ -16,11 +16,11 @@ arista_eos_cpu_process_check:
 cisco_nxos_cpu_process_check:
   display_name: "Cisco NX-OS CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU usage should be less than or equal to 30%."
   evaluate_args:
     params:
       mode: "is-ge"
-      operator_data: 90
+      operator_data: 70
   collectors:
     - name: "json"
       platform: "cisco_nxos"
@@ -30,11 +30,11 @@ cisco_nxos_cpu_process_check:
 cisco_ios_cpu_process_check:
   display_name: "Cisco IOS CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU usage should be less than or equal to 30%."
   evaluate_args:
     params:
       mode: "is-le"
-      operator_data: 10
+      operator_data: 30
   collectors:
     - name: "textfsm"
       platform: "cisco_ios"
@@ -44,11 +44,11 @@ cisco_ios_cpu_process_check:
 cisco_ios_xe_cpu_process_check:
   display_name: "Cisco IOS-XE CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU usage should be less than or equal to 30%."
   evaluate_args:
     params:
       mode: "is-le"
-      operator_data: 10
+      operator_data: 30
   collectors:
     - name: "textfsm"
       platform: "cisco_xe"
@@ -58,11 +58,11 @@ cisco_ios_xe_cpu_process_check:
 cisco_ios_xr_cpu_process_check:
   display_name: "Cisco IOS-XR CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU usage should be less than or equal to 30%."
   evaluate_args:
     params:
       mode: "is-le"
-      operator_data: 10
+      operator_data: 30
   collectors:
     - name: "textfsm"
       platform: "cisco_xr"
