@@ -2,16 +2,16 @@
 arista_eos_cpu_process_check:
   display_name: "Arista EOS CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 30%."
+  description: "CPU idle should be >= 70% (utilization <= 30%)."
   evaluate_args:
     params:
       mode: "is-ge"
       operator_data: 70
   collectors:
-    - name: "textfsm"
+    - name: "json"
       platform: "arista_eos"
-      command: "show processes top once"
-      jmespath: "[0:1].{cpu: {idle: to_number(global_cpu_percent_idle)}}"
+      command: "show processes top once | json"
+      jmespath: "[0:1].{cpu: {idle: to_number(cpuInfo.\"%Cpu(s)\".idle)}}"
 
 cisco_nxos_cpu_process_check:
   display_name: "Cisco NX-OS CPU Process Check"
