@@ -11,7 +11,7 @@ arista_eos_cpu_process_check:
     - name: "json"
       platform: "arista_eos"
       command: "show processes top once | json"
-      jmespath: '{cpu: {idle: to_number(cpuInfo."%Cpu(s)".idle)}}'
+      jmespath: '[{cpu: {idle: to_number(cpuInfo."%Cpu(s)".idle)}}]'
 
 cisco_nxos_cpu_process_check:
   display_name: "Cisco NX-OS CPU Process Check"
