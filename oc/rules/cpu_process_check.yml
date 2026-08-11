@@ -68,3 +68,17 @@ cisco_ios_xr_cpu_process_check:
       platform: "cisco_xr"
       command: "show processes cpu"
       jmespath: "[0:1].{cpu: {cpu_5m: to_number(cpu_5_min)}}"
+
+juniper_junos_cpu_process_check:
+  display_name: "Juniper Junos CPU Process Check"
+  rule_type: "operator"
+  description: "CPU idle should be >= 70% (utilization <= 30%) on both routing engines."
+  evaluate_args:
+    params:
+      mode: "is-ge"
+      operator_data: 70
+  collectors:
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show chassis routing-engine | display json"
+      jmespath: '"multi-routing-engine-results"[0]."multi-routing-engine-item"[].{re: "re-name"[0].data, cpu: {idle: to_number("route-engine-information"[0]."route-engine"[0]."cpu-idle"[0].data)}}'

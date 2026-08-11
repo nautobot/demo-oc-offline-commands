@@ -48,3 +48,13 @@ cisco_ios_xr_interface_status:
       platform: "cisco_xr"
       command: "show interface brief"
       jmespath: "[].{name: interface, state: linep_state, admin: intf_state}"
+
+juniper_junos_interface_status:
+  display_name: "Juniper Junos Interface Status Check"
+  rule_type: "exact_match"
+  description: "Verify all interfaces remain in the same administrative and operational state"
+  collectors:
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show interfaces terse | display json"
+      jmespath: '"interface-information"[0]."physical-interface"[].{name: name[0].data, admin: "admin-status"[0].data, state: "oper-status"[0].data}'
