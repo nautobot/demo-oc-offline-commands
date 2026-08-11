@@ -81,4 +81,4 @@ juniper_junos_cpu_process_check:
     - name: "json"
       platform: "juniper_junos"
       command: "show chassis routing-engine | display json"
-      jmespath: '"multi-routing-engine-results"[0]."multi-routing-engine-item"[].{re: "re-name"[0].data, cpu: {idle: to_number("route-engine-information"[0]."route-engine"[0]."cpu-idle"[0].data)}}'
+      jmespath: '"multi-routing-engine-results"[0]."multi-routing-engine-item"[].{cpu: {idle: to_number("route-engine-information"[0]."route-engine"[0]."cpu-idle"[0].data)}}'
