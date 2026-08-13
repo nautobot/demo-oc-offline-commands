@@ -2,64 +2,83 @@
 arista_eos_cpu_process_check:
   display_name: "Arista EOS CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU idle should be >= 70% (utilization <= 30%)."
   evaluate_args:
+    params:
       mode: "is-ge"
-      operator_data: 90
+      operator_data: 70
   collectors:
-    - name: "textfsm"
+    - name: "json"
       platform: "arista_eos"
-      command: "show processes top once"
-      jmespath: "[0].{idle: global_cpu_percent_idle}"
+      command: "show processes top once | json"
+      jmespath: '[{cpu: {idle: to_number(cpuInfo."%Cpu(s)".idle)}}]'
 
 cisco_nxos_cpu_process_check:
   display_name: "Cisco NX-OS CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU idle should be >= 70% (utilization <= 30%)."
   evaluate_args:
+    params:
       mode: "is-ge"
-      operator_data: 90
+      operator_data: 70
   collectors:
     - name: "json"
       platform: "cisco_nxos"
       command: "show processes cpu | json"
-      jmespath: "{idle: idle_percent}"
+      jmespath: "[@][*].{cpu: {idle: to_number(idle_percent)}}"
 
 cisco_ios_cpu_process_check:
   display_name: "Cisco IOS CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU usage should be less than or equal to 30%."
   evaluate_args:
+    params:
       mode: "is-le"
-      operator_data: 10
+      operator_data: 30
   collectors:
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show processes cpu"
-      jmespath: "[0].{cpu_5m: cpu_usage_5_min}"
+      jmespath: "[0:1].{cpu: {cpu_5m: to_number(cpu_5_min)}}"
 
 cisco_ios_xe_cpu_process_check:
   display_name: "Cisco IOS-XE CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU usage should be less than or equal to 30%."
   evaluate_args:
+    params:
       mode: "is-le"
-      operator_data: 10
+      operator_data: 30
   collectors:
     - name: "textfsm"
       platform: "cisco_xe"
       command: "show processes cpu"
-      jmespath: "[0].{cpu_5m: cpu_usage_5_min}"
+      jmespath: "[0:1].{cpu: {cpu_5m: to_number(cpu_usage_5_min)}}"
 
 cisco_ios_xr_cpu_process_check:
   display_name: "Cisco IOS-XR CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 10%."
+  description: "CPU usage should be less than or equal to 30%."
   evaluate_args:
+    params:
       mode: "is-le"
-      operator_data: 10
+      operator_data: 30
   collectors:
     - name: "textfsm"
       platform: "cisco_xr"
       command: "show processes cpu"
-      jmespath: "[0].{cpu_5m: cpu_5_min}"
+      jmespath: "[0:1].{cpu: {cpu_5m: to_number(cpu_5_min)}}"
+
+juniper_junos_cpu_process_check:
+  display_name: "Juniper Junos CPU Process Check"
+  rule_type: "operator"
+  description: "CPU idle should be >= 70% (utilization <= 30%) on both routing engines."
+  evaluate_args:
+    params:
+      mode: "is-ge"
+      operator_data: 70
+  collectors:
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show chassis routing-engine | display json"
+      jmespath: '"multi-routing-engine-results"[0]."multi-routing-engine-item"[].{cpu: {idle: to_number("route-engine-information"[0]."route-engine"[0]."cpu-idle"[0].data)}}'
