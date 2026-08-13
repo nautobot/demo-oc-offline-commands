@@ -16,7 +16,7 @@ arista_eos_cpu_process_check:
 cisco_nxos_cpu_process_check:
   display_name: "Cisco NX-OS CPU Process Check"
   rule_type: "operator"
-  description: "CPU usage should be less than or equal to 30%."
+  description: "CPU idle should be >= 70% (utilization <= 30%)."
   evaluate_args:
     params:
       mode: "is-ge"
