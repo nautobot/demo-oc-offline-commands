@@ -1,0 +1,48 @@
+---
+arista_eos_arp_table:
+  display_name: "Arista EOS ARP Table Check"
+  rule_type: "tolerance"
+  description: "Verify the ARP entry count stays within a certain tolerance"
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "json"
+      platform: "arista_eos"
+      command: "show ip arp | json"
+      jmespath: "[{entries: length(ipV4Neighbors || `[]`)}]"
+
+cisco_nxos_arp_table:
+  display_name: "Cisco NX-OS ARP Table Check"
+  rule_type: "tolerance"
+  description: "Verify the ARP entry count stays within a certain tolerance"
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show ip arp | json"
+      jmespath: "[{entries: length(TABLE_vrf.ROW_vrf.TABLE_adj.ROW_adj || `[]`)}]"
+
+cisco_ios_arp_table:
+  display_name: "Cisco IOS ARP Table Check"
+  rule_type: "tolerance"
+  description: "Verify the ARP entry count stays within a certain tolerance"
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show ip arp"
+      jmespath: "[{entries: length(@)}]"
+
+juniper_junos_arp_table:
+  display_name: "Juniper Junos ARP Table Check"
+  rule_type: "tolerance"
+  description: "Verify the ARP entry count stays within a certain tolerance"
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show arp no-resolve | display json"
+      jmespath: '[{entries: to_number("arp-table-information"[0]."arp-entry-count"[0].data)}]'

@@ -1,0 +1,69 @@
+---
+pre_post_change_checks:
+  display_name: "Pre/Post-Change Checks"
+  description: "Generic checks to run before and after any OS upgrade."
+  validation_rules:
+    - "Arista EOS Interface Status Check"
+    - "Cisco NX-OS Interface Status Check"
+    - "Cisco IOS Interface Status Check"
+    - "Cisco IOS-XE Interface Status Check"
+    - "Cisco IOS-XR Interface Status Check"
+    - "Juniper Junos Interface Status Check"
+
+cisco_ios_15_0_2_se4_upgrade_checks:
+  display_name: "15.0(2)SE4 Upgrade Checks"
+  description: "Checks specific to Cisco IOS 15.0(2)SE4 upgrades."
+  validation_rules:
+    - "Cisco IOS Router Table Summary Check"
+    - "Cisco IOS Interface Status Check"
+
+cisco_ios_15_0_2_se10_upgrade_checks:
+  display_name: "15.0(2)SE10 Upgrade Checks"
+  description: "Checks specific to Cisco IOS 15.0(2)SE10 upgrades."
+  validation_rules:
+    - "Cisco IOS Router Table Summary Check"
+    - "Cisco IOS Interface Status Check"
+
+arista_eos_4_15_4f_upgrade_checks:
+  display_name: "4.15.4F Upgrade Checks"
+  description: "Checks specific to Arista EOS 4.15.4F upgrades."
+  validation_rules:
+    - "Arista EOS ARP Table Check"
+    - "Arista EOS Interface Status Check"
+
+arista_eos_4_15_10m_upgrade_checks:
+  display_name: "4.15.10M Upgrade Checks"
+  description: "Checks specific to Arista EOS 4.15.10M upgrades."
+  validation_rules:
+    - "Arista EOS ARP Table Check"
+    - "Arista EOS Interface Status Check"
+
+cisco_nxos_9_3_10_upgrade_checks:
+  display_name: "9.3.10 Upgrade Checks"
+  description: "Checks specific to Cisco NX-OS 9.3.10 upgrades."
+  validation_rules:
+    - "Cisco NX-OS Interface Status Check"
+    - "Cisco NX-OS Feature Set Check"
+
+cisco_nxos_9_3_16_upgrade_checks:
+  display_name: "9.3.16 Upgrade Checks"
+  description: "Checks specific to Cisco NX-OS 9.3.16 upgrades."
+  validation_rules:
+    - "Cisco NX-OS Interface Status Check"
+    - "Cisco NX-OS Feature Set Check"
+
+cisco_nxos_7_0_3_i5_2_upgrade_checks:
+  display_name: "7.0.3.I5.2 Upgrade Checks"
+  description: "Checks specific to Cisco NX-OS 7.0.3.I5.2 upgrades."
+  validation_rules:
+    - "Cisco NX-OS Interface Status Check"
+    - "Cisco NX-OS Router Table Summary Check"
+    - "Cisco NX-OS Feature Set Check"
+
+cisco_nxos_7_0_3_i7_4_upgrade_checks:
+  display_name: "7.0.3.I7.4 Upgrade Checks"
+  description: "Checks specific to Cisco NX-OS 7.0.3.I7.4 upgrades."
+  validation_rules:
+    - "Cisco NX-OS Interface Status Check"
+    - "Cisco NX-OS Router Table Summary Check"
+    - "Cisco NX-OS Feature Set Check"

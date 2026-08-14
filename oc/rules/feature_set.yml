@@ -1,0 +1,10 @@
+---
+cisco_nxos_feature_set:
+  display_name: "Cisco NX-OS Feature Set Check"
+  rule_type: "exact_match"
+  description: "Verify the set of enabled features is unchanged across the upgrade"
+  collectors:
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show feature | json"
+      jmespath: "TABLE_cfcFeatureCtrlTable.ROW_cfcFeatureCtrlTable[].{feature: feature_name, state: state} || `[]`"
