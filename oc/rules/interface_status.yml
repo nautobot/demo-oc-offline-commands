@@ -8,6 +8,10 @@ arista_eos_interface_status:
       platform: "arista_eos"
       command: "show interfaces status"
       jmespath: "[].{name: port, state: status}"
+    - name: "textfsm"
+      platform: "Arista EOS"
+      command: "show interfaces status"
+      jmespath: "[].{name: port, state: status}"
 
 cisco_nxos_interface_status:
   display_name: "Cisco NX-OS Interface Status Check"
