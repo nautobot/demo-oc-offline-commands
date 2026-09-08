@@ -1,0 +1,48 @@
+---
+arista_eos_router_table_summary:
+  display_name: "Arista EOS Router Table Summary Check"
+  rule_type: "tolerance"
+  description: "Verify route counts by protocol stay within tolerance pre/post change"
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "json"
+      platform: "arista_eos"
+      command: "show ip route summary | json"
+      jmespath: "vrfs.default || `{}`"
+
+cisco_nxos_router_table_summary:
+  display_name: "Cisco NX-OS Router Table Summary Check"
+  rule_type: "tolerance"
+  description: "Verify route counts by protocol stay within tolerance pre/post change"
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show ip route summary | json"
+      jmespath: "TABLE_vrf.ROW_vrf.TABLE_addrf.ROW_addrf.TABLE_summary.ROW_summary || `[]`"
+
+cisco_ios_router_table_summary:
+  display_name: "Cisco IOS Router Table Summary Check"
+  rule_type: "tolerance"
+  description: "Verify route counts by protocol stay within tolerance pre/post change"
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show ip route summary"
+      jmespath: "[].{source: route_source, networks: to_number(networks), subnets: to_number(subnets)}"
+
+juniper_junos_router_table_summary:
+  display_name: "Juniper Junos Router Table Summary Check"
+  rule_type: "tolerance"
+  description: "Verify route counts by protocol stay within tolerance pre/post change"
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show route summary | display json"
+      jmespath: '"route-summary-information"[0]."route-table" || `[]`'
