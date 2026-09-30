@@ -1,0 +1,10 @@
+---
+cisco_nxos_vlan_brief:
+  display_name: "Cisco NX-OS VLAN Information Check"
+  rule_type: "exact_match"
+  description: "Verify VLANs, their status and port membership remain unchanged"
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_nxos"
+      command: "show vlan brief"
+      jmespath: "[].{vlan_id: vlan_id, name: vlan_name, status: status, ports: interfaces}"

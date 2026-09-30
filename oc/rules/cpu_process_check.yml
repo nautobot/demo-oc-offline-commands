@@ -43,7 +43,7 @@ cisco_ios_cpu_process_check:
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show processes cpu"
-      jmespath: "[0:1].{cpu: {cpu_5m: to_number(cpu_5_min)}}"
+      jmespath: "[0:1].{cpu: {cpu_5m: to_number(cpu_usage_5_min)}}"
 
 cisco_ios_xe_cpu_process_check:
   display_name: "Cisco IOS-XE CPU Process Check"
