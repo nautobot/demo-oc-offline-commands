@@ -1,0 +1,30 @@
+---
+# Each collector reduces the OSPF neighbor table to the same shape on every platform:
+#   [{neighbors: <all neighbors, every VRF and OSPF process>, full: <neighbors in FULL state>}]
+# tolerance is an absolute +/- value: the post-change snapshot passes while each count is
+# within 1 of the pre-change count, and fails once it moves by 2 or more.
+
+ospf_neighbors:
+  display_name: "OSPF Neighbor Count Check"
+  rule_type: "tolerance"
+  description: "Verify the number of OSPF neighbors, and how many are FULL, stays within +/- 1"
+  evaluate_args:
+    tolerance: 1
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      # ntc-templates cisco_ios_show_ip_ospf_neighbor; lists all processes and VRFs.
+      command: "show ip ospf neighbor"
+      jmespath: "[{neighbors: length(@), full: length([?starts_with(state, 'FULL')])}]"
+    - name: "textfsm"
+      platform: "cisco_nxos"
+      # ntc-templates cisco_nxos_show_ip_ospf_neighbor. TextFSM rather than "| json", whose
+      # ROW_ctx/ROW_nbr switch between an object and a list with the number of VRFs/neighbors.
+      command: "show ip ospf neighbors vrf all"
+      jmespath: "[{neighbors: length(@), full: length([?starts_with(state, 'FULL')])}]"
+    - name: "json"
+      platform: "arista_eos"
+      # {"vrfs": {<vrf>: {"instList": {<process>: {"ospfNeighborEntries": [...]}}}}}
+      # values() flattens the VRF and process maps; a nested "vrfs.*.instList.*" returns null.
+      command: "show ip ospf neighbor vrf all | json"
+      jmespath: "[{neighbors: length(values(vrfs || `{}`)[].values(instList || `{}`)[].ospfNeighborEntries[]), full: length(values(vrfs || `{}`)[].values(instList || `{}`)[].ospfNeighborEntries[] | [?adjacencyState=='full'])}]"
