@@ -1,6 +1,6 @@
 ---
-cisco_nxos_vlan_brief:
-  display_name: "Cisco NX-OS VLAN Information Check"
+vlan_checks:
+  display_name: "Vlan Information Check"
   rule_type: "exact_match"
   description: "Verify VLANs, their status and port membership remain unchanged"
   collectors:

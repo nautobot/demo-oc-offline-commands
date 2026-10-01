@@ -1,8 +1,8 @@
 ---
-cisco_nxos_feature_set:
-  display_name: "Cisco NX-OS Feature Set Check"
+feature_set:
+  display_name: "Feature Set Check"
   rule_type: "exact_match"
-  description: "Verify the set of enabled features is unchanged across the upgrade"
+  description: "Verify the set of enabled features is unchanged across the upgrade. Applies to Cisco NX-OS."
   collectors:
     - name: "json"
       platform: "cisco_nxos"

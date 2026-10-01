@@ -55,6 +55,8 @@ Finally, make sure the device is a member of the **dynamic group** associated wi
 
 This repository also includes custom TextFSM parsers under `parsers/cisco_ios/` and `parsers/cisco_xe/`. When a validation rule uses the TextFSM parser type, the app checks parser Git repositories first and uses a matching custom template instead of the built-in [ntc-templates](https://github.com/networktocode/ntc-templates) one.
 
+`parsers/cisco_ios/show_processes_cpu.textfsm` is a copy of the ntc-templates template with one extra rule: IOS can print a `Runtime(ms)` value so large that it runs into the `Invoked` column, which the stock template rejects with a TextFSM `State Error`. The same rule is applied to the `cisco_xe` copy.
+
 The `cisco_xe` parsers exist because ntc-templates ships no `cisco_xe` templates at all, and the `cisco_xe` network driver is not remapped to `cisco_ios` — without a custom parser, a `cisco_xe` TextFSM rule fails with `No template found for attributes: {'Platform': 'cisco_xe'}`. IOS-XE output for these commands is identical to IOS, so these templates are copies of the equivalent `cisco_ios` templates from ntc-templates.
 
 To use them:
