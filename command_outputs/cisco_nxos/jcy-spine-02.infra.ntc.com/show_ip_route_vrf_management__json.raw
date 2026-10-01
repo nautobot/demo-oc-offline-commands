@@ -16,7 +16,7 @@
                   "ROW_path": {
                     "ipnexthop": "10.0.0.15",
                     "ifname": "mgmt0",
-                    "uptime": "P4M11DT23H23M26S",
+                    "uptime": "P4M11DT23H44M55S",
                     "pref": "0",
                     "metric": "0",
                     "clientname": "direct",
@@ -33,7 +33,7 @@
                   "ROW_path": {
                     "ipnexthop": "10.0.0.15",
                     "ifname": "mgmt0",
-                    "uptime": "P4M11DT23H23M26S",
+                    "uptime": "P4M11DT23H44M55S",
                     "pref": "0",
                     "metric": "0",
                     "clientname": "local",
