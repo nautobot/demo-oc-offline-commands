@@ -19,7 +19,7 @@ cpu_idle_check:
     - name: "json"
       platform: "juniper_junos"
       command: "show chassis routing-engine | display json"
-      jmespath: '"multi-routing-engine-results"[0]."multi-routing-engine-item"[].{cpu: {idle: to_number("route-engine-information"[0]."route-engine"[0]."cpu-idle"[0].data)}}'
+      jmespath: '("multi-routing-engine-results"[0]."multi-routing-engine-item"[]."route-engine-information"[0]."route-engine"[] || "route-engine-information"[0]."route-engine") | [].{cpu: {idle: to_number("cpu-idle"[0].data)}}'
 
 cpu_idle_tolerance_check:
   display_name: "CPU Idle Tolerance Check"
