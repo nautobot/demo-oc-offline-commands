@@ -1,1 +1,1461 @@
-{"TABLE_process_cpu": {"ROW_process_cpu": [{"pid": "1", "runtime": "101800", "invoked": "2277887", "usecs": "44", "onesec": "0.00", "process": "init"}, {"pid": "3215", "runtime": "11", "invoked": "157", "usecs": "70", "onesec": "0.00", "process": "bootflash_sync."}, {"pid": "3234", "runtime": "3", "invoked": "199", "usecs": "15", "onesec": "0.00", "process": "inotifywait"}, {"pid": "3832", "runtime": "22", "invoked": "97", "usecs": "226", "onesec": "0.00", "process": "xinetd"}, {"pid": "3833", "runtime": "11", "invoked": "24", "usecs": "458", "onesec": "0.00", "process": "tftpd"}, {"pid": "3834", "runtime": "43", "invoked": "101", "usecs": "425", "onesec": "0.00", "process": "sdwrapd"}, {"pid": "3836", "runtime": "318", "invoked": "241", "usecs": "1319", "onesec": "0.00", "process": "fw_app"}, {"pid": "3838", "runtime": "3229964", "invoked": "22030750", "usecs": "146", "onesec": "0.00", "process": "platform"}, {"pid": "3841", "runtime": "76887", "invoked": "3793416", "usecs": "20", "onesec": "0.00", "process": "dme_bootup_proxy"}, {"pid": "3842", "runtime": "73000", "invoked": "3793493", "usecs": "19", "onesec": "0.00", "process": "dme_proxy"}, {"pid": "3843", "runtime": "601", "invoked": "512", "usecs": "1173", "onesec": "0.00", "process": "event_manager"}, {"pid": "3844", "runtime": "193206", "invoked": "11379587", "usecs": "16", "onesec": "0.00", "process": "mts_telemetry_mgr"}, {"pid": "3845", "runtime": "515", "invoked": "375", "usecs": "1373", "onesec": "0.00", "process": "policyelem"}, {"pid": "3896", "runtime": "495674", "invoked": "11385432", "usecs": "43", "onesec": "0.00", "process": "syslogd"}, {"pid": "3898", "runtime": "586065", "invoked": "18093246", "usecs": "32", "onesec": "0.00", "process": "vshd"}, {"pid": "3899", "runtime": "14004", "invoked": "190287", "usecs": "73", "onesec": "0.00", "process": "template_manager"}, {"pid": "3900", "runtime": "15604", "invoked": "190323", "usecs": "81", "onesec": "0.00", "process": "tamnw"}, {"pid": "3901", "runtime": "208", "invoked": "89", "usecs": "2337", "onesec": "0.00", "process": "smm"}, {"pid": "3902", "runtime": "223383", "invoked": "11380550", "usecs": "19", "onesec": "0.00", "process": "psshelper"}, {"pid": "3903", "runtime": "101926", "invoked": "2278543", "usecs": "44", "onesec": "0.00", "process": "pixm_vl"}, {"pid": "3904", "runtime": "90670", "invoked": "2276945", "usecs": "39", "onesec": "0.00", "process": "pixm_gl"}, {"pid": "3905", "runtime": "556", "invoked": "325", "usecs": "1710", "onesec": "0.00", "process": "nginx_dme"}, {"pid": "3907", "runtime": "31757", "invoked": "190495", "usecs": "166", "onesec": "0.00", "process": "mmode"}, {"pid": "3908", "runtime": "150434", "invoked": "2785555", "usecs": "54", "onesec": "0.00", "process": "lmgrd"}, {"pid": "3909", "runtime": "772635", "invoked": "1321228", "usecs": "584", "onesec": "0.00", "process": "fs-daemon"}, {"pid": "3910", "runtime": "74142", "invoked": "1894239", "usecs": "39", "onesec": "0.00", "process": "feature-mgr"}, {"pid": "3911", "runtime": "87", "invoked": "1850", "usecs": "47", "onesec": "0.00", "process": "confcheck"}, {"pid": "3912", "runtime": "77397", "invoked": "1139108", "usecs": "67", "onesec": "0.00", "process": "capability"}, {"pid": "3913", "runtime": "71172", "invoked": "1861406", "usecs": "38", "onesec": "0.00", "process": "bloggerd"}, {"pid": "3914", "runtime": "217335", "invoked": "11380044", "usecs": "19", "onesec": "0.00", "process": "psshelper_gsvc"}, {"pid": "3920", "runtime": "562594", "invoked": "11397511", "usecs": "49", "onesec": "0.00", "process": "tams_proc"}, {"pid": "3932", "runtime": "143895", "invoked": "11385631", "usecs": "12", "onesec": "0.00", "process": "cisco"}, {"pid": "3933", "runtime": "672201", "invoked": "11422822", "usecs": "58", "onesec": "0.00", "process": "tamd_proc"}, {"pid": "3955", "runtime": "1542", "invoked": "39268", "usecs": "39", "onesec": "0.00", "process": "klogd"}, {"pid": "3964", "runtime": "61191", "invoked": "756161", "usecs": "80", "onesec": "0.00", "process": "clis"}, {"pid": "3965", "runtime": "98314", "invoked": "2235770", "usecs": "43", "onesec": "0.00", "process": "licmgr"}, {"pid": "3993", "runtime": "107823", "invoked": "3793807", "usecs": "28", "onesec": "0.00", "process": "xmlma"}, {"pid": "3994", "runtime": "77479", "invoked": "2276701", "usecs": "34", "onesec": "0.00", "process": "vmm"}, {"pid": "3995", "runtime": "195283", "invoked": "2277880", "usecs": "85", "onesec": "0.00", "process": "usbhsd"}, {"pid": "3996", "runtime": "191492", "invoked": "5692258", "usecs": "33", "onesec": "0.00", "process": "ttyd"}, {"pid": "3997", "runtime": "23499823", "invoked": "39551294", "usecs": "594", "onesec": "0.00", "process": "sysinfo"}, {"pid": "3998", "runtime": "50441", "invoked": "1138687", "usecs": "44", "onesec": "0.00", "process": "snmpmib_proc"}, {"pid": "3999", "runtime": "253", "invoked": "244", "usecs": "1036", "onesec": "0.00", "process": "sksd"}, {"pid": "4001", "runtime": "9461", "invoked": "217450", "usecs": "43", "onesec": "0.00", "process": "res_mgr"}, {"pid": "4002", "runtime": "288877", "invoked": "11387761", "usecs": "25", "onesec": "0.00", "process": "plugin"}, {"pid": "4004", "runtime": "84263", "invoked": "2725907", "usecs": "30", "onesec": "0.00", "process": "plog_sup"}, {"pid": "4005", "runtime": "191629", "invoked": "11238772", "usecs": "17", "onesec": "0.00", "process": "patch-installer"}, {"pid": "4006", "runtime": "447", "invoked": "333", "usecs": "1342", "onesec": "0.00", "process": "nxapi"}, {"pid": "4007", "runtime": "43174", "invoked": "759584", "usecs": "56", "onesec": "0.00", "process": "mvsh"}, {"pid": "4009", "runtime": "164", "invoked": "315", "usecs": "520", "onesec": "0.00", "process": "mts_mgr"}, {"pid": "4012", "runtime": "28", "invoked": "89", "usecs": "314", "onesec": "0.00", "process": "mping_server"}, {"pid": "4013", "runtime": "788620", "invoked": "6854876", "usecs": "115", "onesec": "0.00", "process": "module"}, {"pid": "4014", "runtime": "307", "invoked": "171", "usecs": "1795", "onesec": "0.00", "process": "kim"}, {"pid": "4015", "runtime": "49393", "invoked": "1138490", "usecs": "43", "onesec": "0.00", "process": "kafka"}, {"pid": "4016", "runtime": "155", "invoked": "163", "usecs": "950", "onesec": "0.00", "process": "issu_helper"}, {"pid": "4017", "runtime": "37160", "invoked": "759360", "usecs": "48", "onesec": "0.00", "process": "evms"}, {"pid": "4019", "runtime": "281", "invoked": "208", "usecs": "1350", "onesec": "0.00", "process": "epld_upgrade_stdby"}, {"pid": "4020", "runtime": "2342506", "invoked": "4850553", "usecs": "482", "onesec": "0.00", "process": "diagclient"}, {"pid": "4021", "runtime": "54666", "invoked": "1139303", "usecs": "47", "onesec": "0.00", "process": "dhclient"}, {"pid": "4022", "runtime": "178523", "invoked": "2399556", "usecs": "74", "onesec": "0.00", "process": "crdcfg_server"}, {"pid": "4023", "runtime": "251", "invoked": "216", "usecs": "1162", "onesec": "0.00", "process": "core-dmon"}, {"pid": "4024", "runtime": "227202", "invoked": "1689392", "usecs": "134", "onesec": "0.00", "process": "clk_mgr"}, {"pid": "4025", "runtime": "66702", "invoked": "2227947", "usecs": "29", "onesec": "0.00", "process": "bios_daemon"}, {"pid": "4026", "runtime": "71162", "invoked": "1411205", "usecs": "50", "onesec": "0.00", "process": "ascii-cfg"}, {"pid": "4027", "runtime": "247011", "invoked": "11244736", "usecs": "21", "onesec": "0.00", "process": "securityd"}, {"pid": "4028", "runtime": "236544", "invoked": "11380693", "usecs": "20", "onesec": "0.00", "process": "cert_enroll"}, {"pid": "4029", "runtime": "411641", "invoked": "12664225", "usecs": "32", "onesec": "0.00", "process": "aaa"}, {"pid": "4031", "runtime": "50022", "invoked": "1409112", "usecs": "35", "onesec": "0.00", "process": "obfl"}, {"pid": "4065", "runtime": "405847", "invoked": "11802325", "usecs": "34", "onesec": "0.00", "process": "device_test"}, {"pid": "4066", "runtime": "66443", "invoked": "876675", "usecs": "75", "onesec": "0.00", "process": "xbar"}, {"pid": "4071", "runtime": "42425", "invoked": "569851", "usecs": "74", "onesec": "0.00", "process": "evmc"}, {"pid": "4099", "runtime": "1524", "invoked": "543", "usecs": "2806", "onesec": "0.00", "process": "urib"}, {"pid": "4167", "runtime": "309", "invoked": "248", "usecs": "1245", "onesec": "0.00", "process": "ExceptionLog"}, {"pid": "4168", "runtime": "138838", "invoked": "5691349", "usecs": "24", "onesec": "0.00", "process": "bootvar"}, {"pid": "4169", "runtime": "110114", "invoked": "2399887", "usecs": "45", "onesec": "0.00", "process": "cardclient"}, {"pid": "4170", "runtime": "5696343", "invoked": "9833353", "usecs": "579", "onesec": "0.00", "process": "diagmgr"}, {"pid": "4171", "runtime": "48076", "invoked": "1139342", "usecs": "42", "onesec": "0.00", "process": "ifmgr"}, {"pid": "4191", "runtime": "54294", "invoked": "438237", "usecs": "123", "onesec": "0.00", "process": "aclmgr"}, {"pid": "4262", "runtime": "114", "invoked": "1371", "usecs": "83", "onesec": "0.00", "process": "incrond"}, {"pid": "4263", "runtime": "358", "invoked": "243", "usecs": "1473", "onesec": "0.00", "process": "l3vm"}, {"pid": "4300", "runtime": "231", "invoked": "136", "usecs": "1698", "onesec": "0.00", "process": "npacl"}, {"pid": "4303", "runtime": "58681", "invoked": "1134373", "usecs": "51", "onesec": "0.00", "process": "statsclient"}, {"pid": "4310", "runtime": "89352", "invoked": "2277060", "usecs": "39", "onesec": "0.00", "process": "vdc_mgr"}, {"pid": "4314", "runtime": "427", "invoked": "215", "usecs": "1986", "onesec": "0.00", "process": "adjmgr"}, {"pid": "4315", "runtime": "957", "invoked": "360", "usecs": "2658", "onesec": "0.00", "process": "u6rib"}, {"pid": "4359", "runtime": "629", "invoked": "285", "usecs": "2207", "onesec": "0.00", "process": "arp"}, {"pid": "4360", "runtime": "526", "invoked": "237", "usecs": "2219", "onesec": "0.00", "process": "icmpv6"}, {"pid": "4403", "runtime": "411", "invoked": "210", "usecs": "1957", "onesec": "0.00", "process": "pktmgr"}, {"pid": "4441", "runtime": "1017", "invoked": "487", "usecs": "2088", "onesec": "0.00", "process": "netstack"}, {"pid": "4480", "runtime": "364277", "invoked": "11382164", "usecs": "32", "onesec": "0.00", "process": "radius"}, {"pid": "4481", "runtime": "159700", "invoked": "2882405", "usecs": "55", "onesec": "0.00", "process": "cdp"}, {"pid": "4485", "runtime": "136574", "invoked": "2660722", "usecs": "51", "onesec": "0.00", "process": "cfs"}, {"pid": "4486", "runtime": "23", "invoked": "83", "usecs": "277", "onesec": "0.00", "process": "ip_dummy"}, {"pid": "4487", "runtime": "21", "invoked": "81", "usecs": "259", "onesec": "0.00", "process": "ipv6_dummy"}, {"pid": "4488", "runtime": "16542", "invoked": "380508", "usecs": "43", "onesec": "0.00", "process": "otm"}, {"pid": "4489", "runtime": "493627", "invoked": "3566722", "usecs": "138", "onesec": "0.00", "process": "snmpd"}, {"pid": "4490", "runtime": "24", "invoked": "81", "usecs": "296", "onesec": "0.00", "process": "tcpudp_dummy"}, {"pid": "4494", "runtime": "328", "invoked": "753", "usecs": "435", "onesec": "0.00", "process": "dcos-xinetd"}, {"pid": "4561", "runtime": "223049", "invoked": "11245599", "usecs": "19", "onesec": "0.00", "process": "callhome"}, {"pid": "5686", "runtime": "0", "invoked": "3", "usecs": "0", "onesec": "0.00", "process": "sshd"}, {"pid": "7361", "runtime": "0", "invoked": "30", "usecs": "0", "onesec": "0.00", "process": "nginx"}, {"pid": "7362", "runtime": "0", "invoked": "30", "usecs": "0", "onesec": "0.00", "process": "nginx"}, {"pid": "7363", "runtime": "45", "invoked": "921", "usecs": "48", "onesec": "0.00", "process": "nginx"}, {"pid": "7364", "runtime": "59", "invoked": "1265", "usecs": "46", "onesec": "0.00", "process": "nginx"}, {"pid": "7389", "runtime": "108510", "invoked": "2281489", "usecs": "47", "onesec": "0.00", "process": "port-profile"}, {"pid": "7403", "runtime": "52833", "invoked": "449188", "usecs": "117", "onesec": "0.00", "process": "vman"}, {"pid": "7409", "runtime": "30034", "invoked": "191328", "usecs": "156", "onesec": "0.00", "process": "spm"}, {"pid": "7410", "runtime": "295", "invoked": "357", "usecs": "826", "onesec": "0.00", "process": "sdaa"}, {"pid": "7411", "runtime": "273", "invoked": "163", "usecs": "1674", "onesec": "0.00", "process": "rpm"}, {"pid": "7412", "runtime": "284708", "invoked": "2043212", "usecs": "139", "onesec": "0.00", "process": "pltfm_config"}, {"pid": "7413", "runtime": "27249", "invoked": "190597", "usecs": "142", "onesec": "0.00", "process": "plcmgr"}, {"pid": "7414", "runtime": "4825617", "invoked": "6165712", "usecs": "782", "onesec": "0.00", "process": "pfstat"}, {"pid": "7435", "runtime": "1361732", "invoked": "6180147", "usecs": "220", "onesec": "0.00", "process": "nxos_dc"}, {"pid": "7437", "runtime": "658310", "invoked": "12924531", "usecs": "50", "onesec": "0.00", "process": "ntp"}, {"pid": "7438", "runtime": "470578", "invoked": "11389392", "usecs": "41", "onesec": "0.00", "process": "nia-mgr"}, {"pid": "7440", "runtime": "8745044", "invoked": "12824351", "usecs": "681", "onesec": "0.00", "process": "nbproxy"}, {"pid": "7441", "runtime": "36641", "invoked": "380905", "usecs": "96", "onesec": "0.00", "process": "monitor"}, {"pid": "7442", "runtime": "579", "invoked": "316", "usecs": "1832", "onesec": "0.00", "process": "mld"}, {"pid": "7444", "runtime": "100257", "invoked": "2277017", "usecs": "44", "onesec": "0.00", "process": "lim"}, {"pid": "7445", "runtime": "553031", "invoked": "11116963", "usecs": "49", "onesec": "0.00", "process": "l2rib"}, {"pid": "7447", "runtime": "142500", "invoked": "942542", "usecs": "151", "onesec": "0.00", "process": "ipfib"}, {"pid": "7448", "runtime": "803", "invoked": "378", "usecs": "2124", "onesec": "0.00", "process": "igmp"}, {"pid": "7451", "runtime": "7469912", "invoked": "15796527", "usecs": "472", "onesec": "0.00", "process": "icam"}, {"pid": "7456", "runtime": "68590", "invoked": "1143931", "usecs": "59", "onesec": "0.00", "process": "eth_port_channel"}, {"pid": "7457", "runtime": "204", "invoked": "102", "usecs": "2000", "onesec": "0.00", "process": "ecp"}, {"pid": "7458", "runtime": "35387", "invoked": "379859", "usecs": "93", "onesec": "0.00", "process": "adbm"}, {"pid": "7459", "runtime": "95072", "invoked": "1199358", "usecs": "79", "onesec": "0.00", "process": "acllog"}, {"pid": "7482", "runtime": "61586", "invoked": "1154366", "usecs": "53", "onesec": "0.00", "process": "eltm"}, {"pid": "7495", "runtime": "583257", "invoked": "17077965", "usecs": "34", "onesec": "0.00", "process": "ntpd"}, {"pid": "7528", "runtime": "21600", "invoked": "383302", "usecs": "56", "onesec": "0.00", "process": "eth_dstats"}, {"pid": "7529", "runtime": "3131057", "invoked": "16828998", "usecs": "186", "onesec": "0.00", "process": "ipqosmgr"}, {"pid": "7606", "runtime": "298142", "invoked": "3171561", "usecs": "94", "onesec": "0.00", "process": "vlan_mgr"}, {"pid": "7617", "runtime": "362252", "invoked": "3604032", "usecs": "100", "onesec": "0.00", "process": "ksmtuned.sh"}, {"pid": "7623", "runtime": "303294", "invoked": "3316181", "usecs": "91", "onesec": "0.00", "process": "aclqos"}, {"pid": "7722", "runtime": "93705", "invoked": "595547", "usecs": "157", "onesec": "0.00", "process": "diag_port_lb"}, {"pid": "7723", "runtime": "104859", "invoked": "379876", "usecs": "276", "onesec": "0.00", "process": "ethpm"}, {"pid": "7724", "runtime": "63769", "invoked": "1156084", "usecs": "55", "onesec": "0.00", "process": "l2fm"}, {"pid": "7778", "runtime": "3609501", "invoked": "5112309", "usecs": "706", "onesec": "0.00", "process": "nxpython3"}, {"pid": "7780", "runtime": "14210023", "invoked": "48355138", "usecs": "293", "onesec": "0.00", "process": "stp"}, {"pid": "7781", "runtime": "81056", "invoked": "2276803", "usecs": "35", "onesec": "0.00", "process": "stripcl"}, {"pid": "7820", "runtime": "292", "invoked": "176", "usecs": "1659", "onesec": "0.00", "process": "nxpython3"}, {"pid": "7824", "runtime": "1826753", "invoked": "4225841", "usecs": "432", "onesec": "0.00", "process": "intersight"}, {"pid": "7825", "runtime": "179885", "invoked": "378826", "usecs": "474", "onesec": "0.00", "process": "copp"}, {"pid": "7839", "runtime": "166508", "invoked": "2374742", "usecs": "70", "onesec": "0.00", "process": "ufdm"}, {"pid": "7840", "runtime": "57669", "invoked": "1138735", "usecs": "50", "onesec": "0.00", "process": "u2"}, {"pid": "7844", "runtime": "73494", "invoked": "1138977", "usecs": "64", "onesec": "0.00", "process": "sal"}, {"pid": "7845", "runtime": "9168", "invoked": "64032", "usecs": "143", "onesec": "0.00", "process": "ofm"}, {"pid": "7846", "runtime": "413", "invoked": "321", "usecs": "1286", "onesec": "0.00", "process": "mrib"}, {"pid": "7847", "runtime": "479623694", "invoked": "1259219017", "usecs": "380", "onesec": "0.00", "process": "mfdm"}, {"pid": "7848", "runtime": "99699", "invoked": "2276872", "usecs": "43", "onesec": "0.00", "process": "mcm"}, {"pid": "7849", "runtime": "361", "invoked": "273", "usecs": "1322", "onesec": "0.00", "process": "m6rib"}, {"pid": "7850", "runtime": "102912", "invoked": "2277150", "usecs": "45", "onesec": "0.00", "process": "l2pt"}, {"pid": "7933", "runtime": "59303", "invoked": "570555", "usecs": "103", "onesec": "0.00", "process": "m2rib"}, {"pid": "7966", "runtime": "2808190", "invoked": "13383470", "usecs": "209", "onesec": "0.00", "process": "nxpython3"}, {"pid": "7967", "runtime": "2781135", "invoked": "13146024", "usecs": "211", "onesec": "0.00", "process": "nxpython3"}, {"pid": "7968", "runtime": "811773", "invoked": "11540066", "usecs": "70", "onesec": "0.00", "process": "nxpython3"}, {"pid": "12396", "runtime": "76", "invoked": "285", "usecs": "266", "onesec": "0.00", "process": "login"}, {"pid": "12921", "runtime": "424", "invoked": "2388", "usecs": "177", "onesec": "0.00", "process": "vsh.bin"}, {"pid": "13078", "runtime": "2", "invoked": "12", "usecs": "166", "onesec": "0.00", "process": "nginx_1_fe"}, {"pid": "13079", "runtime": "307", "invoked": "1595", "usecs": "192", "onesec": "0.00", "process": "nginx_1_fe"}, {"pid": "13089", "runtime": "402349", "invoked": "11380447", "usecs": "35", "onesec": "0.00", "process": "uwsgi"}, {"pid": "13090", "runtime": "13", "invoked": "30", "usecs": "433", "onesec": "0.00", "process": "uwsgi"}, {"pid": "13127", "runtime": "1032", "invoked": "1669", "usecs": "618", "onesec": "0.00", "process": "netconf"}, {"pid": "13149", "runtime": "210540", "invoked": "11387322", "usecs": "18", "onesec": "0.00", "process": "xosdsd"}, {"pid": "13208", "runtime": "337", "invoked": "693", "usecs": "486", "onesec": "0.00", "process": "grpc"}, {"pid": "13805", "runtime": "52391", "invoked": "570108", "usecs": "91", "onesec": "0.00", "process": "interface-vlan"}, {"pid": "13829", "runtime": "69603", "invoked": "570605", "usecs": "121", "onesec": "0.00", "process": "hsrp_engine"}, {"pid": "13855", "runtime": "57215", "invoked": "570463", "usecs": "100", "onesec": "0.00", "process": "vpc"}, {"pid": "13860", "runtime": "606383", "invoked": "1448059", "usecs": "418", "onesec": "0.00", "process": "lldp"}, {"pid": "15156", "runtime": "40142", "invoked": "220689", "usecs": "181", "onesec": "0.00", "process": "crond"}, {"pid": "15784", "runtime": "183", "invoked": "514", "usecs": "356", "onesec": "0.00", "process": "dcos_sshd"}, {"pid": "15823", "runtime": "23785", "invoked": "379565", "usecs": "62", "onesec": "0.00", "process": "rpcbind"}, {"pid": "15827", "runtime": "31", "invoked": "877", "usecs": "35", "onesec": "0.00", "process": "dcos_sshd"}, {"pid": "15828", "runtime": "328", "invoked": "2691", "usecs": "121", "onesec": "0.00", "process": "vsh.bin"}, {"pid": "16395", "runtime": "0", "invoked": "2", "usecs": "0", "onesec": "0.00", "process": "rpc.mountd"}, {"pid": "16410", "runtime": "1", "invoked": "12", "usecs": "83", "onesec": "0.00", "process": "rpc.statd"}, {"pid": "19415", "runtime": "0", "invoked": "2", "usecs": "0", "onesec": "0.00", "process": "mcelog"}, {"pid": "21802", "runtime": "1", "invoked": "3", "usecs": "333", "onesec": "0.00", "process": "libvirtd_mon.sh"}, {"pid": "21803", "runtime": "4", "invoked": "10", "usecs": "400", "onesec": "0.00", "process": "sh"}, {"pid": "21804", "runtime": "2558790", "invoked": "24042615", "usecs": "106", "onesec": "0.00", "process": "sysmgr"}, {"pid": "21813", "runtime": "0", "invoked": "2", "usecs": "0", "onesec": "0.00", "process": "inotifywait"}, {"pid": "21836", "runtime": "13", "invoked": "153", "usecs": "84", "onesec": "0.00", "process": "libvirtd"}, {"pid": "26454", "runtime": "0", "invoked": "2", "usecs": "0", "onesec": "0.00", "process": "sleep"}]}, "user_percent": "10.63", "kernel_percent": "32.97", "idle_percent": "56.38", "fivesec_percent": "22", "fivesec_intr_percent": "0", "onemin_percent": "37", "fivemin_percent": "36"}
+{
+  "TABLE_process_cpu": {
+    "ROW_process_cpu": [
+      {
+        "pid": "1",
+        "runtime": "101842",
+        "invoked": "2278763",
+        "usecs": "44",
+        "onesec": "0.00",
+        "process": "init"
+      },
+      {
+        "pid": "3215",
+        "runtime": "11",
+        "invoked": "157",
+        "usecs": "70",
+        "onesec": "0.00",
+        "process": "bootflash_sync."
+      },
+      {
+        "pid": "3234",
+        "runtime": "3",
+        "invoked": "199",
+        "usecs": "15",
+        "onesec": "0.00",
+        "process": "inotifywait"
+      },
+      {
+        "pid": "3832",
+        "runtime": "22",
+        "invoked": "97",
+        "usecs": "226",
+        "onesec": "0.00",
+        "process": "xinetd"
+      },
+      {
+        "pid": "3833",
+        "runtime": "11",
+        "invoked": "24",
+        "usecs": "458",
+        "onesec": "0.00",
+        "process": "tftpd"
+      },
+      {
+        "pid": "3834",
+        "runtime": "45",
+        "invoked": "109",
+        "usecs": "412",
+        "onesec": "0.00",
+        "process": "sdwrapd"
+      },
+      {
+        "pid": "3836",
+        "runtime": "320",
+        "invoked": "247",
+        "usecs": "1295",
+        "onesec": "0.00",
+        "process": "fw_app"
+      },
+      {
+        "pid": "3838",
+        "runtime": "3231211",
+        "invoked": "22039083",
+        "usecs": "146",
+        "onesec": "0.00",
+        "process": "platform"
+      },
+      {
+        "pid": "3841",
+        "runtime": "76907",
+        "invoked": "3794874",
+        "usecs": "20",
+        "onesec": "0.00",
+        "process": "dme_bootup_proxy"
+      },
+      {
+        "pid": "3842",
+        "runtime": "73036",
+        "invoked": "3794951",
+        "usecs": "19",
+        "onesec": "0.00",
+        "process": "dme_proxy"
+      },
+      {
+        "pid": "3843",
+        "runtime": "601",
+        "invoked": "515",
+        "usecs": "1166",
+        "onesec": "0.00",
+        "process": "event_manager"
+      },
+      {
+        "pid": "3844",
+        "runtime": "193302",
+        "invoked": "11383967",
+        "usecs": "16",
+        "onesec": "0.00",
+        "process": "mts_telemetry_mgr"
+      },
+      {
+        "pid": "3845",
+        "runtime": "515",
+        "invoked": "381",
+        "usecs": "1351",
+        "onesec": "0.00",
+        "process": "policyelem"
+      },
+      {
+        "pid": "3896",
+        "runtime": "495909",
+        "invoked": "11389844",
+        "usecs": "43",
+        "onesec": "0.00",
+        "process": "syslogd"
+      },
+      {
+        "pid": "3898",
+        "runtime": "586315",
+        "invoked": "18100754",
+        "usecs": "32",
+        "onesec": "0.00",
+        "process": "vshd"
+      },
+      {
+        "pid": "3899",
+        "runtime": "14019",
+        "invoked": "190376",
+        "usecs": "73",
+        "onesec": "0.00",
+        "process": "template_manager"
+      },
+      {
+        "pid": "3900",
+        "runtime": "15611",
+        "invoked": "190402",
+        "usecs": "81",
+        "onesec": "0.00",
+        "process": "tamnw"
+      },
+      {
+        "pid": "3901",
+        "runtime": "208",
+        "invoked": "89",
+        "usecs": "2337",
+        "onesec": "0.00",
+        "process": "smm"
+      },
+      {
+        "pid": "3902",
+        "runtime": "223488",
+        "invoked": "11384923",
+        "usecs": "19",
+        "onesec": "0.00",
+        "process": "psshelper"
+      },
+      {
+        "pid": "3903",
+        "runtime": "101976",
+        "invoked": "2279435",
+        "usecs": "44",
+        "onesec": "0.00",
+        "process": "pixm_vl"
+      },
+      {
+        "pid": "3904",
+        "runtime": "90697",
+        "invoked": "2277832",
+        "usecs": "39",
+        "onesec": "0.00",
+        "process": "pixm_gl"
+      },
+      {
+        "pid": "3905",
+        "runtime": "556",
+        "invoked": "325",
+        "usecs": "1710",
+        "onesec": "0.00",
+        "process": "nginx_dme"
+      },
+      {
+        "pid": "3907",
+        "runtime": "31771",
+        "invoked": "190582",
+        "usecs": "166",
+        "onesec": "0.00",
+        "process": "mmode"
+      },
+      {
+        "pid": "3908",
+        "runtime": "150492",
+        "invoked": "2786622",
+        "usecs": "54",
+        "onesec": "0.00",
+        "process": "lmgrd"
+      },
+      {
+        "pid": "3909",
+        "runtime": "772923",
+        "invoked": "1321735",
+        "usecs": "584",
+        "onesec": "0.00",
+        "process": "fs-daemon"
+      },
+      {
+        "pid": "3910",
+        "runtime": "74177",
+        "invoked": "1895047",
+        "usecs": "39",
+        "onesec": "0.00",
+        "process": "feature-mgr"
+      },
+      {
+        "pid": "3911",
+        "runtime": "89",
+        "invoked": "1913",
+        "usecs": "46",
+        "onesec": "0.00",
+        "process": "confcheck"
+      },
+      {
+        "pid": "3912",
+        "runtime": "77428",
+        "invoked": "1139560",
+        "usecs": "67",
+        "onesec": "0.00",
+        "process": "capability"
+      },
+      {
+        "pid": "3913",
+        "runtime": "71200",
+        "invoked": "1862131",
+        "usecs": "38",
+        "onesec": "0.00",
+        "process": "bloggerd"
+      },
+      {
+        "pid": "3914",
+        "runtime": "217416",
+        "invoked": "11384423",
+        "usecs": "19",
+        "onesec": "0.00",
+        "process": "psshelper_gsvc"
+      },
+      {
+        "pid": "3920",
+        "runtime": "562812",
+        "invoked": "11401886",
+        "usecs": "49",
+        "onesec": "0.00",
+        "process": "tams_proc"
+      },
+      {
+        "pid": "3932",
+        "runtime": "143952",
+        "invoked": "11390004",
+        "usecs": "12",
+        "onesec": "0.00",
+        "process": "cisco"
+      },
+      {
+        "pid": "3933",
+        "runtime": "672466",
+        "invoked": "11427207",
+        "usecs": "58",
+        "onesec": "0.00",
+        "process": "tamd_proc"
+      },
+      {
+        "pid": "3955",
+        "runtime": "1544",
+        "invoked": "39332",
+        "usecs": "39",
+        "onesec": "0.00",
+        "process": "klogd"
+      },
+      {
+        "pid": "3964",
+        "runtime": "61418",
+        "invoked": "756910",
+        "usecs": "81",
+        "onesec": "0.00",
+        "process": "clis"
+      },
+      {
+        "pid": "3965",
+        "runtime": "98368",
+        "invoked": "2236673",
+        "usecs": "43",
+        "onesec": "0.00",
+        "process": "licmgr"
+      },
+      {
+        "pid": "3993",
+        "runtime": "107871",
+        "invoked": "3795273",
+        "usecs": "28",
+        "onesec": "0.00",
+        "process": "xmlma"
+      },
+      {
+        "pid": "3994",
+        "runtime": "77518",
+        "invoked": "2277587",
+        "usecs": "34",
+        "onesec": "0.00",
+        "process": "vmm"
+      },
+      {
+        "pid": "3995",
+        "runtime": "195361",
+        "invoked": "2278756",
+        "usecs": "85",
+        "onesec": "0.00",
+        "process": "usbhsd"
+      },
+      {
+        "pid": "3996",
+        "runtime": "191577",
+        "invoked": "5694463",
+        "usecs": "33",
+        "onesec": "0.00",
+        "process": "ttyd"
+      },
+      {
+        "pid": "3997",
+        "runtime": "23508708",
+        "invoked": "39566326",
+        "usecs": "594",
+        "onesec": "0.00",
+        "process": "sysinfo"
+      },
+      {
+        "pid": "3998",
+        "runtime": "50464",
+        "invoked": "1139136",
+        "usecs": "44",
+        "onesec": "0.00",
+        "process": "snmpmib_proc"
+      },
+      {
+        "pid": "3999",
+        "runtime": "258",
+        "invoked": "259",
+        "usecs": "996",
+        "onesec": "0.00",
+        "process": "sksd"
+      },
+      {
+        "pid": "4001",
+        "runtime": "9519",
+        "invoked": "217832",
+        "usecs": "43",
+        "onesec": "0.00",
+        "process": "res_mgr"
+      },
+      {
+        "pid": "4002",
+        "runtime": "289012",
+        "invoked": "11392147",
+        "usecs": "25",
+        "onesec": "0.00",
+        "process": "plugin"
+      },
+      {
+        "pid": "4004",
+        "runtime": "84300",
+        "invoked": "2726972",
+        "usecs": "30",
+        "onesec": "0.00",
+        "process": "plog_sup"
+      },
+      {
+        "pid": "4005",
+        "runtime": "191713",
+        "invoked": "11243118",
+        "usecs": "17",
+        "onesec": "0.00",
+        "process": "patch-installer"
+      },
+      {
+        "pid": "4006",
+        "runtime": "447",
+        "invoked": "333",
+        "usecs": "1342",
+        "onesec": "0.00",
+        "process": "nxapi"
+      },
+      {
+        "pid": "4007",
+        "runtime": "43192",
+        "invoked": "759888",
+        "usecs": "56",
+        "onesec": "0.00",
+        "process": "mvsh"
+      },
+      {
+        "pid": "4009",
+        "runtime": "166",
+        "invoked": "333",
+        "usecs": "498",
+        "onesec": "0.00",
+        "process": "mts_mgr"
+      },
+      {
+        "pid": "4012",
+        "runtime": "28",
+        "invoked": "95",
+        "usecs": "294",
+        "onesec": "0.00",
+        "process": "mping_server"
+      },
+      {
+        "pid": "4013",
+        "runtime": "788942",
+        "invoked": "6857522",
+        "usecs": "115",
+        "onesec": "0.00",
+        "process": "module"
+      },
+      {
+        "pid": "4014",
+        "runtime": "307",
+        "invoked": "171",
+        "usecs": "1795",
+        "onesec": "0.00",
+        "process": "kim"
+      },
+      {
+        "pid": "4015",
+        "runtime": "49409",
+        "invoked": "1138939",
+        "usecs": "43",
+        "onesec": "0.00",
+        "process": "kafka"
+      },
+      {
+        "pid": "4016",
+        "runtime": "156",
+        "invoked": "166",
+        "usecs": "939",
+        "onesec": "0.00",
+        "process": "issu_helper"
+      },
+      {
+        "pid": "4017",
+        "runtime": "37184",
+        "invoked": "759665",
+        "usecs": "48",
+        "onesec": "0.00",
+        "process": "evms"
+      },
+      {
+        "pid": "4019",
+        "runtime": "281",
+        "invoked": "211",
+        "usecs": "1331",
+        "onesec": "0.00",
+        "process": "epld_upgrade_stdby"
+      },
+      {
+        "pid": "4020",
+        "runtime": "2343344",
+        "invoked": "4852170",
+        "usecs": "482",
+        "onesec": "0.00",
+        "process": "diagclient"
+      },
+      {
+        "pid": "4021",
+        "runtime": "54689",
+        "invoked": "1139753",
+        "usecs": "47",
+        "onesec": "0.00",
+        "process": "dhclient"
+      },
+      {
+        "pid": "4022",
+        "runtime": "178615",
+        "invoked": "2400809",
+        "usecs": "74",
+        "onesec": "0.00",
+        "process": "crdcfg_server"
+      },
+      {
+        "pid": "4023",
+        "runtime": "253",
+        "invoked": "228",
+        "usecs": "1109",
+        "onesec": "0.00",
+        "process": "core-dmon"
+      },
+      {
+        "pid": "4024",
+        "runtime": "227289",
+        "invoked": "1690040",
+        "usecs": "134",
+        "onesec": "0.00",
+        "process": "clk_mgr"
+      },
+      {
+        "pid": "4025",
+        "runtime": "66761",
+        "invoked": "2228811",
+        "usecs": "29",
+        "onesec": "0.00",
+        "process": "bios_daemon"
+      },
+      {
+        "pid": "4026",
+        "runtime": "71214",
+        "invoked": "1411774",
+        "usecs": "50",
+        "onesec": "0.00",
+        "process": "ascii-cfg"
+      },
+      {
+        "pid": "4027",
+        "runtime": "247132",
+        "invoked": "11249126",
+        "usecs": "21",
+        "onesec": "0.00",
+        "process": "securityd"
+      },
+      {
+        "pid": "4028",
+        "runtime": "236688",
+        "invoked": "11385087",
+        "usecs": "20",
+        "onesec": "0.00",
+        "process": "cert_enroll"
+      },
+      {
+        "pid": "4029",
+        "runtime": "411956",
+        "invoked": "12669426",
+        "usecs": "32",
+        "onesec": "0.00",
+        "process": "aaa"
+      },
+      {
+        "pid": "4031",
+        "runtime": "50046",
+        "invoked": "1409663",
+        "usecs": "35",
+        "onesec": "0.00",
+        "process": "obfl"
+      },
+      {
+        "pid": "4065",
+        "runtime": "406049",
+        "invoked": "11806844",
+        "usecs": "34",
+        "onesec": "0.00",
+        "process": "device_test"
+      },
+      {
+        "pid": "4066",
+        "runtime": "66470",
+        "invoked": "877026",
+        "usecs": "75",
+        "onesec": "0.00",
+        "process": "xbar"
+      },
+      {
+        "pid": "4071",
+        "runtime": "42443",
+        "invoked": "570082",
+        "usecs": "74",
+        "onesec": "0.00",
+        "process": "evmc"
+      },
+      {
+        "pid": "4099",
+        "runtime": "1524",
+        "invoked": "543",
+        "usecs": "2806",
+        "onesec": "0.00",
+        "process": "urib"
+      },
+      {
+        "pid": "4167",
+        "runtime": "310",
+        "invoked": "258",
+        "usecs": "1201",
+        "onesec": "0.00",
+        "process": "ExceptionLog"
+      },
+      {
+        "pid": "4168",
+        "runtime": "138945",
+        "invoked": "5693733",
+        "usecs": "24",
+        "onesec": "0.00",
+        "process": "bootvar"
+      },
+      {
+        "pid": "4169",
+        "runtime": "110157",
+        "invoked": "2400810",
+        "usecs": "45",
+        "onesec": "0.00",
+        "process": "cardclient"
+      },
+      {
+        "pid": "4170",
+        "runtime": "5698438",
+        "invoked": "9837063",
+        "usecs": "579",
+        "onesec": "0.00",
+        "process": "diagmgr"
+      },
+      {
+        "pid": "4171",
+        "runtime": "48105",
+        "invoked": "1139808",
+        "usecs": "42",
+        "onesec": "0.00",
+        "process": "ifmgr"
+      },
+      {
+        "pid": "4191",
+        "runtime": "54372",
+        "invoked": "438586",
+        "usecs": "123",
+        "onesec": "0.00",
+        "process": "aclmgr"
+      },
+      {
+        "pid": "4262",
+        "runtime": "118",
+        "invoked": "1409",
+        "usecs": "83",
+        "onesec": "0.00",
+        "process": "incrond"
+      },
+      {
+        "pid": "4263",
+        "runtime": "358",
+        "invoked": "243",
+        "usecs": "1473",
+        "onesec": "0.00",
+        "process": "l3vm"
+      },
+      {
+        "pid": "4300",
+        "runtime": "231",
+        "invoked": "136",
+        "usecs": "1698",
+        "onesec": "0.00",
+        "process": "npacl"
+      },
+      {
+        "pid": "4303",
+        "runtime": "58706",
+        "invoked": "1134812",
+        "usecs": "51",
+        "onesec": "0.00",
+        "process": "statsclient"
+      },
+      {
+        "pid": "4310",
+        "runtime": "89412",
+        "invoked": "2277995",
+        "usecs": "39",
+        "onesec": "0.00",
+        "process": "vdc_mgr"
+      },
+      {
+        "pid": "4314",
+        "runtime": "427",
+        "invoked": "215",
+        "usecs": "1986",
+        "onesec": "0.00",
+        "process": "adjmgr"
+      },
+      {
+        "pid": "4315",
+        "runtime": "957",
+        "invoked": "360",
+        "usecs": "2658",
+        "onesec": "0.00",
+        "process": "u6rib"
+      },
+      {
+        "pid": "4359",
+        "runtime": "629",
+        "invoked": "285",
+        "usecs": "2207",
+        "onesec": "0.00",
+        "process": "arp"
+      },
+      {
+        "pid": "4360",
+        "runtime": "526",
+        "invoked": "237",
+        "usecs": "2219",
+        "onesec": "0.00",
+        "process": "icmpv6"
+      },
+      {
+        "pid": "4403",
+        "runtime": "411",
+        "invoked": "210",
+        "usecs": "1957",
+        "onesec": "0.00",
+        "process": "pktmgr"
+      },
+      {
+        "pid": "4441",
+        "runtime": "1017",
+        "invoked": "487",
+        "usecs": "2088",
+        "onesec": "0.00",
+        "process": "netstack"
+      },
+      {
+        "pid": "4480",
+        "runtime": "364457",
+        "invoked": "11386548",
+        "usecs": "32",
+        "onesec": "0.00",
+        "process": "radius"
+      },
+      {
+        "pid": "4481",
+        "runtime": "159996",
+        "invoked": "2884141",
+        "usecs": "55",
+        "onesec": "0.00",
+        "process": "cdp"
+      },
+      {
+        "pid": "4485",
+        "runtime": "136639",
+        "invoked": "2661758",
+        "usecs": "51",
+        "onesec": "0.00",
+        "process": "cfs"
+      },
+      {
+        "pid": "4486",
+        "runtime": "23",
+        "invoked": "86",
+        "usecs": "267",
+        "onesec": "0.00",
+        "process": "ip_dummy"
+      },
+      {
+        "pid": "4487",
+        "runtime": "21",
+        "invoked": "84",
+        "usecs": "250",
+        "onesec": "0.00",
+        "process": "ipv6_dummy"
+      },
+      {
+        "pid": "4488",
+        "runtime": "16550",
+        "invoked": "380665",
+        "usecs": "43",
+        "onesec": "0.00",
+        "process": "otm"
+      },
+      {
+        "pid": "4489",
+        "runtime": "493846",
+        "invoked": "3568249",
+        "usecs": "138",
+        "onesec": "0.00",
+        "process": "snmpd"
+      },
+      {
+        "pid": "4490",
+        "runtime": "24",
+        "invoked": "84",
+        "usecs": "285",
+        "onesec": "0.00",
+        "process": "tcpudp_dummy"
+      },
+      {
+        "pid": "4494",
+        "runtime": "330",
+        "invoked": "767",
+        "usecs": "430",
+        "onesec": "0.00",
+        "process": "dcos-xinetd"
+      },
+      {
+        "pid": "4561",
+        "runtime": "223137",
+        "invoked": "11249930",
+        "usecs": "19",
+        "onesec": "0.00",
+        "process": "callhome"
+      },
+      {
+        "pid": "5686",
+        "runtime": "0",
+        "invoked": "3",
+        "usecs": "0",
+        "onesec": "0.00",
+        "process": "sshd"
+      },
+      {
+        "pid": "7361",
+        "runtime": "0",
+        "invoked": "45",
+        "usecs": "0",
+        "onesec": "0.00",
+        "process": "nginx"
+      },
+      {
+        "pid": "7362",
+        "runtime": "0",
+        "invoked": "45",
+        "usecs": "0",
+        "onesec": "0.00",
+        "process": "nginx"
+      },
+      {
+        "pid": "7363",
+        "runtime": "160",
+        "invoked": "2007",
+        "usecs": "79",
+        "onesec": "0.00",
+        "process": "nginx"
+      },
+      {
+        "pid": "7364",
+        "runtime": "116",
+        "invoked": "1824",
+        "usecs": "63",
+        "onesec": "0.00",
+        "process": "nginx"
+      },
+      {
+        "pid": "7389",
+        "runtime": "108575",
+        "invoked": "2282630",
+        "usecs": "47",
+        "onesec": "0.00",
+        "process": "port-profile"
+      },
+      {
+        "pid": "7403",
+        "runtime": "52854",
+        "invoked": "449372",
+        "usecs": "117",
+        "onesec": "0.00",
+        "process": "vman"
+      },
+      {
+        "pid": "7409",
+        "runtime": "30065",
+        "invoked": "191408",
+        "usecs": "157",
+        "onesec": "0.00",
+        "process": "spm"
+      },
+      {
+        "pid": "7410",
+        "runtime": "297",
+        "invoked": "370",
+        "usecs": "802",
+        "onesec": "0.00",
+        "process": "sdaa"
+      },
+      {
+        "pid": "7411",
+        "runtime": "273",
+        "invoked": "163",
+        "usecs": "1674",
+        "onesec": "0.00",
+        "process": "rpm"
+      },
+      {
+        "pid": "7412",
+        "runtime": "284881",
+        "invoked": "2044166",
+        "usecs": "139",
+        "onesec": "0.00",
+        "process": "pltfm_config"
+      },
+      {
+        "pid": "7413",
+        "runtime": "27269",
+        "invoked": "190683",
+        "usecs": "143",
+        "onesec": "0.00",
+        "process": "plcmgr"
+      },
+      {
+        "pid": "7414",
+        "runtime": "4827427",
+        "invoked": "6168453",
+        "usecs": "782",
+        "onesec": "0.00",
+        "process": "pfstat"
+      },
+      {
+        "pid": "7435",
+        "runtime": "1362243",
+        "invoked": "6182496",
+        "usecs": "220",
+        "onesec": "0.00",
+        "process": "nxos_dc"
+      },
+      {
+        "pid": "7437",
+        "runtime": "658573",
+        "invoked": "12929464",
+        "usecs": "50",
+        "onesec": "0.00",
+        "process": "ntp"
+      },
+      {
+        "pid": "7438",
+        "runtime": "470770",
+        "invoked": "11393765",
+        "usecs": "41",
+        "onesec": "0.00",
+        "process": "nia-mgr"
+      },
+      {
+        "pid": "7440",
+        "runtime": "8749343",
+        "invoked": "12831194",
+        "usecs": "681",
+        "onesec": "0.00",
+        "process": "nbproxy"
+      },
+      {
+        "pid": "7441",
+        "runtime": "36661",
+        "invoked": "381066",
+        "usecs": "96",
+        "onesec": "0.00",
+        "process": "monitor"
+      },
+      {
+        "pid": "7442",
+        "runtime": "579",
+        "invoked": "316",
+        "usecs": "1832",
+        "onesec": "0.00",
+        "process": "mld"
+      },
+      {
+        "pid": "7444",
+        "runtime": "100301",
+        "invoked": "2277918",
+        "usecs": "44",
+        "onesec": "0.00",
+        "process": "lim"
+      },
+      {
+        "pid": "7445",
+        "runtime": "553263",
+        "invoked": "11121233",
+        "usecs": "49",
+        "onesec": "0.00",
+        "process": "l2rib"
+      },
+      {
+        "pid": "7447",
+        "runtime": "142554",
+        "invoked": "942915",
+        "usecs": "151",
+        "onesec": "0.00",
+        "process": "ipfib"
+      },
+      {
+        "pid": "7448",
+        "runtime": "803",
+        "invoked": "378",
+        "usecs": "2124",
+        "onesec": "0.00",
+        "process": "igmp"
+      },
+      {
+        "pid": "7451",
+        "runtime": "7472551",
+        "invoked": "15802048",
+        "usecs": "472",
+        "onesec": "0.00",
+        "process": "icam"
+      },
+      {
+        "pid": "7456",
+        "runtime": "68632",
+        "invoked": "1144398",
+        "usecs": "59",
+        "onesec": "0.00",
+        "process": "eth_port_channel"
+      },
+      {
+        "pid": "7457",
+        "runtime": "204",
+        "invoked": "102",
+        "usecs": "2000",
+        "onesec": "0.00",
+        "process": "ecp"
+      },
+      {
+        "pid": "7458",
+        "runtime": "35403",
+        "invoked": "380017",
+        "usecs": "93",
+        "onesec": "0.00",
+        "process": "adbm"
+      },
+      {
+        "pid": "7459",
+        "runtime": "95110",
+        "invoked": "1199819",
+        "usecs": "79",
+        "onesec": "0.00",
+        "process": "acllog"
+      },
+      {
+        "pid": "7482",
+        "runtime": "61628",
+        "invoked": "1154821",
+        "usecs": "53",
+        "onesec": "0.00",
+        "process": "eltm"
+      },
+      {
+        "pid": "7495",
+        "runtime": "583507",
+        "invoked": "17084499",
+        "usecs": "34",
+        "onesec": "0.00",
+        "process": "ntpd"
+      },
+      {
+        "pid": "7528",
+        "runtime": "21609",
+        "invoked": "383458",
+        "usecs": "56",
+        "onesec": "0.00",
+        "process": "eth_dstats"
+      },
+      {
+        "pid": "7529",
+        "runtime": "3132403",
+        "invoked": "16835568",
+        "usecs": "186",
+        "onesec": "0.00",
+        "process": "ipqosmgr"
+      },
+      {
+        "pid": "7606",
+        "runtime": "298286",
+        "invoked": "3172868",
+        "usecs": "94",
+        "onesec": "0.00",
+        "process": "vlan_mgr"
+      },
+      {
+        "pid": "7617",
+        "runtime": "362384",
+        "invoked": "3605418",
+        "usecs": "100",
+        "onesec": "0.00",
+        "process": "ksmtuned.sh"
+      },
+      {
+        "pid": "7623",
+        "runtime": "303419",
+        "invoked": "3317462",
+        "usecs": "91",
+        "onesec": "0.00",
+        "process": "aclqos"
+      },
+      {
+        "pid": "7722",
+        "runtime": "93740",
+        "invoked": "595780",
+        "usecs": "157",
+        "onesec": "0.00",
+        "process": "diag_port_lb"
+      },
+      {
+        "pid": "7723",
+        "runtime": "105015",
+        "invoked": "380645",
+        "usecs": "275",
+        "onesec": "0.00",
+        "process": "ethpm"
+      },
+      {
+        "pid": "7724",
+        "runtime": "63802",
+        "invoked": "1156540",
+        "usecs": "55",
+        "onesec": "0.00",
+        "process": "l2fm"
+      },
+      {
+        "pid": "7778",
+        "runtime": "3610841",
+        "invoked": "5114143",
+        "usecs": "706",
+        "onesec": "0.00",
+        "process": "nxpython3"
+      },
+      {
+        "pid": "7780",
+        "runtime": "14215611",
+        "invoked": "48373761",
+        "usecs": "293",
+        "onesec": "0.00",
+        "process": "stp"
+      },
+      {
+        "pid": "7781",
+        "runtime": "81096",
+        "invoked": "2277691",
+        "usecs": "35",
+        "onesec": "0.00",
+        "process": "stripcl"
+      },
+      {
+        "pid": "7820",
+        "runtime": "292",
+        "invoked": "176",
+        "usecs": "1659",
+        "onesec": "0.00",
+        "process": "nxpython3"
+      },
+      {
+        "pid": "7824",
+        "runtime": "1827452",
+        "invoked": "4227485",
+        "usecs": "432",
+        "onesec": "0.00",
+        "process": "intersight"
+      },
+      {
+        "pid": "7825",
+        "runtime": "180098",
+        "invoked": "379401",
+        "usecs": "474",
+        "onesec": "0.00",
+        "process": "copp"
+      },
+      {
+        "pid": "7839",
+        "runtime": "166571",
+        "invoked": "2375667",
+        "usecs": "70",
+        "onesec": "0.00",
+        "process": "ufdm"
+      },
+      {
+        "pid": "7840",
+        "runtime": "57693",
+        "invoked": "1139179",
+        "usecs": "50",
+        "onesec": "0.00",
+        "process": "u2"
+      },
+      {
+        "pid": "7844",
+        "runtime": "73522",
+        "invoked": "1139427",
+        "usecs": "64",
+        "onesec": "0.00",
+        "process": "sal"
+      },
+      {
+        "pid": "7845",
+        "runtime": "9175",
+        "invoked": "64079",
+        "usecs": "143",
+        "onesec": "0.00",
+        "process": "ofm"
+      },
+      {
+        "pid": "7846",
+        "runtime": "413",
+        "invoked": "321",
+        "usecs": "1286",
+        "onesec": "0.00",
+        "process": "mrib"
+      },
+      {
+        "pid": "7847",
+        "runtime": "479841564",
+        "invoked": "1266256870",
+        "usecs": "378",
+        "onesec": "0.00",
+        "process": "mfdm"
+      },
+      {
+        "pid": "7848",
+        "runtime": "99745",
+        "invoked": "2277760",
+        "usecs": "43",
+        "onesec": "0.00",
+        "process": "mcm"
+      },
+      {
+        "pid": "7849",
+        "runtime": "361",
+        "invoked": "273",
+        "usecs": "1322",
+        "onesec": "0.00",
+        "process": "m6rib"
+      },
+      {
+        "pid": "7850",
+        "runtime": "102950",
+        "invoked": "2278042",
+        "usecs": "45",
+        "onesec": "0.00",
+        "process": "l2pt"
+      },
+      {
+        "pid": "7933",
+        "runtime": "59325",
+        "invoked": "570786",
+        "usecs": "103",
+        "onesec": "0.00",
+        "process": "m2rib"
+      },
+      {
+        "pid": "7966",
+        "runtime": "2809231",
+        "invoked": "13388515",
+        "usecs": "209",
+        "onesec": "0.00",
+        "process": "nxpython3"
+      },
+      {
+        "pid": "7967",
+        "runtime": "2782171",
+        "invoked": "13151020",
+        "usecs": "211",
+        "onesec": "0.00",
+        "process": "nxpython3"
+      },
+      {
+        "pid": "7968",
+        "runtime": "812113",
+        "invoked": "11544457",
+        "usecs": "70",
+        "onesec": "0.00",
+        "process": "nxpython3"
+      },
+      {
+        "pid": "12396",
+        "runtime": "76",
+        "invoked": "285",
+        "usecs": "266",
+        "onesec": "0.00",
+        "process": "login"
+      },
+      {
+        "pid": "12921",
+        "runtime": "424",
+        "invoked": "2388",
+        "usecs": "177",
+        "onesec": "0.00",
+        "process": "vsh.bin"
+      },
+      {
+        "pid": "13078",
+        "runtime": "2",
+        "invoked": "12",
+        "usecs": "166",
+        "onesec": "0.00",
+        "process": "nginx_1_fe"
+      },
+      {
+        "pid": "13079",
+        "runtime": "489",
+        "invoked": "2753",
+        "usecs": "177",
+        "onesec": "0.00",
+        "process": "nginx_1_fe"
+      },
+      {
+        "pid": "13089",
+        "runtime": "402523",
+        "invoked": "11384818",
+        "usecs": "35",
+        "onesec": "0.00",
+        "process": "uwsgi"
+      },
+      {
+        "pid": "13090",
+        "runtime": "13",
+        "invoked": "30",
+        "usecs": "433",
+        "onesec": "0.00",
+        "process": "uwsgi"
+      },
+      {
+        "pid": "13127",
+        "runtime": "1032",
+        "invoked": "1669",
+        "usecs": "618",
+        "onesec": "0.00",
+        "process": "netconf"
+      },
+      {
+        "pid": "13149",
+        "runtime": "210648",
+        "invoked": "11391698",
+        "usecs": "18",
+        "onesec": "0.00",
+        "process": "xosdsd"
+      },
+      {
+        "pid": "13208",
+        "runtime": "337",
+        "invoked": "693",
+        "usecs": "486",
+        "onesec": "0.00",
+        "process": "grpc"
+      },
+      {
+        "pid": "13805",
+        "runtime": "52416",
+        "invoked": "570354",
+        "usecs": "91",
+        "onesec": "0.00",
+        "process": "interface-vlan"
+      },
+      {
+        "pid": "13829",
+        "runtime": "69632",
+        "invoked": "570839",
+        "usecs": "121",
+        "onesec": "0.00",
+        "process": "hsrp_engine"
+      },
+      {
+        "pid": "13855",
+        "runtime": "57238",
+        "invoked": "570694",
+        "usecs": "100",
+        "onesec": "0.00",
+        "process": "vpc"
+      },
+      {
+        "pid": "13860",
+        "runtime": "608781",
+        "invoked": "1452368",
+        "usecs": "419",
+        "onesec": "0.00",
+        "process": "lldp"
+      },
+      {
+        "pid": "15156",
+        "runtime": "40190",
+        "invoked": "220777",
+        "usecs": "182",
+        "onesec": "0.00",
+        "process": "crond"
+      },
+      {
+        "pid": "15823",
+        "runtime": "23793",
+        "invoked": "379711",
+        "usecs": "62",
+        "onesec": "0.00",
+        "process": "rpcbind"
+      },
+      {
+        "pid": "15998",
+        "runtime": "273",
+        "invoked": "1361",
+        "usecs": "200",
+        "onesec": "0.00",
+        "process": "vsh.bin"
+      },
+      {
+        "pid": "16395",
+        "runtime": "0",
+        "invoked": "2",
+        "usecs": "0",
+        "onesec": "0.00",
+        "process": "rpc.mountd"
+      },
+      {
+        "pid": "16410",
+        "runtime": "1",
+        "invoked": "12",
+        "usecs": "83",
+        "onesec": "0.00",
+        "process": "rpc.statd"
+      },
+      {
+        "pid": "19415",
+        "runtime": "0",
+        "invoked": "2",
+        "usecs": "0",
+        "onesec": "0.00",
+        "process": "mcelog"
+      },
+      {
+        "pid": "20934",
+        "runtime": "0",
+        "invoked": "2",
+        "usecs": "0",
+        "onesec": "0.00",
+        "process": "sleep"
+      },
+      {
+        "pid": "21802",
+        "runtime": "1",
+        "invoked": "3",
+        "usecs": "333",
+        "onesec": "0.00",
+        "process": "libvirtd_mon.sh"
+      },
+      {
+        "pid": "21803",
+        "runtime": "4",
+        "invoked": "10",
+        "usecs": "400",
+        "onesec": "0.00",
+        "process": "sh"
+      },
+      {
+        "pid": "21804",
+        "runtime": "2559814",
+        "invoked": "24052289",
+        "usecs": "106",
+        "onesec": "0.00",
+        "process": "sysmgr"
+      },
+      {
+        "pid": "21813",
+        "runtime": "0",
+        "invoked": "2",
+        "usecs": "0",
+        "onesec": "0.00",
+        "process": "inotifywait"
+      },
+      {
+        "pid": "21836",
+        "runtime": "13",
+        "invoked": "153",
+        "usecs": "84",
+        "onesec": "0.00",
+        "process": "libvirtd"
+      }
+    ]
+  },
+  "user_percent": "2.10",
+  "kernel_percent": "28.42",
+  "idle_percent": "69.47",
+  "fivesec_percent": "40",
+  "fivesec_intr_percent": "0",
+  "onemin_percent": "34",
+  "fivemin_percent": "36"
+}
