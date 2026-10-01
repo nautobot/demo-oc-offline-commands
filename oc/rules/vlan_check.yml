@@ -1,6 +1,6 @@
 ---
-vlan_checks:
-  display_name: "Vlan Information Check"
+vlan_check:
+  display_name: "VLAN Check"
   rule_type: "exact_match"
   description: "Verify VLANs, their status and port membership remain unchanged"
   collectors:

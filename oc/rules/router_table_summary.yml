@@ -1,24 +1,57 @@
 ---
-router_table_summary:
+router_table_summary_check:
   display_name: "Router Table Summary Check"
   rule_type: "tolerance"
-  description: "Verify route counts by protocol stay within tolerance pre/post change. Applies to Arista EOS, Cisco NX-OS, Cisco IOS and Juniper Junos."
+  description: "Verify IPv4 route counts per protocol (connected, static, OSPF, BGP, IS-IS) and in total stay within tolerance pre/post change. Applies to Arista EOS, Cisco NX-OS, Cisco IOS and Juniper Junos."
   evaluate_args:
     tolerance: 10
   collectors:
     - name: "json"
       platform: "arista_eos"
       command: "show ip route summary | json"
-      jmespath: "[vrfs.default.{total: totalRoutes, connected: connected, static: static, ospf: ospfCounts.ospfTotal, bgp: bgpCounts.bgpTotal, isis: isisCounts.isisTotal}]"
+      jmespath: >-
+        (vrfs.default || @)
+        | [{routes: {
+            connected: connected,
+            static: static,
+            ospf: ospfCounts.ospfTotal,
+            bgp: bgpCounts.bgpTotal,
+            isis: isisCounts.isisTotal,
+            total: totalRoutes}}]
     - name: "json"
       platform: "cisco_nxos"
       command: "show ip route summary | json"
-      jmespath: "TABLE_vrf.ROW_vrf.TABLE_addrf.ROW_addrf.TABLE_summary.ROW_summary || `[]`"
+      jmespath: >-
+        [TABLE_vrf.ROW_vrf][] | [0].TABLE_addrf.ROW_addrf | [@][] | [?addrf=='ipv4'] | [0].TABLE_summary.ROW_summary
+        | {u: [TABLE_unicast.ROW_unicast][], total: to_number(routes)}
+        | [{routes: {
+            connected: sum(u[?clientnameuni=='direct'].to_number("best-paths")),
+            static: sum(u[?clientnameuni=='static'].to_number("best-paths")),
+            ospf: sum(u[?starts_with(clientnameuni, 'ospf')].to_number("best-paths")),
+            bgp: sum(u[?starts_with(clientnameuni, 'bgp')].to_number("best-paths")),
+            isis: sum(u[?starts_with(clientnameuni, 'isis')].to_number("best-paths")),
+            total: total}}]
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show ip route summary"
-      jmespath: "[].{source: route_source, networks: to_number(networks), subnets: to_number(subnets)}"
+      jmespath: >-
+        [{routes: {
+            connected: sum([?route_source=='connected'].sum([to_number(networks || '0'), to_number(subnets || '0')])),
+            static: sum([?route_source=='static'].sum([to_number(networks || '0'), to_number(subnets || '0')])),
+            ospf: sum([?starts_with(route_source, 'ospf')].sum([to_number(networks || '0'), to_number(subnets || '0')])),
+            bgp: sum([?starts_with(route_source, 'bgp')].sum([to_number(networks || '0'), to_number(subnets || '0')])),
+            isis: sum([?starts_with(route_source, 'isis')].sum([to_number(networks || '0'), to_number(subnets || '0')])),
+            total: sum([?route_source=='Total'].sum([to_number(networks || '0'), to_number(subnets || '0')]))}}]
     - name: "json"
       platform: "juniper_junos"
       command: "show route summary | display json"
-      jmespath: '"route-summary-information"[0]."route-table" || `[]`'
+      jmespath: >-
+        "route-summary-information"[0]."route-table"[?"table-name"[0].data=='inet.0'] | [0]
+        | {p: protocols, total: to_number("total-route-count"[0].data)}
+        | [{routes: {
+            connected: sum(p[?"protocol-name"[0].data=='Direct'].to_number("protocol-route-count"[0].data)),
+            static: sum(p[?"protocol-name"[0].data=='Static'].to_number("protocol-route-count"[0].data)),
+            ospf: sum(p[?"protocol-name"[0].data=='OSPF'].to_number("protocol-route-count"[0].data)),
+            bgp: sum(p[?"protocol-name"[0].data=='BGP'].to_number("protocol-route-count"[0].data)),
+            isis: sum(p[?"protocol-name"[0].data=='IS-IS'].to_number("protocol-route-count"[0].data)),
+            total: total}}]

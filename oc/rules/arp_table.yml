@@ -1,5 +1,5 @@
 ---
-arp_table:
+arp_table_check:
   display_name: "ARP Table Check"
   rule_type: "tolerance"
   description: "Verify the ARP entry count stays within a certain tolerance. Applies to Arista EOS, Cisco NX-OS, Cisco IOS and Juniper Junos."

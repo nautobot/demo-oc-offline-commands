@@ -1,5 +1,5 @@
 ---
-feature_set:
+feature_set_check:
   display_name: "Feature Set Check"
   rule_type: "exact_match"
   description: "Verify the set of enabled features is unchanged across the upgrade. Applies to Cisco NX-OS."

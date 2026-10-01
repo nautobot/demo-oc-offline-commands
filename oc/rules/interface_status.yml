@@ -1,5 +1,5 @@
 ---
-interface_status:
+interface_status_check:
   display_name: "Interface Status Check"
   rule_type: "exact_match"
   description: "Verify all interfaces remain in the same operational state (plus administrative or line-protocol state where the platform reports it). Applies to Arista EOS, Cisco NX-OS, IOS, IOS-XE, IOS-XR and Juniper Junos."
