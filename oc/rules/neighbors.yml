@@ -26,3 +26,25 @@ lldp_neighbor_count_check:
       platform: "cisco_nxos"
       command: "show lldp neighbors"
       jmespath: "[{neighbors: {count: length(@)}}]"
+
+# $local_interface$ keys each neighbor by the local port, so the diff names the port that
+# changed and a different neighbor order still matches.
+cdp_neighbor_check:
+  display_name: "CDP Neighbor Check"
+  rule_type: "exact_match"
+  description: "Verify each local interface keeps the same CDP neighbor port pre/post change. Applies to Cisco NX-OS."
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_nxos"
+      command: "show cdp neighbors"
+      jmespath: "[*].[$local_interface$,neighbor_interface]"
+
+lldp_neighbor_check:
+  display_name: "LLDP Neighbor Check"
+  rule_type: "exact_match"
+  description: "Verify each local interface keeps the same LLDP neighbor port pre/post change. Applies to Cisco NX-OS."
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_nxos"
+      command: "show lldp neighbors"
+      jmespath: "[*].[$local_interface$,neighbor_interface]"
