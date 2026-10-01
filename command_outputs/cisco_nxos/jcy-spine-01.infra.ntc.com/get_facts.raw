@@ -1,6 +1,6 @@
 {
-  "fqdn": "jcy-spine-01.infra.ntc.com.ntc.com",
-  "hostname": "jcy-spine-01.infra.ntc.com",
+  "fqdn": "jcy-spine-01.ntc.com",
+  "hostname": "jcy-spine-01",
   "interface_list": [
     "mgmt0",
     "Ethernet1/1",
@@ -73,6 +73,6 @@
   "model": "cisco Nexus9000 C9500v Chassis",
   "os_version": "10.2(3)",
   "serial_number": "9TXQJOK34W0",
-  "uptime": 11388971.0,
+  "uptime": 11389223.0,
   "vendor": "Cisco"
 }
