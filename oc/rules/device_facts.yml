@@ -1,0 +1,30 @@
+---
+# Each collector holds its platform's approved versions in the contains() list and
+# reports version_approved, so every platform shares the rule's single expected value.
+os_version_check:
+  display_name: "OS Version Check"
+  rule_type: "parameter_match"
+  description: "Verify the device runs an approved OS version for its platform. Applies to Cisco NX-OS."
+  evaluate_args:
+    params:
+      version_approved: true
+    mode: "match"
+  collectors:
+    - name: "napalm"
+      platform: "cisco_nxos"
+      napalm_getter: "get_facts"
+      jmespath: 'get_facts.{hostname: hostname, os_version: os_version, version_approved: contains(`["10.2(3)"]`, os_version)}'
+
+device_identity_check:
+  display_name: "Device Identity Check"
+  rule_type: "exact_match"
+  description: "Verify hostname, model and serial number are unchanged pre/post change. Applies to Cisco IOS and Cisco NX-OS."
+  collectors:
+    - name: "napalm"
+      platform: "cisco_ios"
+      napalm_getter: "get_facts"
+      jmespath: "[get_facts.{hostname: hostname, model: model, serial_number: serial_number}]"
+    - name: "napalm"
+      platform: "cisco_nxos"
+      napalm_getter: "get_facts"
+      jmespath: "[get_facts.{hostname: hostname, model: model, serial_number: serial_number}]"
