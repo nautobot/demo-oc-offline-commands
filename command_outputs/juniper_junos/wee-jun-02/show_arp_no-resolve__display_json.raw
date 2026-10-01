@@ -1,0 +1,120 @@
+{
+    "arp-table-information" : [
+    {
+        "attributes" : {"xmlns" : "http://xml.juniper.net/junos/18.4R1/junos-arp", 
+                        "junos:style" : "no-resolve"
+                       }, 
+        "arp-table-entry" : [
+        {
+            "mac-address" : [
+            {
+                "data" : "00:14:1c:57:a4:c2"
+            }
+            ], 
+            "ip-address" : [
+            {
+                "data" : "10.1.100.1"
+            }
+            ], 
+            "interface-name" : [
+            {
+                "data" : "ge-0/0/0.0"
+            }
+            ], 
+            "arp-table-entry-flags" : [
+            {
+                "none" : [
+                {
+                    "data" : [null]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "mac-address" : [
+            {
+                "data" : "70:6d:15:8a:d2:80"
+            }
+            ], 
+            "ip-address" : [
+            {
+                "data" : "10.1.100.75"
+            }
+            ], 
+            "interface-name" : [
+            {
+                "data" : "ge-0/0/0.0"
+            }
+            ], 
+            "arp-table-entry-flags" : [
+            {
+                "none" : [
+                {
+                    "data" : [null]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "mac-address" : [
+            {
+                "data" : "f4:4d:30:63:34:f3"
+            }
+            ], 
+            "ip-address" : [
+            {
+                "data" : "10.1.100.200"
+            }
+            ], 
+            "interface-name" : [
+            {
+                "data" : "ge-0/0/0.0"
+            }
+            ], 
+            "arp-table-entry-flags" : [
+            {
+                "none" : [
+                {
+                    "data" : [null]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            "mac-address" : [
+            {
+                "data" : "08:00:27:4f:23:d8"
+            }
+            ], 
+            "ip-address" : [
+            {
+                "data" : "10.1.100.220"
+            }
+            ], 
+            "interface-name" : [
+            {
+                "data" : "ge-0/0/0.0"
+            }
+            ], 
+            "arp-table-entry-flags" : [
+            {
+                "none" : [
+                {
+                    "data" : [null]
+                }
+                ]
+            }
+            ]
+        }
+        ], 
+        "arp-entry-count" : [
+        {
+            "data" : "4"
+        }
+        ]
+    }
+    ]
+}

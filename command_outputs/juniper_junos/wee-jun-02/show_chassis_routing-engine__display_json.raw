@@ -1,0 +1,140 @@
+{
+    "route-engine-information" : [
+    {
+        "attributes" : {"xmlns" : "http://xml.juniper.net/junos/18.4R1/junos-chassis"}, 
+        "route-engine" : [
+        {
+            "status" : [
+            {
+                "data" : "OK"
+            }
+            ], 
+            "temperature" : [
+            {
+                "data" : "43 degrees C / 109 degrees F", 
+                "attributes" : {"junos:celsius" : "43"}
+            }
+            ], 
+            "cpu-temperature" : [
+            {
+                "data" : "70 degrees C / 158 degrees F", 
+                "attributes" : {"junos:celsius" : "70"}
+            }
+            ], 
+            "memory-system-total" : [
+            {
+                "data" : "4096"
+            }
+            ], 
+            "memory-system-total-used" : [
+            {
+                "data" : "1188"
+            }
+            ], 
+            "memory-system-total-util" : [
+            {
+                "data" : "29"
+            }
+            ], 
+            "memory-control-plane" : [
+            {
+                "data" : "2400"
+            }
+            ], 
+            "memory-control-plane-used" : [
+            {
+                "data" : "792"
+            }
+            ], 
+            "memory-control-plane-util" : [
+            {
+                "data" : "33"
+            }
+            ], 
+            "memory-data-plane" : [
+            {
+                "data" : "1696"
+            }
+            ], 
+            "memory-data-plane-used" : [
+            {
+                "data" : "390"
+            }
+            ], 
+            "memory-data-plane-util" : [
+            {
+                "data" : "23"
+            }
+            ], 
+            "cpu-user" : [
+            {
+                "data" : "12"
+            }
+            ], 
+            "cpu-background" : [
+            {
+                "data" : "0"
+            }
+            ], 
+            "cpu-system" : [
+            {
+                "data" : "4"
+            }
+            ], 
+            "cpu-interrupt" : [
+            {
+                "data" : "0"
+            }
+            ], 
+            "cpu-idle" : [
+            {
+                "data" : "85"
+            }
+            ], 
+            "model" : [
+            {
+                "data" : "RE-SRX320"
+            }
+            ], 
+            "serial-number" : [
+            {
+                "data" : "CW3523AX0076"
+            }
+            ], 
+            "start-time" : [
+            {
+                "data" : "2026-08-13 15:47:09 UTC", 
+                "attributes" : {"junos:seconds" : "1786636029"}
+            }
+            ], 
+            "up-time" : [
+            {
+                "data" : "48 days, 18 hours, 12 minutes, 59 seconds", 
+                "attributes" : {"junos:seconds" : "4212779"}
+            }
+            ], 
+            "last-reboot-reason" : [
+            {
+                "data" : "0x200:normal shutdown "
+            }
+            ], 
+            "load-average-one" : [
+            {
+                "data" : "0.24"
+            }
+            ], 
+            "load-average-five" : [
+            {
+                "data" : "0.15"
+            }
+            ], 
+            "load-average-fifteen" : [
+            {
+                "data" : "0.10"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
