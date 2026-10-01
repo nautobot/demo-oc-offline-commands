@@ -1,0 +1,19 @@
+---
+# Each next hop of the management VRF default route becomes one row, so every ECMP path is
+# checked; a missing default route yields next_hop "none" and fails instead of erroring.
+management_default_route_check:
+  display_name: "Management Default Route Check"
+  rule_type: "regex"
+  description: "Verify the management VRF default route points at the expected gateway, to catch a lost or repointed management gateway before it breaks automation access. Applies to Cisco NX-OS."
+  evaluate_args:
+    regex: "^(10\\.1\\.100\\.1|10\\.0\\.0\\.1)$"
+    mode: "match"
+  collectors:
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show ip route vrf management | json"
+      jmespath: >-
+        [TABLE_vrf.ROW_vrf][] | [0].TABLE_addrf.ROW_addrf | [@][] | [0].TABLE_prefix.ROW_prefix | [@][]
+        | [?ipprefix=='0.0.0.0/0'] | [0].TABLE_path.ROW_path | [@][]
+        | [].{default_route: {next_hop: ipnexthop}}
+        || `[{"default_route": {"next_hop": "none"}}]`
