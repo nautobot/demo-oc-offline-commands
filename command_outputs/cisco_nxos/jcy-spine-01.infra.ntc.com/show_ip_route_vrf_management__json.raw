@@ -1,0 +1,50 @@
+{
+  "TABLE_vrf": {
+    "ROW_vrf": {
+      "vrf-name-out": "management",
+      "TABLE_addrf": {
+        "ROW_addrf": {
+          "addrf": "ipv4",
+          "TABLE_prefix": {
+            "ROW_prefix": [
+              {
+                "ipprefix": "10.0.0.0/24",
+                "ucast-nhops": "1",
+                "mcast-nhops": "0",
+                "attached": "true",
+                "TABLE_path": {
+                  "ROW_path": {
+                    "ipnexthop": "10.0.0.15",
+                    "ifname": "mgmt0",
+                    "uptime": "P4M11DT23H22M22S",
+                    "pref": "0",
+                    "metric": "0",
+                    "clientname": "direct",
+                    "ubest": "true"
+                  }
+                }
+              },
+              {
+                "ipprefix": "10.0.0.15/32",
+                "ucast-nhops": "1",
+                "mcast-nhops": "0",
+                "attached": "true",
+                "TABLE_path": {
+                  "ROW_path": {
+                    "ipnexthop": "10.0.0.15",
+                    "ifname": "mgmt0",
+                    "uptime": "P4M11DT23H22M22S",
+                    "pref": "0",
+                    "metric": "0",
+                    "clientname": "local",
+                    "ubest": "true"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

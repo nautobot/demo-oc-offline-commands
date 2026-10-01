@@ -5,12 +5,12 @@ Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
 
 Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
 jcy-spine-02.ntc.com(9BQZEN797OH)
-                    Eth1/1         169    R S s     N9K-C9500v    Eth1/1        
+                    Eth1/1         167    R S s     N9K-C9500v    Eth1/1        
 jcy-spine-02.ntc.com(9BQZEN797OH)
-                    Eth1/2         124    R S s     N9K-C9500v    Eth1/2        
+                    Eth1/2         123    R S s     N9K-C9500v    Eth1/2        
 jcy-spine-02.ntc.com(9BQZEN797OH)
-                    Eth1/3         138    R S s     N9K-C9500v    Eth1/3        
+                    Eth1/3         137    R S s     N9K-C9500v    Eth1/3        
 jcy-spine-02.ntc.com(9BQZEN797OH)
-                    Eth1/4         123    R S s     N9K-C9500v    Eth1/4        
+                    Eth1/4         121    R S s     N9K-C9500v    Eth1/4        
 
 Total entries displayed: 4
