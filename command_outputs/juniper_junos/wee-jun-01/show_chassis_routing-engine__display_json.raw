@@ -1,0 +1,153 @@
+{
+    "multi-routing-engine-results" : [
+    {
+        "multi-routing-engine-item" : [
+        {
+            "re-name" : [
+            {
+                "data" : "node0"
+            }
+            ], 
+            "route-engine-information" : [
+            {
+                "attributes" : {"xmlns" : "http://xml.juniper.net/junos/18.4R1/junos-chassis"}, 
+                "route-engine" : [
+                {
+                    "status" : [
+                    {
+                        "data" : "OK"
+                    }
+                    ], 
+                    "temperature" : [
+                    {
+                        "data" : "36 degrees C / 96 degrees F", 
+                        "attributes" : {"junos:celsius" : "36"}
+                    }
+                    ], 
+                    "cpu-temperature" : [
+                    {
+                        "data" : "56 degrees C / 132 degrees F", 
+                        "attributes" : {"junos:celsius" : "56"}
+                    }
+                    ], 
+                    "memory-system-total" : [
+                    {
+                        "data" : "4096"
+                    }
+                    ], 
+                    "memory-system-total-used" : [
+                    {
+                        "data" : "1393"
+                    }
+                    ], 
+                    "memory-system-total-util" : [
+                    {
+                        "data" : "34"
+                    }
+                    ], 
+                    "memory-control-plane" : [
+                    {
+                        "data" : "2400"
+                    }
+                    ], 
+                    "memory-control-plane-used" : [
+                    {
+                        "data" : "816"
+                    }
+                    ], 
+                    "memory-control-plane-util" : [
+                    {
+                        "data" : "34"
+                    }
+                    ], 
+                    "memory-data-plane" : [
+                    {
+                        "data" : "1696"
+                    }
+                    ], 
+                    "memory-data-plane-used" : [
+                    {
+                        "data" : "577"
+                    }
+                    ], 
+                    "memory-data-plane-util" : [
+                    {
+                        "data" : "34"
+                    }
+                    ], 
+                    "cpu-user" : [
+                    {
+                        "data" : "12"
+                    }
+                    ], 
+                    "cpu-background" : [
+                    {
+                        "data" : "0"
+                    }
+                    ], 
+                    "cpu-system" : [
+                    {
+                        "data" : "6"
+                    }
+                    ], 
+                    "cpu-interrupt" : [
+                    {
+                        "data" : "0"
+                    }
+                    ], 
+                    "cpu-idle" : [
+                    {
+                        "data" : "82"
+                    }
+                    ], 
+                    "model" : [
+                    {
+                        "data" : "RE-SRX340"
+                    }
+                    ], 
+                    "serial-number" : [
+                    {
+                        "data" : "CY1318AF0301"
+                    }
+                    ], 
+                    "start-time" : [
+                    {
+                        "data" : "2026-09-26 11:50:42 UTC", 
+                        "attributes" : {"junos:seconds" : "1790423442"}
+                    }
+                    ], 
+                    "up-time" : [
+                    {
+                        "data" : "4 days, 21 hours, 30 minutes, 59 seconds", 
+                        "attributes" : {"junos:seconds" : "423059"}
+                    }
+                    ], 
+                    "last-reboot-reason" : [
+                    {
+                        "data" : "0x800:reboot due to exception"
+                    }
+                    ], 
+                    "load-average-one" : [
+                    {
+                        "data" : "0.23"
+                    }
+                    ], 
+                    "load-average-five" : [
+                    {
+                        "data" : "0.11"
+                    }
+                    ], 
+                    "load-average-fifteen" : [
+                    {
+                        "data" : "0.09"
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
