@@ -2,9 +2,13 @@
 vlan_check:
   display_name: "VLAN Check"
   rule_type: "exact_match"
-  description: "Verify VLANs, their status and port membership remain unchanged"
+  description: "Verify VLANs, their status and port membership remain unchanged. Applies to Cisco NX-OS and Cisco IOS."
   collectors:
     - name: "textfsm"
       platform: "cisco_nxos"
+      command: "show vlan brief"
+      jmespath: "[].{vlan_id: vlan_id, name: vlan_name, status: status, ports: interfaces}"
+    - name: "textfsm"
+      platform: "cisco_ios"
       command: "show vlan brief"
       jmespath: "[].{vlan_id: vlan_id, name: vlan_name, status: status, ports: interfaces}"
