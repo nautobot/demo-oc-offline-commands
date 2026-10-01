@@ -21,6 +21,18 @@ cpu_idle_check:
       command: "show chassis routing-engine | display json"
       jmespath: '"multi-routing-engine-results"[0]."multi-routing-engine-item"[].{cpu: {idle: to_number("route-engine-information"[0]."route-engine"[0]."cpu-idle"[0].data)}}'
 
+cpu_idle_tolerance_check:
+  display_name: "CPU Idle Tolerance Check"
+  rule_type: "tolerance"
+  description: "Verify CPU idle stays within 10% of its pre-change value. Applies to Cisco NX-OS."
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show system resources | json"
+      jmespath: "[{cpu: {idle: to_number(cpu_state_idle)}}]"
+
 cpu_usage_check:
   display_name: "CPU Usage Check"
   rule_type: "operator"
