@@ -8,6 +8,22 @@
           "TABLE_prefix": {
             "ROW_prefix": [
               {
+                "ipprefix": "0.0.0.0/0",
+                "ucast-nhops": "1",
+                "mcast-nhops": "0",
+                "attached": "false",
+                "TABLE_path": {
+                  "ROW_path": {
+                    "ipnexthop": "10.0.0.1",
+                    "uptime": "P4M11DT23H41M46S",
+                    "pref": "1",
+                    "metric": "0",
+                    "clientname": "static",
+                    "ubest": "true"
+                  }
+                }
+              },
+              {
                 "ipprefix": "10.0.0.0/24",
                 "ucast-nhops": "1",
                 "mcast-nhops": "0",
