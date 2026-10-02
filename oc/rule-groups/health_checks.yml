@@ -1,0 +1,11 @@
+---
+cisco_nxos_health_checks:
+  display_name: "NX-OS Health Checks"
+  description: "Verify VLANs, CPU, OS version, CDP/LLDP neighbor counts and the management VRF default route. Applies to Cisco NX-OS."
+  validation_rules:
+    - "VLAN Check"
+    - "CPU Idle Check"
+    - "OS Version Check"
+    - "CDP Neighbor Count Check"
+    - "LLDP Neighbor Count Check"
+    - "Management Default Route Check"

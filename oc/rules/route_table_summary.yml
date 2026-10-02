@@ -1,6 +1,6 @@
 ---
-router_table_summary_check:
-  display_name: "Router Table Summary Check"
+route_table_summary_check:
+  display_name: "Route Table Summary Check"
   rule_type: "tolerance"
   description: "Verify IPv4 route counts per protocol (connected, static, OSPF, BGP, IS-IS) and in total stay within tolerance pre/post change. Applies to Arista EOS, Cisco NX-OS, Cisco IOS and Juniper Junos."
   evaluate_args:
