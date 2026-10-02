@@ -5,6 +5,7 @@ cisco_nxos_health_checks:
   validation_rules:
     - "VLAN Check"
     - "CPU Idle Check"
+    - "CPU Idle Tolerance Check"
     - "OS Version Check"
     - "CDP Neighbor Count Check"
     - "LLDP Neighbor Count Check"

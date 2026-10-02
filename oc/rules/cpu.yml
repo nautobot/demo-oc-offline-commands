@@ -21,6 +21,8 @@ cpu_idle_check:
       command: "show chassis routing-engine | display json"
       jmespath: '("multi-routing-engine-results"[0]."multi-routing-engine-item"[]."route-engine-information"[0]."route-engine"[] || "route-engine-information"[0]."route-engine") | [].{cpu: {idle: to_number("cpu-idle"[0].data)}}'
 
+# Idle is always made a decimal ("70" -> 70.0): jdiff skips the tolerance comparison when
+# a value changes from a whole number to a decimal, so 70 -> 10.5 would otherwise pass.
 cpu_idle_tolerance_check:
   display_name: "CPU Idle Tolerance Check"
   rule_type: "tolerance"
@@ -31,7 +33,7 @@ cpu_idle_tolerance_check:
     - name: "json"
       platform: "cisco_nxos"
       command: "show system resources | json"
-      jmespath: "[{cpu: {idle: to_number(cpu_state_idle)}}]"
+      jmespath: "[{cpu: {idle: to_number(contains(cpu_state_idle, '.') && cpu_state_idle || join('', [cpu_state_idle, '.0']))}}]"
 
 cpu_usage_check:
   display_name: "CPU Usage Check"
