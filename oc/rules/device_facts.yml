@@ -13,7 +13,7 @@ os_version_check:
     - name: "napalm"
       platform: "cisco_nxos"
       napalm_getter: "get_facts"
-      jmespath: 'get_facts.{hostname: hostname, os_version: os_version, version_approved: contains(`["10.2(3)"]`, os_version)}'
+      jmespath: 'get_facts.{hostname: hostname, os_version: os_version, version_approved: contains(`["10.2(3)", "7.0(3)I7(7)"]`, os_version)}'
 
 device_identity_check:
   display_name: "Device Identity Check"
