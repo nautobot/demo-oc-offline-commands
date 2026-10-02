@@ -1,0 +1,58 @@
+---
+cpu_idle_check:
+  display_name: "CPU Idle Check"
+  rule_type: "operator"
+  description: "CPU idle should be >= 70% (utilization <= 30%). Applies to Arista EOS, Cisco NX-OS and Juniper Junos (all routing engines)."
+  evaluate_args:
+    params:
+      mode: "is-ge"
+      operator_data: 70
+  collectors:
+    - name: "json"
+      platform: "arista_eos"
+      command: "show processes top once | json"
+      jmespath: '[{cpu: {idle: to_number(cpuInfo."%Cpu(s)".idle)}}]'
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show processes cpu | json"
+      jmespath: "[@][*].{cpu: {idle: to_number(idle_percent)}}"
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show chassis routing-engine | display json"
+      jmespath: '("multi-routing-engine-results"[0]."multi-routing-engine-item"[]."route-engine-information"[0]."route-engine"[] || "route-engine-information"[0]."route-engine") | [].{cpu: {idle: to_number("cpu-idle"[0].data)}}'
+
+# Idle is always made a decimal ("70" -> 70.0): jdiff skips the tolerance comparison when
+# a value changes from a whole number to a decimal, so 70 -> 10.5 would otherwise pass.
+cpu_idle_tolerance_check:
+  display_name: "CPU Idle Tolerance Check"
+  rule_type: "tolerance"
+  description: "Verify CPU idle stays within 10% of its pre-change value. Applies to Cisco NX-OS."
+  evaluate_args:
+    tolerance: 10
+  collectors:
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show system resources | json"
+      jmespath: "[{cpu: {idle: to_number(contains(cpu_state_idle, '.') && cpu_state_idle || join('', [cpu_state_idle, '.0']))}}]"
+
+cpu_usage_check:
+  display_name: "CPU Usage Check"
+  rule_type: "operator"
+  description: "5-minute CPU utilization should be <= 30%. Applies to Cisco IOS, IOS-XE and IOS-XR."
+  evaluate_args:
+    params:
+      mode: "is-le"
+      operator_data: 30
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show processes cpu"
+      jmespath: "[0:1].{cpu: {usage: to_number(cpu_usage_5_min)}}"
+    - name: "textfsm"
+      platform: "cisco_xe"
+      command: "show processes cpu"
+      jmespath: "[0:1].{cpu: {usage: to_number(cpu_usage_5_min)}}"
+    - name: "textfsm"
+      platform: "cisco_xr"
+      command: "show processes cpu"
+      jmespath: "[0:1].{cpu: {usage: to_number(cpu_5_min)}}"

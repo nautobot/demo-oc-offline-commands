@@ -1,0 +1,58 @@
+{
+    "vrfs": {
+        "default": {
+            "maskLen": {
+                "24": 1,
+                "0": 1,
+                "8": 2,
+                "32": 5
+            },
+            "totalRoutes": 9,
+            "ospfv3Counts": {
+                "ospfv3Total": 0,
+                "ospfv3InterArea": 0,
+                "ospfv3External1": 0,
+                "ospfv3External2": 0,
+                "ospfv3NssaExternal1": 0,
+                "ospfv3NssaExternal2": 0,
+                "ospfv3IntraArea": 0
+            },
+            "staticNexthopGroup": 0,
+            "bgpCounts": {
+                "bgpExternal": 0,
+                "bgpTotal": 0,
+                "bgpLocal": 0,
+                "bgpInternal": 0
+            },
+            "attached": 0,
+            "gribi": 0,
+            "staticNonPersistent": 0,
+            "staticPersistent": 1,
+            "static": 1,
+            "vcs": 0,
+            "connected": 1,
+            "rip": 0,
+            "isisCounts": {
+                "isisLevel1": 0,
+                "isisLevel2": 0,
+                "isisTotal": 0
+            },
+            "aggregate": 0,
+            "dynamicPolicy": 0,
+            "internal": 7,
+            "ospfCounts": {
+                "ospfInterArea": 0,
+                "ospfExternal2": 0,
+                "ospfExternal1": 0,
+                "nssaExternal1": 0,
+                "nssaExternal2": 0,
+                "ospfIntraArea": 0,
+                "ospfTotal": 0
+            }
+        }
+    },
+    "protoModelStatus": {
+        "configuredProtoModel": "ribd",
+        "operatingProtoModel": "ribd"
+    }
+}

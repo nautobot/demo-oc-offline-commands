@@ -1,0 +1,32 @@
+{
+    "dynamicEntries": 4,
+    "ipV4Neighbors": [
+        {
+            "hwAddress": "0014.1c57.a4c2",
+            "address": "10.1.100.1",
+            "interface": "Management1",
+            "age": 0
+        },
+        {
+            "hwAddress": "706d.158a.d280",
+            "address": "10.1.100.75",
+            "interface": "Management1",
+            "age": 265
+        },
+        {
+            "hwAddress": "f44d.3063.34f3",
+            "address": "10.1.100.200",
+            "interface": "Management1",
+            "age": 127
+        },
+        {
+            "hwAddress": "0800.274f.23d8",
+            "address": "10.1.100.220",
+            "interface": "Management1",
+            "age": 139
+        }
+    ],
+    "notLearnedEntries": 0,
+    "totalEntries": 4,
+    "staticEntries": 0
+}

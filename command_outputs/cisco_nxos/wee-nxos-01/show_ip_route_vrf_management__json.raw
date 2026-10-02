@@ -1,0 +1,66 @@
+{
+  "TABLE_vrf": {
+    "ROW_vrf": {
+      "vrf-name-out": "management",
+      "TABLE_addrf": {
+        "ROW_addrf": {
+          "addrf": "ipv4",
+          "TABLE_prefix": {
+            "ROW_prefix": [
+              {
+                "ipprefix": "0.0.0.0/0",
+                "ucast-nhops": "1",
+                "mcast-nhops": "0",
+                "attached": "false",
+                "TABLE_path": {
+                  "ROW_path": {
+                    "ipnexthop": "10.1.100.1",
+                    "uptime": "PT1H42M34S",
+                    "pref": "1",
+                    "metric": "0",
+                    "clientname": "static",
+                    "ubest": "true"
+                  }
+                }
+              },
+              {
+                "ipprefix": "10.1.100.0/24",
+                "ucast-nhops": "1",
+                "mcast-nhops": "0",
+                "attached": "true",
+                "TABLE_path": {
+                  "ROW_path": {
+                    "ipnexthop": "10.1.100.26",
+                    "ifname": "mgmt0",
+                    "uptime": "PT1H43M4S",
+                    "pref": "0",
+                    "metric": "0",
+                    "clientname": "direct",
+                    "ubest": "true"
+                  }
+                }
+              },
+              {
+                "ipprefix": "10.1.100.26/32",
+                "ucast-nhops": "1",
+                "mcast-nhops": "0",
+                "attached": "true",
+                "TABLE_path": {
+                  "ROW_path": {
+                    "ipnexthop": "10.1.100.26",
+                    "ifname": "mgmt0",
+                    "uptime": "PT1H43M4S",
+                    "pref": "0",
+                    "metric": "0",
+                    "clientname": "local",
+                    "ubest": "true"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "load_avg_1min": "0.58",
+  "load_avg_5min": "0.73",
+  "load_avg_15min": "0.61",
+  "processes_total": "747",
+  "processes_running": "2",
+  "cpu_state_user": "9.67",
+  "cpu_state_kernel": "37.63",
+  "cpu_state_idle": "52.68",
+  "TABLE_cpu_usage": {
+    "ROW_cpu_usage": {
+      "cpuid": "0",
+      "user": "9.67",
+      "kernel": "37.63",
+      "idle": "52.68"
+    }
+  },
+  "memory_usage_total": "8146676",
+  "memory_usage_used": "5916868",
+  "memory_usage_free": "2229808",
+  "vm_total": "0",
+  "vm_free": "0",
+  "mem_buffers": "105384",
+  "mem_cached": "3319412",
+  "current_memory_status": "OK"
+}

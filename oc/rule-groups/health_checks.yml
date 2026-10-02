@@ -1,0 +1,12 @@
+---
+health_checks:
+  display_name: "Health Checks"
+  description: "Verify VLANs, CPU, OS version, CDP/LLDP neighbor counts and the management VRF default route. Rules without a collector for a device's platform are skipped."
+  validation_rules:
+    - "VLAN Check"
+    - "CPU Idle Check"
+    - "CPU Idle Tolerance Check"
+    - "OS Version Check"
+    - "CDP Neighbor Count Check"
+    - "LLDP Neighbor Count Check"
+    - "Management Default Route Check"
