@@ -1,0 +1,6 @@
+---
+ospf_neighbor_checks:
+  display_name: "OSPF Neighbor Checks"
+  description: "OSPF neighbor counts to compare before and after a change. Each device runs the collector for its platform."
+  validation_rules:
+    - "OSPF Neighbor Count Check"
