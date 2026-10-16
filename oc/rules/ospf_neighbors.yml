@@ -1,0 +1,179 @@
+---
+# Containerlab OSPF neighbor counts. Each collector reduces the neighbor table to
+#   [{ospf: {neighbors: <neighbors, every VRF and OSPF process>}}]
+# An operator has no "equals", so `is-in` lists the accepted counts.
+#
+# The "Pre" rules are the pre-change check and accept either lab state a deploy can start from:
+# 0 (straight from Containerlab Startup Reset, which leaves no OSPF) or one adjacency per cabled
+# link (converged by an earlier deploy). Any count in between means the network is already broken.
+# Output that does not parse into a table (an error line, e.g. NX-OS without `feature ospf`)
+# comes back as the raw string, so the collectors count rows only for a list and 0 otherwise;
+# the post-change check still fails on 0.
+# The other per-role rules are the post-change check: exactly one adjacency per cabled link.
+# The spine role mixes NX-OS (JCY) and EOS (NYC) with different counts, so it has a rule per platform.
+# NX-OS uses ntc-templates cisco_nxos_show_ip_ospf_neighbor; TextFSM rather than "| json", whose
+# ROW_ctx/ROW_nbr switch between an object and a list with the number of VRFs/neighbors.
+
+ospf_neighbor_count_pre_spine_nxos:
+  display_name: "OSPF Neighbor Count Pre (Spine NX-OS)"
+  rule_type: "operator"
+  description: "Verify a containerlab NX-OS spine (JCY) has either no OSPF neighbors or exactly 5. Applies to Cisco NX-OS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [0, 5]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_nxos"
+      command: "show ip ospf neighbors"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+
+
+ospf_neighbor_count_pre_spine_eos:
+  display_name: "OSPF Neighbor Count Pre (Spine EOS)"
+  rule_type: "operator"
+  description: "Verify a containerlab EOS spine (NYC) has either no OSPF neighbors or exactly 3. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [0, 3]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+
+
+ospf_neighbor_count_pre_leaf:
+  display_name: "OSPF Neighbor Count Pre (Leaf)"
+  rule_type: "operator"
+  description: "Verify a containerlab leaf has either no OSPF neighbors or exactly 2. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [0, 2]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+
+
+ospf_neighbor_count_pre_router:
+  display_name: "OSPF Neighbor Count Pre (Router)"
+  rule_type: "operator"
+  description: "Verify a containerlab router has either no OSPF neighbors or exactly 3. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [0, 3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+
+
+ospf_neighbor_count_pre_backbone:
+  display_name: "OSPF Neighbor Count Pre (Backbone)"
+  rule_type: "operator"
+  description: "Verify a containerlab backbone router has either no OSPF neighbors or exactly 3. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [0, 3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+
+ospf_neighbor_count_spine_nxos:
+  display_name: "OSPF Neighbor Count (Spine NX-OS)"
+  rule_type: "operator"
+  description: "Verify a containerlab NX-OS spine (JCY) has exactly 5 OSPF neighbors. Applies to Cisco NX-OS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [5]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_nxos"
+      command: "show ip ospf neighbors"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+
+
+ospf_neighbor_count_spine_eos:
+  display_name: "OSPF Neighbor Count (Spine EOS)"
+  rule_type: "operator"
+  description: "Verify a containerlab EOS spine (NYC) has exactly 3 OSPF neighbors. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+
+
+ospf_neighbor_count_leaf:
+  display_name: "OSPF Neighbor Count (Leaf)"
+  rule_type: "operator"
+  description: "Verify a containerlab leaf has exactly 2 OSPF neighbors. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [2]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+
+
+ospf_neighbor_count_router:
+  display_name: "OSPF Neighbor Count (Router)"
+  rule_type: "operator"
+  description: "Verify a containerlab router has exactly 3 OSPF neighbors. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+
+
+ospf_neighbor_count_backbone:
+  display_name: "OSPF Neighbor Count (Backbone)"
+  rule_type: "operator"
+  description: "Verify a containerlab backbone router has exactly 3 OSPF neighbors. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show ospf neighbor"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"

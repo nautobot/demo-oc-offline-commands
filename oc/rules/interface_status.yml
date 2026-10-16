@@ -28,3 +28,113 @@ interface_status_check:
       platform: "juniper_junos"
       command: "show interfaces terse | display json"
       jmespath: '"interface-information"[0]."physical-interface"[].{name: name[0].data, admin: "admin-status"[0].data, state: "oper-status"[0].data}'
+
+# Containerlab pre/post comparison of the data ports only. A deploy creates loopbacks and VLAN
+# interfaces, which would shift a positional comparison of the full list, so management, loopback
+# and VLAN interfaces are left out. `$name$` keys each port by name so a diff names the port;
+# jdiff only takes a plain key as reference, so Junos (`name[0].data`) is compared in order, which
+# its fixed `ge-` port list keeps stable.
+interface_status_check_containerlab:
+  display_name: "Interface Status Check (Containerlab)"
+  rule_type: "exact_match"
+  description: "Verify each containerlab data port keeps the same state pre/post change. Applies to Arista EOS, Cisco NX-OS, Cisco IOS and Juniper Junos."
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show interfaces status"
+      jmespath: "[?starts_with(port, 'Et')].[$port$,status]"
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show interface status | json"
+      jmespath: "TABLE_interface.ROW_interface[?starts_with(interface, 'Ethernet')].[$interface$,state]"
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show interfaces"
+      jmespath: "[?starts_with(interface, 'GigabitEthernet') && interface!='GigabitEthernet1'].[$interface$,link_status,protocol_status]"
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show interfaces terse | display json"
+      jmespath: '"interface-information"[0]."physical-interface"[?starts_with(name[0].data, ''ge-'')].{name: name[0].data, admin: "admin-status"[0].data, state: "oper-status"[0].data}'
+
+# Containerlab per-role counts of data ports that are up. Management ports (NX-OS mgmt0, EOS
+# Management0, IOS GigabitEthernet1, Junos fxp0) are left out. An operator has no "equals", so
+# `is-in` with one value checks the exact count. Each role's number is its cabled links in the lab
+# topology; the spine role mixes NX-OS (JCY) and EOS (NYC) with different counts, so it has a rule
+# per platform.
+interface_up_count_spine_nxos:
+  display_name: "Interface Up Count (Spine NX-OS)"
+  rule_type: "operator"
+  description: "Verify a containerlab NX-OS spine (JCY) has exactly 5 Ethernet ports connected. Applies to Cisco NX-OS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [5]
+  collectors:
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show interface status | json"
+      jmespath: "[{interfaces: {up: length(TABLE_interface.ROW_interface[?starts_with(interface, 'Ethernet') && state=='connected'])}}]"
+
+interface_up_count_spine_eos:
+  display_name: "Interface Up Count (Spine EOS)"
+  rule_type: "operator"
+  description: "Verify a containerlab EOS spine (NYC) has exactly 3 Ethernet ports connected. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show interfaces status"
+      jmespath: "[{interfaces: {up: length([?starts_with(port, 'Et') && status=='connected'])}}]"
+
+interface_up_count_leaf:
+  display_name: "Interface Up Count (Leaf)"
+  rule_type: "operator"
+  description: "Verify a containerlab leaf has exactly 2 Ethernet ports connected. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [2]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show interfaces status"
+      jmespath: "[{interfaces: {up: length([?starts_with(port, 'Et') && status=='connected'])}}]"
+
+interface_up_count_router:
+  display_name: "Interface Up Count (Router)"
+  rule_type: "operator"
+  description: "Verify a containerlab router has exactly 3 data ports up. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show interfaces"
+      jmespath: "[{interfaces: {up: length([?starts_with(interface, 'GigabitEthernet') && interface!='GigabitEthernet1' && link_status=='up' && protocol_status=='up'])}}]"
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show interfaces terse | display json"
+      jmespath: '[{interfaces: {up: length("interface-information"[0]."physical-interface"[?starts_with(name[0].data, ''ge-'') && "oper-status"[0].data==''up''])}}]'
+
+interface_up_count_backbone:
+  display_name: "Interface Up Count (Backbone)"
+  rule_type: "operator"
+  description: "Verify a containerlab backbone router has exactly 3 data ports up. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show interfaces"
+      jmespath: "[{interfaces: {up: length([?starts_with(interface, 'GigabitEthernet') && interface!='GigabitEthernet1' && link_status=='up' && protocol_status=='up'])}}]"
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show interfaces terse | display json"
+      jmespath: '[{interfaces: {up: length("interface-information"[0]."physical-interface"[?starts_with(name[0].data, ''ge-'') && "oper-status"[0].data==''up''])}}]'
