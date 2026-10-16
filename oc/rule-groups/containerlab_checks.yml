@@ -9,7 +9,6 @@ containerlab_pre_check:
     - "CPU Idle Check"
     - "CPU Usage Check"
     - "OS Version Check (Containerlab)"
-    - "OSPF Neighbor Count Zero"
     - "Interface Status Check"
     - "LLDP Neighbor Check"
 
