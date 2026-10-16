@@ -6,8 +6,6 @@ containerlab_pre_check:
   display_name: "Containerlab Pre-Check"
   description: "Checks before a containerlab deploy. The exact-match rules are only collected here, as the baseline the post-check compares against."
   validation_rules:
-    - "CPU Idle Check"
-    - "CPU Usage Check"
     - "OS Version Check (Containerlab)"
     - "Interface Status Check"
     - "LLDP Neighbor Check"
@@ -16,8 +14,6 @@ containerlab_post_check:
   display_name: "Containerlab Post-Check"
   description: "Checks after a containerlab deploy, compared against the pre-check snapshot."
   validation_rules:
-    - "CPU Idle Check"
-    - "CPU Usage Check"
     - "Interface Status Check"
     - "LLDP Neighbor Check"
     - "OS Version Check (Containerlab)"
