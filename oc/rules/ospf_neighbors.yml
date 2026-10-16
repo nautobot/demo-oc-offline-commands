@@ -6,8 +6,9 @@
 # The "Pre" rules are the pre-change check and accept either lab state a deploy can start from:
 # 0 (straight from Containerlab Startup Reset, which leaves no OSPF) or one adjacency per cabled
 # link (converged by an earlier deploy). Any count in between means the network is already broken.
-# With OSPF not configured the commands print nothing (or an error line that no template row
-# matches), so the neighbor table parses empty and counts 0.
+# Output that does not parse into a table (an error line, e.g. NX-OS without `feature ospf`)
+# comes back as the raw string, so the collectors count rows only for a list and 0 otherwise;
+# the post-change check still fails on 0.
 # The other per-role rules are the post-change check: exactly one adjacency per cabled link.
 # The spine role mixes NX-OS (JCY) and EOS (NYC) with different counts, so it has a rule per platform.
 # NX-OS uses ntc-templates cisco_nxos_show_ip_ospf_neighbor; TextFSM rather than "| json", whose
@@ -24,8 +25,8 @@ ospf_neighbor_count_pre_spine_nxos:
   collectors:
     - name: "textfsm"
       platform: "cisco_nxos"
-      command: "show ip ospf neighbors vrf all"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      command: "show ip ospf neighbors"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
 
 
 ospf_neighbor_count_pre_spine_eos:
@@ -40,7 +41,7 @@ ospf_neighbor_count_pre_spine_eos:
     - name: "textfsm"
       platform: "arista_eos"
       command: "show ip ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
 
 
 ospf_neighbor_count_pre_leaf:
@@ -55,7 +56,7 @@ ospf_neighbor_count_pre_leaf:
     - name: "textfsm"
       platform: "arista_eos"
       command: "show ip ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
 
 
 ospf_neighbor_count_pre_router:
@@ -70,11 +71,11 @@ ospf_neighbor_count_pre_router:
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show ip ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
     - name: "textfsm"
       platform: "juniper_junos"
       command: "show ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
 
 
 ospf_neighbor_count_pre_backbone:
@@ -89,11 +90,11 @@ ospf_neighbor_count_pre_backbone:
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show ip ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
     - name: "textfsm"
       platform: "juniper_junos"
       command: "show ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
 
 ospf_neighbor_count_spine_nxos:
   display_name: "OSPF Neighbor Count (Spine NX-OS)"
@@ -106,8 +107,8 @@ ospf_neighbor_count_spine_nxos:
   collectors:
     - name: "textfsm"
       platform: "cisco_nxos"
-      command: "show ip ospf neighbors vrf all"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      command: "show ip ospf neighbors"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
 
 
 ospf_neighbor_count_spine_eos:
@@ -122,7 +123,7 @@ ospf_neighbor_count_spine_eos:
     - name: "textfsm"
       platform: "arista_eos"
       command: "show ip ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
 
 
 ospf_neighbor_count_leaf:
@@ -137,7 +138,7 @@ ospf_neighbor_count_leaf:
     - name: "textfsm"
       platform: "arista_eos"
       command: "show ip ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
 
 
 ospf_neighbor_count_router:
@@ -152,11 +153,11 @@ ospf_neighbor_count_router:
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show ip ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
     - name: "textfsm"
       platform: "juniper_junos"
       command: "show ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
 
 
 ospf_neighbor_count_backbone:
@@ -171,8 +172,8 @@ ospf_neighbor_count_backbone:
     - name: "textfsm"
       platform: "cisco_ios"
       command: "show ip ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
     - name: "textfsm"
       platform: "juniper_junos"
       command: "show ospf neighbor"
-      jmespath: "[{ospf: {neighbors: length(@)}}]"
+      jmespath: "[{ospf: {neighbors: type(@) == 'array' && length(@) || `0`}}]"
