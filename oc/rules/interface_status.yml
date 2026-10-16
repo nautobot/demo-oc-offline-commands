@@ -29,6 +29,33 @@ interface_status_check:
       command: "show interfaces terse | display json"
       jmespath: '"interface-information"[0]."physical-interface"[].{name: name[0].data, admin: "admin-status"[0].data, state: "oper-status"[0].data}'
 
+# Containerlab pre/post comparison of the data ports only. A deploy creates loopbacks and VLAN
+# interfaces, which would shift a positional comparison of the full list, so management, loopback
+# and VLAN interfaces are left out. `$name$` keys each port by name so a diff names the port;
+# jdiff only takes a plain key as reference, so Junos (`name[0].data`) is compared in order, which
+# its fixed `ge-` port list keeps stable.
+interface_status_check_containerlab:
+  display_name: "Interface Status Check (Containerlab)"
+  rule_type: "exact_match"
+  description: "Verify each containerlab data port keeps the same state pre/post change. Applies to Arista EOS, Cisco NX-OS, Cisco IOS and Juniper Junos."
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show interfaces status"
+      jmespath: "[?starts_with(port, 'Et')].[$port$,status]"
+    - name: "json"
+      platform: "cisco_nxos"
+      command: "show interface status | json"
+      jmespath: "TABLE_interface.ROW_interface[?starts_with(interface, 'Ethernet')].[$interface$,state]"
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show interfaces"
+      jmespath: "[?starts_with(interface, 'GigabitEthernet') && interface!='GigabitEthernet1'].[$interface$,link_status,protocol_status]"
+    - name: "json"
+      platform: "juniper_junos"
+      command: "show interfaces terse | display json"
+      jmespath: '"interface-information"[0]."physical-interface"[?starts_with(name[0].data, ''ge-'')].{name: name[0].data, admin: "admin-status"[0].data, state: "oper-status"[0].data}'
+
 # Containerlab per-role counts of data ports that are up. Management ports (NX-OS mgmt0, EOS
 # Management0, IOS GigabitEthernet1, Junos fxp0) are left out. An operator has no "equals", so
 # `is-in` with one value checks the exact count. Each role's number is its cabled links in the lab
