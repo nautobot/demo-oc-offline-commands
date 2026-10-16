@@ -68,4 +68,12 @@ To use them:
 
 Note that unlike offline command outputs, the parser path template does not include the device name — parsers are shared by all devices with the same platform network driver.
 
+## Containerlab deploy checks
+
+`oc/rule-groups/containerlab_checks.yml` holds the **Containerlab Pre-Check** and **Containerlab Post-Check** groups that the solitaire-data *Containerlab Config Deploy* job runs before and after it pushes config to the containerlab devices. The job also passes each device role its own exact-count rules: **Interface Up Count**, **LLDP Neighbor Count** and **OSPF Neighbor Count**, one per role (spine, leaf, router, backbone). Spines have one rule per platform, because the NX-OS and EOS spines have different numbers of cabled links. The pre-check expects no OSPF neighbors (**OSPF Neighbor Count Zero**), since the lab is expected to come straight from a startup reset.
+
+The per-role count rules are not listed in either group; the job adds them to each role's snapshot (`CLAB_OC_PRE_CHECK_RULES_BY_ROLE` and `CLAB_OC_POST_CHECK_RULES_BY_ROLE` in solitaire-data `jobs/constants.py`). The pre-check adds **Interface Up Count** and **LLDP Neighbor Count**, so the cabling is confirmed before the deploy. The post-check adds **OSPF Neighbor Count**, so each role must reach one adjacency per cabled link; interfaces and LLDP neighbors are compared against the pre-check snapshot by **Interface Status Check** and **LLDP Neighbor Check**, so they are not counted again.
+
+The pre-check group also collects the exact-match rules that it does not grade, so the post-check (run with *Compare against latest snapshot*) has a baseline to compare against.
+
 For more detail on both features, see the [Operational Compliance app documentation](https://docs.nautobot.com/projects/operational-compliance/en/stable/).

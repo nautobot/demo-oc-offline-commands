@@ -42,9 +42,103 @@ cdp_neighbor_check:
 lldp_neighbor_check:
   display_name: "LLDP Neighbor Check"
   rule_type: "exact_match"
-  description: "Verify each local interface keeps the same LLDP neighbor port pre/post change. Applies to Cisco NX-OS."
+  description: "Verify each local interface keeps the same LLDP neighbor port pre/post change. Applies to Arista EOS, Cisco NX-OS, Cisco IOS and Juniper Junos."
   collectors:
     - name: "textfsm"
       platform: "cisco_nxos"
       command: "show lldp neighbors"
       jmespath: "[*].[$local_interface$,neighbor_interface]"
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show lldp neighbors"
+      jmespath: "[*].[$local_interface$,neighbor_interface]"
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show lldp neighbors"
+      jmespath: "[*].[$local_interface$,neighbor_interface]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show lldp neighbors"
+      jmespath: "[*].[$local_interface$,neighbor_interface]"
+
+# Containerlab per-role LLDP neighbor counts: exactly the role's cabled links, so one lost
+# adjacency fails the check. Neighbors seen on a management port are not counted. An operator has
+# no "equals", so `is-in` with one value checks the exact count. The spine role mixes NX-OS (JCY)
+# and EOS (NYC) with different counts, so it has a rule per platform.
+lldp_neighbor_count_spine_nxos:
+  display_name: "LLDP Neighbor Count (Spine NX-OS)"
+  rule_type: "operator"
+  description: "Verify a containerlab NX-OS spine (JCY) sees exactly 5 LLDP neighbors. Applies to Cisco NX-OS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [5]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_nxos"
+      command: "show lldp neighbors"
+      jmespath: "[{neighbors: {count: length([?local_interface!='mgmt0'])}}]"
+
+lldp_neighbor_count_spine_eos:
+  display_name: "LLDP Neighbor Count (Spine EOS)"
+  rule_type: "operator"
+  description: "Verify a containerlab EOS spine (NYC) sees exactly 3 LLDP neighbors. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show lldp neighbors"
+      jmespath: "[{neighbors: {count: length([?!starts_with(local_interface, 'Ma')])}}]"
+
+lldp_neighbor_count_leaf:
+  display_name: "LLDP Neighbor Count (Leaf)"
+  rule_type: "operator"
+  description: "Verify a containerlab leaf sees exactly 2 LLDP neighbors. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [2]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show lldp neighbors"
+      jmespath: "[{neighbors: {count: length([?!starts_with(local_interface, 'Ma')])}}]"
+
+lldp_neighbor_count_router:
+  display_name: "LLDP Neighbor Count (Router)"
+  rule_type: "operator"
+  description: "Verify a containerlab router sees exactly 3 LLDP neighbors. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show lldp neighbors"
+      jmespath: "[{neighbors: {count: length([?local_interface!='Gi1'])}}]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show lldp neighbors"
+      jmespath: "[{neighbors: {count: length([?!starts_with(local_interface, 'fxp')])}}]"
+
+lldp_neighbor_count_backbone:
+  display_name: "LLDP Neighbor Count (Backbone)"
+  rule_type: "operator"
+  description: "Verify a containerlab backbone router sees exactly 3 LLDP neighbors. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show lldp neighbors"
+      jmespath: "[{neighbors: {count: length([?local_interface!='Gi1'])}}]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show lldp neighbors"
+      jmespath: "[{neighbors: {count: length([?!starts_with(local_interface, 'fxp')])}}]"

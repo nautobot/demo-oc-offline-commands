@@ -15,6 +15,44 @@ os_version_check:
       napalm_getter: "get_facts"
       jmespath: 'get_facts.{hostname: hostname, os_version: os_version, version_approved: contains(`["10.2(3)", "7.0(3)I7(7)"]`, os_version)}'
 
+# Containerlab version check. A rule has one `is-in` list for all its collectors, so each
+# collector prefixes the version with its platform (ios:17.3.4a) and the list holds prefixed
+# values: a version is only approved on the platform it belongs to.
+os_version_check_containerlab:
+  display_name: "OS Version Check (Containerlab)"
+  rule_type: "operator"
+  description: "Verify the device runs an approved OS version for its platform. Applies to Arista EOS, Cisco NX-OS, Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data:
+        - "nxos:10.2(3)"
+        - "nxos:7.0(3)I7(7)"
+        - "eos:4.30.4M-34191138.4304M (engineering build)"
+        - "ios:17.3.4a"
+        - "junos:18.2R1.9"
+  collectors:
+    - name: "napalm"
+      platform: "cisco_nxos"
+      napalm_getter: "get_facts"
+      jmespath: "[{os: {version: join(':', ['nxos', get_facts.os_version])}}]"
+    # cEOS reports its build in the version string, so the full string is matched.
+    - name: "json"
+      platform: "arista_eos"
+      command: "show version | json"
+      jmespath: "[{os: {version: join(':', ['eos', version])}}]"
+    # NAPALM's IOS os_version is the whole "Cisco IOS Software, ..." line, so IOS reads the
+    # version from the TextFSM show version template. IOS-XE prints 17.03.04a on its
+    # "Cisco IOS XE Software" line but 17.3.4a on the line the template parses.
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show version"
+      jmespath: "[0:1].{os: {version: join(':', ['ios', version])}}"
+    - name: "napalm"
+      platform: "juniper_junos"
+      napalm_getter: "get_facts"
+      jmespath: "[{os: {version: join(':', ['junos', get_facts.os_version])}}]"
+
 device_identity_check:
   display_name: "Device Identity Check"
   rule_type: "exact_match"

@@ -1,0 +1,114 @@
+---
+# Containerlab OSPF neighbor counts. Each collector reduces the neighbor table to
+#   [{ospf: {neighbors: <neighbors, every VRF and OSPF process>}}]
+# An operator has no "equals", so `is-in` with one value checks the exact count.
+#
+# "Zero" is the pre-change check: the lab is expected straight from Containerlab Startup Reset,
+# which leaves no OSPF. With OSPF not configured the commands print nothing (or an error line
+# that no template row matches), so the neighbor table parses empty and counts 0.
+# The per-role rules are the post-change check: one adjacency per cabled link. The spine role
+# mixes NX-OS (JCY) and EOS (NYC) with different counts, so it has a rule per platform.
+
+ospf_neighbor_count_zero:
+  display_name: "OSPF Neighbor Count Zero"
+  rule_type: "operator"
+  description: "Verify the device has no OSPF neighbors yet. Applies to Arista EOS, Cisco NX-OS, Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [0]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+    - name: "textfsm"
+      platform: "cisco_nxos"
+      command: "show ip ospf neighbors vrf all"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show ospf neighbor"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+
+ospf_neighbor_count_spine_nxos:
+  display_name: "OSPF Neighbor Count (Spine NX-OS)"
+  rule_type: "operator"
+  description: "Verify a containerlab NX-OS spine (JCY) has exactly 5 OSPF neighbors. Applies to Cisco NX-OS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [5]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_nxos"
+      command: "show ip ospf neighbors vrf all"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+
+ospf_neighbor_count_spine_eos:
+  display_name: "OSPF Neighbor Count (Spine EOS)"
+  rule_type: "operator"
+  description: "Verify a containerlab EOS spine (NYC) has exactly 3 OSPF neighbors. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+
+ospf_neighbor_count_leaf:
+  display_name: "OSPF Neighbor Count (Leaf)"
+  rule_type: "operator"
+  description: "Verify a containerlab leaf has exactly 2 OSPF neighbors. Applies to Arista EOS."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [2]
+  collectors:
+    - name: "textfsm"
+      platform: "arista_eos"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+
+ospf_neighbor_count_router:
+  display_name: "OSPF Neighbor Count (Router)"
+  rule_type: "operator"
+  description: "Verify a containerlab router has exactly 3 OSPF neighbors. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show ospf neighbor"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+
+ospf_neighbor_count_backbone:
+  display_name: "OSPF Neighbor Count (Backbone)"
+  rule_type: "operator"
+  description: "Verify a containerlab backbone router has exactly 3 OSPF neighbors. Applies to Cisco IOS and Juniper Junos."
+  evaluate_args:
+    params:
+      mode: "is-in"
+      operator_data: [3]
+  collectors:
+    - name: "textfsm"
+      platform: "cisco_ios"
+      command: "show ip ospf neighbor"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
+    - name: "textfsm"
+      platform: "juniper_junos"
+      command: "show ospf neighbor"
+      jmespath: "[{ospf: {neighbors: length(@)}}]"
